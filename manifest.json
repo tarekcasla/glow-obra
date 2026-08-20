@@ -1,0 +1,16 @@
+{
+  "name": "GLOW 3 · Tablero de obra",
+  "short_name": "GLOW 3 Obra",
+  "description": "Seguimiento semanal de obra con metodología Last Planner System",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#101619",
+  "theme_color": "#101619",
+  "lang": "es-AR",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
