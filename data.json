@@ -27,7 +27,7 @@
           "tipo": "monday",
           "ref": "board 18398874016 · regenerado desde el dataset de la obra"
         },
-        "ppc": 31,
+        "ppc": 48.6,
         "finTablero": "2026-10-15",
         "finReal": "2026-12-21",
         "alerta": "critico",
@@ -882,7 +882,11 @@
           "tipo": "monday",
           "ref": "board 18398874016 · 778 ítems leídos y recalculados"
         },
-        "vencidas": 71
+        "vencidas": 71,
+        "fuentePpc": {
+          "tipo": "monday",
+          "ref": "board 18398874030 · «Se cumplió o no» · 17 de 35"
+        }
       },
       {
         "id": "glow5",
