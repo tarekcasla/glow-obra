@@ -2247,7 +2247,7 @@ footer b { color: var(--ink-2); font-weight: 600; }
 
       const S = P.semanaEnCurso;
       $("ppc-big").innerHTML = `${S.porcentaje}<small> %</small>`;
-      $("ppc-frac").textContent = `${S.cumplidos} de ${S.compromisos} compromisos · semana previa ${P.historico[0].ppc} %`;
+      $("ppc-frac").textContent = `${S.cumplidos} de ${S.compromisos} compromisos ${P.historico && P.historico.length > 1 ? `· semana previa ${P.historico[P.historico.length - 2].ppc} %` : "· sin semana previa medida"}`;
 
       const partes = [
         { k: "Cumplidos",           v: S.cumplidos,          c: "var(--good)" },
@@ -2590,8 +2590,9 @@ footer b { color: var(--ink-2); font-weight: 600; }
       ? `Tablero Monday «${O.proyecto.nombre} — ${O.proyecto.codigo}»` +
         (O.boardId ? ` · board ${O.boardId}` : "")
       : D.meta.fuente;
-    $("f-metodo-lbl").textContent = O.metodo || D.meta.metodo;
-    $("f-metodo").textContent = "Método de la estimación: " + O.metodo;
+    $("f-metodo-lbl").textContent = "";
+    $("f-metodo-lbl").hidden = true;
+    $("f-metodo").textContent = "Método de la estimación: " + (O.metodo || D.meta.metodo || "—");
   }
 
   /* ── ARRANQUE ─────────────────────────────────────────
