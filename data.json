@@ -7553,6 +7553,25 @@
         "fuente": {
           "tipo": "monday",
           "ref": "CRONOGRAMA del tablero"
+        },
+        "propagacion": {
+          "tareasMovidas": 167,
+          "haciaAdelante": 165,
+          "haciaAtras": 2,
+          "corrimientoMediano": 20,
+          "corrimientoMax": 59,
+          "finLineaBase": "2026-10-15",
+          "finCronograma": "2026-10-21",
+          "finSeMovio": 6,
+          "sinCronograma": 234,
+          "ejecutables": 715,
+          "conLineaBase": 481,
+          "dependencias": 0,
+          "lectura": "El plan se mantiene tarea por tarea: 167 fechas fueron corridas respecto de la línea base, 165 de ellas hacia adelante, con una mediana de 20 días y un máximo de 59. Pero el fin de obra sólo se movió 6 días. Con 0 dependencias cargadas en las 778 tareas, correr una fecha no arrastra lo que viene detrás, así que el atraso se acumula en las tareas y no llega nunca al hito final.",
+          "fuente": {
+            "tipo": "calculado",
+            "ref": "board 18398874016 leído el 21/08/2026 · CRONOGRAMA (timerange_mkyay6x2) vs línea base 14/07 (timerange_mm58xj5v) sobre los 715 ejecutables"
+          }
         }
       },
       "cobertura": {
