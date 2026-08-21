@@ -18224,6 +18224,86 @@
           "tipo": "calculado",
           "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 20 tareas en 1 sectores"
         }
+      },
+      "etapa": {
+        "nombre": "Estructura de subsuelos",
+        "tramos": [
+          {
+            "tramo": "Anillo de submuración · contrafrente",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-03-24"
+          },
+          {
+            "tramo": "Anillo de submuración · frente",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-08-01"
+          },
+          {
+            "tramo": "Excavación bases y platea · sector 1",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-02-28"
+          },
+          {
+            "tramo": "Excavación bases y platea · frente",
+            "pct": 50,
+            "estado": "Iniciada",
+            "fin": "2026-08-20"
+          },
+          {
+            "tramo": "Retiro de suelo total",
+            "pct": 80,
+            "estado": "Iniciada",
+            "fin": "2026-08-20"
+          },
+          {
+            "tramo": "Losa de subpresión SS2 · contrafrente",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-03-03"
+          },
+          {
+            "tramo": "Losa de subpresión SS2 · frente",
+            "pct": 0,
+            "estado": "Programado",
+            "fin": "2026-09-03"
+          },
+          {
+            "tramo": "Estructura Ho.Ao. SS2 · contrafrente",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-05-19"
+          },
+          {
+            "tramo": "Estructura Ho.Ao. SS2 · frente",
+            "pct": 0,
+            "estado": "Programado",
+            "fin": "2026-09-24"
+          },
+          {
+            "tramo": "Estructura Ho.Ao. SS1 · contrafrente",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-06-30"
+          },
+          {
+            "tramo": "Estructura Ho.Ao. SS1 · frente",
+            "pct": 0,
+            "estado": "Programado",
+            "fin": "2026-10-14"
+          }
+        ],
+        "cerrados": 6,
+        "total": 11,
+        "pct": 66.4,
+        "siguiente": "Losa de subpresión del frente, programada para el 03/09",
+        "nota": "La obra se ejecuta partida en <b>frente y contrafrente</b>, y tiene <b>dos subsuelos</b>. Eso da ocho tramos de hormigón donde otra obra tendría uno. El contrafrente está completo; el frente no arrancó ninguno porque estuvo esperando la submuración, que llevó de abril a agosto: <b>casi cuatro meses</b>. Recién con eso cerrado el 01/08 se pudo empezar a excavar el frente, que hoy va por la mitad.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18398672766 · grupos FUNDACIONES, SUBSUELO 1 y SUBSUELO 2 · tareas de hormigón, submuración y excavación"
+        }
       }
     },
     "glow7": {
@@ -21822,6 +21902,80 @@
           "tipo": "calculado",
           "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 30 tareas en 1 sectores"
         }
+      },
+      "etapa": {
+        "nombre": "Estructura en elevación",
+        "tramos": [
+          {
+            "tramo": "Excavación bases y platea",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-01-20"
+          },
+          {
+            "tramo": "Excavación para subsuelo",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": null
+          },
+          {
+            "tramo": "Excavación vigas y zapatas",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": null
+          },
+          {
+            "tramo": "Retiro de suelo",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": null
+          },
+          {
+            "tramo": "Perfilado de bases",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": null
+          },
+          {
+            "tramo": "Perfilado de submurales",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": null
+          },
+          {
+            "tramo": "Estructura Ho.Ao. subsuelo",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-04-01"
+          },
+          {
+            "tramo": "Canalización eléctrica losa subsuelo",
+            "pct": 100,
+            "estado": "Finalizada",
+            "fin": "2026-03-13"
+          },
+          {
+            "tramo": "Puesta a tierra subsuelo",
+            "pct": 90,
+            "estado": "Iniciada",
+            "fin": null
+          },
+          {
+            "tramo": "Excavación para piscina",
+            "pct": 0,
+            "estado": "Pendiente",
+            "fin": null
+          }
+        ],
+        "cerrados": 8,
+        "total": 10,
+        "pct": 89.0,
+        "siguiente": "Estructura de los pisos; ya hay 6 tareas cerradas en elevación",
+        "nota": "El subsuelo se ejecutó <b>en un solo tramo</b>: la estructura de hormigón entró el 04/03 y cerró el 01/04, cuatro semanas. Antes había cerrado toda la fundación — excavación, retiro de suelo y perfilado de bases y submurales. Sin partición por sectores y con un solo subsuelo, la secuencia corrió de corrido.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18402983267 · grupos FUNDACIONES y SUBSUELO · tareas de hormigón y excavación"
+        }
       }
     },
     "glow2": {
@@ -24444,6 +24598,37 @@
     "fuente": {
       "tipo": "calculado",
       "ref": "mediana del desvío por sector en cada board · el sector peor fija el atraso de la obra"
+    }
+  },
+  "comparativaEstructura": {
+    "obras": [
+      {
+        "obra": "GLOW 7",
+        "id": "glow7",
+        "cerrados": 8,
+        "total": 10,
+        "pct": 89.0,
+        "etapa": "Estructura en elevación",
+        "subsuelos": 1,
+        "sectores": 1,
+        "finEstructuraSubsuelo": "2026-04-01"
+      },
+      {
+        "obra": "GLOW 6+",
+        "id": "glow6",
+        "cerrados": 6,
+        "total": 11,
+        "pct": 66.4,
+        "etapa": "Estructura de subsuelos",
+        "subsuelos": 2,
+        "sectores": 2,
+        "finEstructuraSubsuelo": null
+      }
+    ],
+    "nota": "Las dos están en hormigón, pero no en el mismo punto. <b>GLOW 7 cerró la estructura de su subsuelo el 01/04 y ya tiene tareas en elevación. GLOW 6+ tiene tres tramos de hormigón sin arrancar.</b> La diferencia no es de ritmo de trabajo: GLOW 6+ tiene dos subsuelos y ejecuta partida en frente y contrafrente por las medianeras, así que cada tramo espera al anterior. Comparar el porcentaje global de las dos obras —7,4 % y 7,3 %— esconde eso por completo.",
+    "fuente": {
+      "tipo": "cruzado",
+      "ref": "boards 18398672766 y 18402983267 · secuencia de tareas de hormigón con su estado y fecha real de cierre"
     }
   }
 }
