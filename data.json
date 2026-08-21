@@ -12095,6 +12095,25 @@
         "pctCerradas": 46.4,
         "confiable": true,
         "motivo": "46 % de la obra ya cerrado y ritmo sostenido: la proyección es utilizable."
+      },
+      "desvioAcumulado": {
+        "tareasMedidas": 221,
+        "tardias": 174,
+        "adelantadas": 43,
+        "atrasoDias": 3387,
+        "adelantoDias": 1749,
+        "netoDias": 1638,
+        "promedioPorTarea": 7.4,
+        "finCronograma": "2026-10-21",
+        "finProyectado": "2026-10-28",
+        "desvioDias": 7,
+        "confiable": true,
+        "nota": "Se suma. tarea por tarea. la diferencia entre la fecha en que el plan decía que terminaba y la fecha real: para las cerradas. cuándo pasaron a terminada según el historial; para las vencidas sin cerrar. cuántos días llevan pasadas. <b>174 tareas tarde suman 3.387 días</b> y 43 adelantadas descuentan 1.749. Neto: <b>+1.638 días-tarea</b>. +7.4 por tarea.",
+        "aviso": null,
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 221 tareas medidas"
+        }
       }
     },
     "glow5": {
@@ -15377,6 +15396,25 @@
         "pctCerradas": 54.3,
         "confiable": true,
         "motivo": "54 % de la obra ya cerrado y ritmo sostenido: la proyección es utilizable."
+      },
+      "desvioAcumulado": {
+        "tareasMedidas": 388,
+        "tardias": 357,
+        "adelantadas": 30,
+        "atrasoDias": 17048,
+        "adelantoDias": 752,
+        "netoDias": 16296,
+        "promedioPorTarea": 42.0,
+        "finCronograma": "2026-12-31",
+        "finProyectado": "2027-02-11",
+        "desvioDias": 42,
+        "confiable": true,
+        "nota": "Se suma. tarea por tarea. la diferencia entre la fecha en que el plan decía que terminaba y la fecha real: para las cerradas. cuándo pasaron a terminada según el historial; para las vencidas sin cerrar. cuántos días llevan pasadas. <b>357 tareas tarde suman 17.048 días</b> y 30 adelantadas descuentan 752. Neto: <b>+16.296 días-tarea</b>. +42.0 por tarea.",
+        "aviso": null,
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 388 tareas medidas"
+        }
       }
     },
     "glow6": {
@@ -17555,6 +17593,25 @@
         "pctCerradas": 7.4,
         "confiable": false,
         "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos tres meses (2.3/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
+      },
+      "desvioAcumulado": {
+        "tareasMedidas": 20,
+        "tardias": 19,
+        "adelantadas": 1,
+        "atrasoDias": 1377,
+        "adelantoDias": 5,
+        "netoDias": 1372,
+        "promedioPorTarea": 68.6,
+        "finCronograma": "2028-04-17",
+        "finProyectado": "2028-06-25",
+        "desvioDias": 69,
+        "confiable": false,
+        "nota": "Se suma. tarea por tarea. la diferencia entre la fecha en que el plan decía que terminaba y la fecha real: para las cerradas. cuándo pasaron a terminada según el historial; para las vencidas sin cerrar. cuántos días llevan pasadas. <b>19 tareas tarde suman 1.377 días</b> y 1 adelantadas descuentan 5. Neto: <b>+1.372 días-tarea</b>. +68.6 por tarea.",
+        "aviso": "Muestra chica: sólo 20 tareas tienen fecha de plan y desenlace medible. El promedio por tarea no es representativo de la obra.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 20 tareas medidas"
+        }
       }
     },
     "glow7": {
@@ -21109,6 +21166,25 @@
         "pctCerradas": 7.3,
         "confiable": false,
         "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos tres meses (10.7/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
+      },
+      "desvioAcumulado": {
+        "tareasMedidas": 30,
+        "tardias": 30,
+        "adelantadas": 0,
+        "atrasoDias": 1533,
+        "adelantoDias": 0,
+        "netoDias": 1533,
+        "promedioPorTarea": 51.1,
+        "finCronograma": "2027-08-06",
+        "finProyectado": "2027-09-26",
+        "desvioDias": 51,
+        "confiable": false,
+        "nota": "Se suma. tarea por tarea. la diferencia entre la fecha en que el plan decía que terminaba y la fecha real: para las cerradas. cuándo pasaron a terminada según el historial; para las vencidas sin cerrar. cuántos días llevan pasadas. <b>30 tareas tarde suman 1.533 días</b> y 0 adelantadas descuentan 0. Neto: <b>+1.533 días-tarea</b>. +51.1 por tarea.",
+        "aviso": "Muestra chica: sólo 30 tareas tienen fecha de plan y desenlace medible. El promedio por tarea no es representativo de la obra.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 30 tareas medidas"
+        }
       }
     },
     "glow2": {
@@ -23149,6 +23225,19 @@
         "pctCerradas": 25.1,
         "confiable": false,
         "motivo": "El tablero no registra cierres: no hay ritmo que medir."
+      },
+      "desvioAcumulado": {
+        "tareasMedidas": 0,
+        "confiable": false,
+        "finCronograma": "2026-06-17",
+        "finProyectado": null,
+        "desvioDias": null,
+        "nota": "No se puede medir: el tablero no registra un cambio de estado desde el 07/04/2026, así que no hay fecha real de cierre contra la cual comparar el plan.",
+        "aviso": "Tablero sin actividad desde abril de 2026.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18403319169 · activity_logs sin eventos posteriores al 07/04/2026"
+        }
       }
     }
   },
@@ -23639,6 +23728,65 @@
     "fuente": {
       "tipo": "calculado",
       "ref": "activity_logs(column_ids:[status]) de cada board · cierres netos por mes · tareas sin cerrar ÷ ritmo de los últimos 3 meses"
+    }
+  },
+  "carteraDesvio": {
+    "filas": [
+      {
+        "obra": "GLOW 5",
+        "id": "glow5",
+        "tareas": 388,
+        "neto": 16296,
+        "promedio": 42.0,
+        "finCronograma": "2026-12-31",
+        "finProyectado": "2027-02-11",
+        "confiable": true
+      },
+      {
+        "obra": "GLOW 3",
+        "id": "glow3",
+        "tareas": 221,
+        "neto": 1638,
+        "promedio": 7.4,
+        "finCronograma": "2026-10-21",
+        "finProyectado": "2026-10-28",
+        "confiable": true
+      },
+      {
+        "obra": "GLOW 7",
+        "id": "glow7",
+        "tareas": 30,
+        "neto": 1533,
+        "promedio": 51.1,
+        "finCronograma": "2027-08-06",
+        "finProyectado": "2027-09-26",
+        "confiable": false
+      },
+      {
+        "obra": "GLOW 6+",
+        "id": "glow6",
+        "tareas": 20,
+        "neto": 1372,
+        "promedio": 68.6,
+        "finCronograma": "2028-04-17",
+        "finProyectado": "2028-06-25",
+        "confiable": false
+      },
+      {
+        "obra": "GLOW 2",
+        "id": "glow2",
+        "tareas": 0,
+        "neto": null,
+        "promedio": null,
+        "finCronograma": "2026-06-17",
+        "finProyectado": null,
+        "confiable": false
+      }
+    ],
+    "nota": "Suma de días de atraso y adelanto tarea por tarea. <b>GLOW 5 acumula 16.296 días-tarea de atraso</b> contra 1.638 de GLOW 3, aunque GLOW 5 va más adelantada en obra: su plan era más exigente. GLOW 6+ y GLOW 7 tienen apenas 20 y 30 tareas medibles, así que su promedio no representa la obra.",
+    "fuente": {
+      "tipo": "calculado",
+      "ref": "fin de línea base vs fecha real de cierre por tarea, en los 5 boards"
     }
   }
 }
