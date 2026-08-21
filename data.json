@@ -896,7 +896,7 @@
         "barrio": null,
         "etapa": "En obra",
         "estado": "conectada",
-        "boardId": "18418778949",
+        "boardId": "18402983112",
         "items": 544,
         "ejecutables": 543,
         "cerradas": 283,
@@ -5456,7 +5456,8 @@
         "fuente": {
           "tipo": "monday",
           "ref": "board 18398874016"
-        }
+        },
+        "lineaBaseNota": "«Referencia de CRONOGRAMA (14 Jul '26)» es una foto del cronograma congelada el 14/07/2026, no la línea base contractual de la obra. El desvío que se mide contra ella es desvío contra la última replanificación, no contra el plan original."
       },
       "alcance": {
         "items": 778,
@@ -7567,7 +7568,7 @@
           "ejecutables": 715,
           "conLineaBase": 481,
           "dependencias": 0,
-          "lectura": "El plan se mantiene tarea por tarea: 167 fechas fueron corridas respecto de la línea base, 165 de ellas hacia adelante, con una mediana de 20 días y un máximo de 59. Pero el fin de obra sólo se movió 6 días. Con 0 dependencias cargadas en las 778 tareas, correr una fecha no arrastra lo que viene detrás, así que el atraso se acumula en las tareas y no llega nunca al hito final.",
+          "lectura": "El plan se mantiene tarea por tarea: 167 fechas fueron corridas respecto de la referencia del 14/07, 165 hacia adelante, con una mediana de 20 días y un máximo de 59. Pero el fin de obra sólo se movió 6 días. Las 778 tareas tienen <b>cero dependencias cargadas</b>, así que correr una fecha no arrastra lo que viene detrás. La comparación que lo prueba: GLOW 5 tiene 222 dependencias cargadas y ahí el fin de obra sí se movió, 97 días.",
           "fuente": {
             "tipo": "calculado",
             "ref": "board 18398874016 leído el 21/08/2026 · CRONOGRAMA (timerange_mkyay6x2) vs línea base 14/07 (timerange_mm58xj5v) sobre los 715 ejecutables"
@@ -7849,7 +7850,14 @@
         "conRestriccion": 32,
         "nota": "Partes semanales: una fila por compromiso, con equipo, tipo (Producción/Liberación) y si se cumplió."
       },
-      "dependencias": 0,
+      "dependencias": {
+        "cargadas": 0,
+        "total": null,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board · dependency_mm08tktm con operator is_not_empty (conteo por cursor)"
+        }
+      },
       "metodo": "Lectura del board 18398874016 el 21/08/2026. Avance ponderado = Σ(% × DURACION) ÷ Σ(DURACION) sobre los ítems ejecutables (778 totales − 45 \"HITO\" − 18 \"FIN\" = 715). Entran los 567 ejecutables con DURACION > 0 (Σ DURACION = 4.598 días); el % vacío se computa como 0",
       "diagnostico": {
         "titulo": "Por qué el tablero no lo muestra",
@@ -7954,13 +7962,111 @@
         "lectura": "Los compromisos se registran en los subelementos del tablero, una fila por semana y equipo.",
         "historico": [
           {
-            "semana": "13/07 – 23/08",
-            "ppc": 48.6
+            "semana": "13–19 jul",
+            "ppc": 100.0,
+            "cumplidos": 1,
+            "noCumplidos": 0,
+            "comprometidos": 1
+          },
+          {
+            "semana": "20–26 jul",
+            "ppc": 25.0,
+            "cumplidos": 3,
+            "noCumplidos": 9,
+            "comprometidos": 15
+          },
+          {
+            "semana": "27 jul – 2 ago",
+            "ppc": 40.0,
+            "cumplidos": 4,
+            "noCumplidos": 6,
+            "comprometidos": 13
+          },
+          {
+            "semana": "3–9 ago",
+            "ppc": 100.0,
+            "cumplidos": 1,
+            "noCumplidos": 0,
+            "comprometidos": 5
+          },
+          {
+            "semana": "10–16 ago",
+            "ppc": 66.7,
+            "cumplidos": 2,
+            "noCumplidos": 1,
+            "comprometidos": 7
+          },
+          {
+            "semana": "17–23 ago",
+            "ppc": null,
+            "cumplidos": 0,
+            "noCumplidos": 0,
+            "comprometidos": 1
           }
         ],
         "fuenteSub": {
           "tipo": "monday",
           "ref": "board de subelementos 18398874030 · 55 partes semanales"
+        },
+        "serieFuente": {
+          "tipo": "monday",
+          "ref": "board 18398874030 · columna Semana (week_mm5g3xqz) × «Se cumplió o no»"
+        },
+        "tipoCompromiso": {
+          "produccion": {
+            "cumplidos": 15,
+            "resueltos": 25,
+            "total": 42,
+            "ppc": 60
+          },
+          "liberacion": {
+            "cumplidos": 1,
+            "resueltos": 9,
+            "total": 11,
+            "ppc": 11
+          },
+          "lectura": "Los equipos de obra cumplen el 60 % de lo que se comprometen. Las liberaciones —destrabar material, conseguir una inspección, cerrar una compra— cumplen el 11 %: 1 de 9. Seis de esas once liberaciones son de Compras. El cuello de botella no está en la cuadrilla sino aguas arriba.",
+          "fuente": {
+            "tipo": "monday",
+            "ref": "board 18398874030 · columna Tipo (color_mm5gf5k) × «Se cumplió o no»"
+          }
+        },
+        "calidadEquipo": {
+          "calificados": 8,
+          "total": 55,
+          "calidad": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "equipo": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "nota": "Escala 1 a 3. Sólo 8 de 55 compromisos están calificados, así que no es representativo. El caso que vale mirar es «compra de materiales»: Calidad 3, Equipo 1.",
+          "fuente": {
+            "tipo": "monday",
+            "ref": "board 18398874030 · rating_mm5g42gq (Calidad) y rating_mm5gq2rw (Equipo)"
+          }
+        },
+        "advertencia": {
+          "titulo": "Cómo leer este PPC",
+          "texto": "El período completo da 48,6 % (17 de 35) contando todos los registros. Si se cuentan sólo los 27 compromisos que tienen semana asignada, da 40,7 %. La diferencia son 8 compromisos resueltos sin semana, que no se pueden ubicar en la serie. Además «Cumplido con retraso» no cuenta como cumplido: en Last Planner, cumplir tarde es no cumplir.",
+          "fuente": {
+            "tipo": "calculado",
+            "ref": "board 18398874030 · 55 subelementos, 42 con semana, 27 resueltos con semana"
+          }
         }
       },
       "movimientos": {
@@ -11226,7 +11332,8 @@
             "Asignar responsable donde figura sin contratista: hoy no hay a quién reclamarle."
           ]
         }
-      }
+      },
+      "metodoNota": "De los 687 ítems con % cargado, 336 están en 100 y 304 en 0: sólo 47 tienen un valor intermedio. El % funciona como un booleano terminado/no terminado, así que el avance ponderado mide qué proporción de días-tarea está cerrada, no progreso gradual."
     },
     "glow5": {
       "proyecto": {
@@ -11241,7 +11348,7 @@
         "lineaBase": "timerange_mm4mfdkj — 'Referencia de CRONOGRAMA (24 Jun '26)'",
         "fuente": {
           "tipo": "monday",
-          "ref": "board 18418778949 · GLOW 5 PLAN DE TRABAJO v2"
+          "ref": "board 18402983112 · GLOW 5 PLAN DE TRABAJO (vigente al 21/08/2026)"
         }
       },
       "alcance": {
@@ -13036,6 +13143,25 @@
         "fuente": {
           "tipo": "monday",
           "ref": "CRONOGRAMA del tablero"
+        },
+        "propagacion": {
+          "tareasMovidas": 293,
+          "haciaAdelante": 290,
+          "haciaAtras": 3,
+          "corrimientoMediano": 76,
+          "corrimientoMax": 229,
+          "finLineaBase": "2026-09-25",
+          "finCronograma": "2026-12-31",
+          "finSeMovio": 97,
+          "ejecutables": 544,
+          "conLineaBase": 400,
+          "dependencias": 222,
+          "sinCronograma": 120,
+          "lectura": "Acá el atraso sí llega al final: 290 tareas se corrieron respecto de la línea base del 24/06 y el fin de obra se movió 97 días, de 25/09/2026 a 31/12/2026. La diferencia con GLOW 3 es que este tablero tiene <b>222 dependencias cargadas</b> contra cero, así que el corrimiento se propaga. Ojo con 50 tareas marcadas «Finalizada» con fecha de cronograma futura, que inflan los picos de atraso.",
+          "fuente": {
+            "tipo": "calculado",
+            "ref": "board 18402983112 leído el 21/08/2026 · CRONOGRAMA vs «Referencia de CRONOGRAMA (24 Jun '26)» (timerange_mm4mfdkj); la columna formula «Diferencia» devuelve vacío por API"
+          }
         }
       },
       "cobertura": {
@@ -13319,13 +13445,20 @@
         },
         "nota": "Los 3 subelementos cuelgan de un solo ítem (PISO 10 - INSTALACION EQUIPO A.A.) y viven en un tablero de subelementos con estructura Last Planner distinta a la del tablero padre: SEMANA (week_mm647njd), CATEGORIA/RESPONSABLE (color_mm64w6fn: Técnicas / Equipo 1 / Compras), TIPO (color_mm64mf3: Produccion / Liberacion), CUMPLIMIENTO (color_mm64r1t9: No cumplida / Cumplida con retrasos), CAUSA en texto y dos ratings. Uno es un test ('asdas'), los otros dos son 'OBJETIVO 50%' (causa cargada: 'Le falto gente al contratista') y 'SOLICITUD DE COMPRA N 520'. Es un piloto de 3 registros, no una capa usable todavía."
       },
-      "dependencias": 222,
+      "dependencias": {
+        "cargadas": 222,
+        "total": null,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board · dependency_mm08tktm con operator is_not_empty (conteo por cursor)"
+        }
+      },
       "metodo": "Lectura del board 18402983112 el 21/08/2026. Avance ponderado = Σ(% × DURACION) / Σ(DURACION) sobre los 436 ítems ejecutables que tienen cargadas AMBAS columnas (% y DURACION, col. numeric_mkya8gds y numeric_mkyap28c). Σ(DURACION) = 2.640 días. Resultado: 72,23 %. ",
       "diagnostico": {
         "titulo": "Qué no puede medir este tablero",
         "cuerpo": "Tareas bloqueadas (tareas.bloqueadas = lista vacía): La columna ESTADO de este tablero no tiene la etiqueta 'Bloqueada' (índice 8). Sus etiquetas son 0=Iniciada, 1=Finalizada, 2=Pendiente, 5=Sin programar, 7=Programada. No es que no haya tareas bloqueadas: es que no hay dónde marcarlas. · Distinción entre 'Retrasada' y 'Pendiente': El slot rojo (índice 2) que en GLOW 3 se llama 'Retrasada' acá está renombrado 'Pendiente'. Se reportan sus 24 tareas en el campo tareas.retrasadas por equivalencia de posición y color, no porque el tablero diga 'Retrasada'. · Corte por persona / responsable (personas.quienes vacío): La columna SUPERVICION (multiple_person_mkzerbc5) existe en el tablero pero no tiene ningún ítem cargado: 0 de 546. · Avance ponderado del 100% de la obra: 126 tareas (23%) no tienen DURACION cargada y quedan fuera del cálculo Σ(avance×duración)/Σ(duración). El ponderado de 71,92% describe 420 tareas que suman 2.664 días-tarea."
       },
-      "boardId": "18418778949",
+      "boardId": "18402983112",
       "lookahead": {
         "ventana": {
           "desde": "17/08",
@@ -13627,7 +13760,7 @@
         ],
         "fuente": {
           "tipo": "monday",
-          "ref": "board 18418778949 (v2) · responsable de la columna CONTRATISTA"
+          "ref": "board 18402983112 (vigente) · columna CONTRATISTA color_mkyaxv6j"
         },
         "alerta": {
           "titulo": "Sólo 22 de 271 tareas activas caen en las próximas cuatro semanas",
@@ -13729,47 +13862,75 @@
         }
       },
       "responsablesNombrados": {
-        "columna": "CONTRATISTA",
-        "cobertura": "268/400",
+        "columna": "CONTRATISTA (color_mkyaxv6j)",
+        "cobertura": "417 de 544 tareas",
         "lista": [
           [
             "SIELPROM",
+            60
+          ],
+          [
+            "NORAY",
+            39
+          ],
+          [
+            "SANITARIAS",
             38
           ],
           [
             "BALDINO",
-            30
-          ],
-          [
-            "NORAY",
-            29
-          ],
-          [
-            "SANITARIAS",
-            29
+            35
           ],
           [
             "PINTOR",
-            22
+            33
           ],
           [
-            "ROLANDO",
-            19
+            "OSCAR",
+            26
+          ],
+          [
+            "C DEBILES HUGO",
+            21
           ],
           [
             "BULAS",
-            17
+            21
+          ],
+          [
+            "ROLANDO",
+            20
           ],
           [
             "MARMOLERO",
-            17
+            19
           ],
           [
             "COLOCADOR",
-            11
+            18
+          ],
+          [
+            "DURLOCK",
+            15
           ],
           [
             "TERMOMECANICA",
+            12
+          ],
+          [
+            "VIDRIERO",
+            11
+          ],
+          [
+            "POTENZA INST.",
+            11
+          ],
+          [
+            "CORTINAS",
+            9
+          ],
+          [
+            "ELECTRODOMESTICOS",
             9
           ],
           [
@@ -13777,33 +13938,17 @@
             9
           ],
           [
-            "C DEBILES HUGO",
-            9
-          ],
-          [
-            "VIDRIERO",
-            9
-          ],
-          [
-            "DURLOCK",
+            "SERVAS",
             8
           ],
           [
-            "SERVAS",
-            6
-          ],
-          [
-            "OSCAR",
-            4
-          ],
-          [
-            "RESPONSABLE 1",
-            2
+            "H° ELABORADO",
+            3
           ]
         ],
         "fuente": {
           "tipo": "monday",
-          "ref": "etiquetas de color_mkyaxv6j en el board v2"
+          "ref": "board 18402983112 (vigente) · etiquetas de color_mkyaxv6j"
         }
       }
     },
@@ -15208,7 +15353,14 @@
         },
         "nota": "Board de subelementos 18398672781. Tiene su propio esquema de seguimiento semanal Last Planner: Semana Planificada, Estado, Responsable, Tipo, 'Se cumplió o no', 'Restriciones o causas de no cumplimiento', y ratings de Calidad y Equipo. Está prácticamente sin usar: 8 subelementos para 726 tareas. El campo 'Se cumplió o no' está cargado en 2 (uno 'Programada', uno 'No cumplida') y la única restricción escrita en todo el tablero es 'desmoronamiento de rampa' en 'Limpieza de bases'. Responsables mencionados: Pedro (3), Excavador (2), Compras (1), Técnica (1). Uno de los 8 se llama 'sadaddsa' y es basura de prueba. items_count del board informa 7 pero la API devuelve 8."
       },
-      "dependencias": 475,
+      "dependencias": {
+        "cargadas": 475,
+        "total": null,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board · dependency_mm08tktm con operator is_not_empty (conteo por cursor)"
+        }
+      },
       "metodo": "Lectura del board 18398672766 el 21/08/2026. Avance ponderado = Σ(% de la tarea × DURACION en días) ÷ Σ(DURACION), sobre los 637 ítems con DURACION > 0 (5.858 días de obra). Columnas: numeric_mkya8gds (%) y numeric_mkyap28c (DURACION), tablero 18398672766, corte 21",
       "diagnostico": {
         "titulo": "Qué no puede medir este tablero",
@@ -17791,7 +17943,14 @@
         },
         "nota": "El tablero de subelementos existe (18402983268, 'Subelementos de GLOW 7') y esta armado como planilla de PPC semanal: columnas Semana, Responsable, Tipo, 'Se cumplio o no', 'Restricciones o causas de no cumplimiento', Calidad y Equipo. Pero tiene solo 4 filas y 3 son de prueba ('tarea 3', 'sdas', 'pedido de hormigon'). La unica cargada de verdad es 'Desencofrado' (Subcontrato / Produccion / No cumplida / causa: 'Llovio'). Con 4 filas no hay PPC ni serie semanal posible."
       },
-      "dependencias": 470,
+      "dependencias": {
+        "cargadas": 470,
+        "total": null,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board · dependency_mm08tktm con operator is_not_empty (conteo por cursor)"
+        }
+      },
       "metodo": "Lectura del board 18402983267 el 21/08/2026. Avance ponderado = Σ(DURACION_i × %_i) / Σ(DURACION_i) sobre los 557 ítems que tienen DURACION cargada = 28.484 / 4.052 días = 7,03%. Los otros 62 ítems del tablero quedan fuera del cálculo porque no tienen DURACION, y e",
       "diagnostico": {
         "titulo": "Qué no puede medir este tablero",
