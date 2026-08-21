@@ -7633,13 +7633,13 @@
           }
         },
         "repropagada": {
-          "fecha": "2026-12-21",
-          "label": "Estimación repropagada",
-          "diasCorridos": 67,
-          "semanas": 9.6,
+          "fecha": "2027-12-26",
+          "label": "Proyección por ritmo real",
+          "diasCorridos": 431,
+          "semanas": 61.6,
           "fuente": {
-            "tipo": "informe",
-            "ref": "§06 · estimación repropagada 21/12/2026, +67 días"
+            "tipo": "calculado",
+            "ref": "383 tareas sin cerrar ÷ 23,7 cierres netos por mes (promedio jun-jul-ago del historial de Monday)"
           }
         },
         "reprogramadas": {
@@ -7674,6 +7674,15 @@
           "fuente": {
             "tipo": "calculado",
             "ref": "board 18398874016 leído el 21/08/2026 · CRONOGRAMA (timerange_mkyay6x2) vs línea base 14/07 (timerange_mm58xj5v) sobre los 715 ejecutables"
+          }
+        },
+        "informePDF": {
+          "fecha": "2026-12-21",
+          "label": "Estimación del informe del 07/08",
+          "nota": "Es la repropagación que hizo el informe en papel. Se conserva como referencia; la proyección de arriba se calcula desde el ritmo de cierre real del tablero y da 12 meses más.",
+          "fuente": {
+            "tipo": "informe",
+            "ref": "§06 · estimación repropagada 21/12/2026, +67 días"
           }
         }
       },
@@ -12038,6 +12047,54 @@
           "tipo": "monday",
           "ref": "board 18398874016 · ESTADO=HITO (45) y ESTADO=FIN (18) · CRONOGRAMA vs línea base 14/07"
         }
+      },
+      "proyeccion": {
+        "ejecutables": 715,
+        "cerradas": 332,
+        "faltan": 383,
+        "ritmoMensual": 23.7,
+        "mesesRestantes": 16.2,
+        "finProyectado": "2027-12-26",
+        "finCronograma": "2026-10-21",
+        "desvioDias": 431,
+        "serie": [
+          {
+            "mes": "2026-02",
+            "cerradas": 41
+          },
+          {
+            "mes": "2026-03",
+            "cerradas": 21
+          },
+          {
+            "mes": "2026-04",
+            "cerradas": 40
+          },
+          {
+            "mes": "2026-05",
+            "cerradas": 18
+          },
+          {
+            "mes": "2026-06",
+            "cerradas": 22
+          },
+          {
+            "mes": "2026-07",
+            "cerradas": 33
+          },
+          {
+            "mes": "2026-08",
+            "cerradas": 16
+          }
+        ],
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 23.7/mes"
+        },
+        "pctCerradas": 46.4,
+        "confiable": true,
+        "motivo": "46 % de la obra ya cerrado y ritmo sostenido: la proyección es utilizable."
       }
     },
     "glow5": {
@@ -15276,6 +15333,50 @@
           "tipo": "monday",
           "ref": "board 18402983112 · dropdown_mm086nqq × % × DURACION, gremios con 4 tareas o más"
         }
+      },
+      "proyeccion": {
+        "ejecutables": 521,
+        "cerradas": 283,
+        "faltan": 238,
+        "ritmoMensual": 47.0,
+        "mesesRestantes": 5.1,
+        "finProyectado": "2027-01-22",
+        "finCronograma": "2026-12-31",
+        "desvioDias": 22,
+        "serie": [
+          {
+            "mes": "2026-03",
+            "cerradas": 26
+          },
+          {
+            "mes": "2026-04",
+            "cerradas": 6
+          },
+          {
+            "mes": "2026-05",
+            "cerradas": 30
+          },
+          {
+            "mes": "2026-06",
+            "cerradas": 19
+          },
+          {
+            "mes": "2026-07",
+            "cerradas": 58
+          },
+          {
+            "mes": "2026-08",
+            "cerradas": 64
+          }
+        ],
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 47.0/mes"
+        },
+        "pctCerradas": 54.3,
+        "confiable": true,
+        "motivo": "54 % de la obra ya cerrado y ritmo sostenido: la proyección es utilizable."
       }
     },
     "glow6": {
@@ -17414,6 +17515,46 @@
           "tipo": "monday",
           "ref": "board 18398672766 · dropdown_mm086nqq × % × DURACION, gremios con 4 tareas o más"
         }
+      },
+      "proyeccion": {
+        "ejecutables": 726,
+        "cerradas": 54,
+        "faltan": 672,
+        "ritmoMensual": 2.3,
+        "mesesRestantes": 292.2,
+        "finProyectado": "2050-12-27",
+        "finCronograma": "2028-04-17",
+        "desvioDias": 8289,
+        "serie": [
+          {
+            "mes": "2026-03",
+            "cerradas": 2
+          },
+          {
+            "mes": "2026-04",
+            "cerradas": 18
+          },
+          {
+            "mes": "2026-05",
+            "cerradas": 2
+          },
+          {
+            "mes": "2026-06",
+            "cerradas": 0
+          },
+          {
+            "mes": "2026-08",
+            "cerradas": 5
+          }
+        ],
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 2.3/mes"
+        },
+        "pctCerradas": 7.4,
+        "confiable": false,
+        "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos tres meses (2.3/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
       }
     },
     "glow7": {
@@ -20932,6 +21073,42 @@
           "tipo": "monday",
           "ref": "board 18402983267 · dropdown_mm086nqq × % × DURACION, gremios con 4 tareas o más"
         }
+      },
+      "proyeccion": {
+        "ejecutables": 618,
+        "cerradas": 45,
+        "faltan": 573,
+        "ritmoMensual": 10.7,
+        "mesesRestantes": 53.6,
+        "finProyectado": "2031-02-06",
+        "finCronograma": "2027-08-06",
+        "desvioDias": 1280,
+        "serie": [
+          {
+            "mes": "2026-03",
+            "cerradas": -172
+          },
+          {
+            "mes": "2026-05",
+            "cerradas": 2
+          },
+          {
+            "mes": "2026-06",
+            "cerradas": 1
+          },
+          {
+            "mes": "2026-08",
+            "cerradas": 29
+          }
+        ],
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 10.7/mes"
+        },
+        "pctCerradas": 7.3,
+        "confiable": false,
+        "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos tres meses (10.7/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
       }
     },
     "glow2": {
@@ -22953,6 +23130,25 @@
           "tipo": "monday",
           "ref": "board 18403327874 · dropdown_mm1d4t63 (Recurso) × Estado × Duración"
         }
+      },
+      "proyeccion": {
+        "ejecutables": 346,
+        "cerradas": 87,
+        "faltan": 259,
+        "ritmoMensual": 0.0,
+        "mesesRestantes": null,
+        "finProyectado": null,
+        "finCronograma": "2026-06-17",
+        "desvioDias": null,
+        "serie": [],
+        "nota": "No se puede proyectar: el tablero no registra cierres desde abril de 2026, así que no hay ritmo que medir. Su cronograma terminaba el 17/06/2026.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 0.0/mes"
+        },
+        "pctCerradas": 25.1,
+        "confiable": false,
+        "motivo": "El tablero no registra cierres: no hay ritmo que medir."
       }
     }
   },
@@ -23384,6 +23580,65 @@
     "fuente": {
       "tipo": "calculado",
       "ref": "los 5 boards · fin de la línea base de cada obra vs estado terminado, al 21/08/2026"
+    }
+  },
+  "carteraProyeccion": {
+    "filas": [
+      {
+        "obra": "GLOW 3",
+        "id": "glow3",
+        "finCronograma": "2026-10-21",
+        "finProyectado": "2027-12-26",
+        "desvioDias": 431,
+        "ritmo": 23.7,
+        "faltan": 383,
+        "confiable": true
+      },
+      {
+        "obra": "GLOW 5",
+        "id": "glow5",
+        "finCronograma": "2026-12-31",
+        "finProyectado": "2027-01-22",
+        "desvioDias": 22,
+        "ritmo": 47.0,
+        "faltan": 238,
+        "confiable": true
+      },
+      {
+        "obra": "GLOW 6+",
+        "id": "glow6",
+        "finCronograma": "2028-04-17",
+        "finProyectado": "2050-12-27",
+        "desvioDias": 8289,
+        "ritmo": 2.3,
+        "faltan": 672,
+        "confiable": false
+      },
+      {
+        "obra": "GLOW 7",
+        "id": "glow7",
+        "finCronograma": "2027-08-06",
+        "finProyectado": "2031-02-06",
+        "desvioDias": 1280,
+        "ritmo": 10.7,
+        "faltan": 573,
+        "confiable": false
+      },
+      {
+        "obra": "GLOW 2",
+        "id": "glow2",
+        "finCronograma": "2026-06-17",
+        "finProyectado": null,
+        "desvioDias": null,
+        "ritmo": 0.0,
+        "faltan": 259,
+        "confiable": false
+      }
+    ],
+    "nota": "Fin de cronograma contra fin proyectado por el ritmo real de cierre de cada obra. <b>Sólo GLOW 3 y GLOW 5 tienen proyección utilizable</b>: las otras tres están al 7 %, al 7 % y congelada, y el ritmo de una obra en estructura no predice el de terminaciones.",
+    "fuente": {
+      "tipo": "calculado",
+      "ref": "activity_logs(column_ids:[status]) de cada board · cierres netos por mes · tareas sin cerrar ÷ ritmo de los últimos 3 meses"
     }
   }
 }
