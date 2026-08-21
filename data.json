@@ -29,7 +29,7 @@
         },
         "ppc": 48.6,
         "finTablero": "2026-10-15",
-        "finReal": "2026-12-21",
+        "finReal": "2026-11-07",
         "alerta": "critico",
         "detalle": null,
         "avancePonderado": 58.2,
@@ -1607,7 +1607,8 @@
           "tipo": "monday",
           "ref": "board 18402983112 · 546 ítems leídos y recalculados"
         },
-        "vencidas": 60
+        "vencidas": 60,
+        "finReal": "2027-03-26"
       },
       {
         "id": "glow7",
@@ -2422,7 +2423,8 @@
           "tipo": "monday",
           "ref": "board 18402983267 · 619 ítems leídos y recalculados"
         },
-        "vencidas": 67
+        "vencidas": 67,
+        "finReal": "2027-09-16"
       },
       {
         "id": "glow6",
@@ -2766,7 +2768,8 @@
           "tipo": "monday",
           "ref": "board 18398672766 · 726 ítems leídos y recalculados"
         },
-        "vencidas": 10
+        "vencidas": 10,
+        "finReal": "2028-05-25"
       },
       {
         "id": "glow2",
@@ -7633,13 +7636,13 @@
           }
         },
         "repropagada": {
-          "fecha": "2027-12-26",
-          "label": "Proyección por ritmo real",
-          "diasCorridos": 431,
-          "semanas": 61.6,
+          "fecha": "2026-11-07",
+          "label": "Proyección por desvío real",
+          "diasCorridos": 17,
+          "semanas": 2.4,
           "fuente": {
             "tipo": "calculado",
-            "ref": "383 tareas sin cerrar ÷ 23,7 cierres netos por mes (promedio jun-jul-ago del historial de Monday)"
+            "ref": "fin de cronograma + 17 días, el atraso del frente más atrasado (PISO 1)"
           }
         },
         "reprogramadas": {
@@ -12208,6 +12211,173 @@
         "fuente": {
           "tipo": "calculado",
           "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 221 tareas en 11 sectores"
+        }
+      },
+      "justificacion": {
+        "causas": [
+          {
+            "causa": "Defensas de fachada sin retirar",
+            "detalle": "Las defensas de Benito Juárez y del frente impiden cerrar balcones, carpetas y revestimientos. Depende de terminar el revoque exterior y colocar barandas.",
+            "cita": "Los balcones del frente, estan las defensas, hasta terminar revoque exterior y colocar barandas no se podra finalizar.",
+            "autor": "Luis Fontana",
+            "fecha": "2026-07-17",
+            "gestionable": true,
+            "tareas": [
+              "PISO 1 - IMPERMEABILIZACION BALCONES",
+              "PISO 2 - REVESTIMIENTOS DE PISO PORCELANATO",
+              "PISO 2 - REVESTIMIENTOS DE PARED PORCELANATO",
+              "PISO 6 - REVESTIMIENTOS DE PISO PORCELANATO",
+              "PISO 6 - REVESTIMIENTOS DE PARED PORCELANATO",
+              "PISO 9 - CARPETA CEMENTICIA BALCONES",
+              "PISO 5 - CARPETA CEMENTICIA BALCONES"
+            ],
+            "sectores": [
+              "PISO 1",
+              "PISO 2",
+              "PISO 5",
+              "PISO 6",
+              "PISO 9"
+            ],
+            "tareasCount": 7
+          },
+          {
+            "causa": "Falta de material",
+            "detalle": "Ladrillo celular del 12 y pedidos 102, 103, 104 y 105 sin entregar. El pedido 103 se hizo el 08/07 y el material llegó del espesor equivocado.",
+            "cita": "Falta ladrillo del 12 celular. Pedido 103 fecha 08/07/2026. (el que vino «brumana» es de 15 y ya estaba levanta la mampostería). 24/07 — Falta de materiles. Pedido 104 y 105 pendiente.",
+            "autor": "Luis Fontana",
+            "fecha": "2026-07-21",
+            "gestionable": true,
+            "tareas": [
+              "PISO PB - MAMPOSTERIA",
+              "L. - MAMPOSTERIA",
+              "L. - PRE INSTALACION Y CANALIZACION A.A",
+              "PA - INSTALACION SANITARIAS",
+              "PA - INSTALACION GAS",
+              "PA - MAMPOSTERIA DE CIERRE DE PLENOS"
+            ],
+            "sectores": [
+              "PLANTA BAJA",
+              "LOCAL",
+              "PALLIERES"
+            ],
+            "tareasCount": 6
+          },
+          {
+            "causa": "Inspección de gas pendiente",
+            "detalle": "La inspección está anunciada para el 31/08. Hasta entonces no se cierran banquinas ni cocinas del departamento A de cada piso.",
+            "cita": "Hasta supuesta inspeccion del 31/08 de GAS no se puede terminar banquina del departamento A",
+            "autor": "Luis Fontana",
+            "fecha": "2026-07-17",
+            "gestionable": false,
+            "tareas": [
+              "PISO 1 - BANQUINAS",
+              "PISO 1 - REVESTIMIENTOS DE PISO PORCELANATO",
+              "PISO 2 - BANQUINAS",
+              "PISO 3 - REVESTIMIENTOS DE PISO PORCELANATO",
+              "PISO 10 - CARPETA CEMENTICIA"
+            ],
+            "sectores": [
+              "PISO 1",
+              "PISO 2",
+              "PISO 3",
+              "PISO 10"
+            ],
+            "tareasCount": 5
+          },
+          {
+            "causa": "Contrato de durlock retrasado",
+            "detalle": "La contratación del yesero se demoró y arrastró la placa de yeso de cuatro pisos. Es el gremio con más tareas retrasadas de la obra: 13 de 16.",
+            "cita": "Se retraso el contrato de durlock.",
+            "autor": "Luis Fontana",
+            "fecha": "2026-07-30",
+            "gestionable": true,
+            "tareas": [
+              "PISO 1 - PLACA DE YESO EST.",
+              "PISO 1 - PLACA DE YESO EMPLACADO",
+              "PISO 3 - PLACA DE YESO EST.",
+              "PISO 3 - PLACA DE YESO EMPLACADO",
+              "PISO 4 - PLACA DE YESO EST."
+            ],
+            "sectores": [
+              "PISO 1",
+              "PISO 3",
+              "PISO 4"
+            ],
+            "tareasCount": 5
+          },
+          {
+            "causa": "Izaje de carpinterías",
+            "detalle": "La contratación del izaje se retrasó por cuestiones técnicas; quedó para el 03/08 y arrastró la carpintería exterior y las puertas de ascensor.",
+            "cita": "Se retraso la contratación de izaje por cuestiones tecnicas. El izaje esta programado para el 03/08/2026.",
+            "autor": "Luis Fontana",
+            "fecha": "2026-07-30",
+            "gestionable": true,
+            "tareas": [
+              "PISO 2 - CARPINTERIA EXTERIOR",
+              "ASC - COLOCACION DE PUERTAS"
+            ],
+            "sectores": [
+              "PISO 2",
+              "ASCENSOR"
+            ],
+            "tareasCount": 2
+          },
+          {
+            "causa": "Equipo roto",
+            "detalle": "Se rompió la proyectadora de revoque y el frente hizo medio día. Antes, el arreglo del guinche había demorado el inicio.",
+            "cita": "18-05-26 tarea pausada porque se rompió la proyectadora. Hicieron medio dia.",
+            "autor": "Solana Diakow",
+            "fecha": "2026-05-27",
+            "gestionable": true,
+            "tareas": [
+              "REVOQUE EXTERIOR - FACHADA CONTRAFRENTE",
+              "PINTURA - FACHADA CONTRAFRENTE"
+            ],
+            "sectores": [
+              "EXTERIOR FACHADAS"
+            ],
+            "tareasCount": 2
+          },
+          {
+            "causa": "Clima",
+            "detalle": "Lluvias del 20 y 21 de julio sobre el frente de fachada.",
+            "cita": "Atrasos por clima: Lluvias del 20-21",
+            "autor": "Luis Fontana",
+            "fecha": "2026-07-21",
+            "gestionable": false,
+            "tareas": [
+              "REVOQUE EXTERIOR - FACHADA BENITO JUÁREZ"
+            ],
+            "sectores": [
+              "EXTERIOR FACHADAS"
+            ],
+            "tareasCount": 1
+          },
+          {
+            "causa": "Herramienta no disponible",
+            "detalle": "La roscadora recién estuvo disponible el jueves 23/07.",
+            "cita": "Recien se puede contar con la roscadora jueves 23/07",
+            "autor": "Luis Fontana",
+            "fecha": "2026-07-21",
+            "gestionable": true,
+            "tareas": [
+              "PA - INSTALACIONES DE INCENDIO"
+            ],
+            "sectores": [
+              "PALLIERES"
+            ],
+            "tareasCount": 1
+          }
+        ],
+        "tareasConCausa": 29,
+        "tareasFrenadas": 87,
+        "sinCausa": 58,
+        "gestionables": 23,
+        "noGestionables": 6,
+        "nota": "De las 87 tareas frenadas o retrasadas, <b>29 tienen el motivo escrito</b> por el jefe de obra en el comentario del ítem y 58 no tienen ninguna explicación cargada. <b>23 de las 29 son gestionables</b> — material, contratación, herramienta — y sólo 6 dependen de terceros o del clima.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18398874016 · updates y replies de los ítems en ESTADO Retrasada, Bloqueada o Iniciada con fecha vencida · texto literal del jefe de obra"
         }
       }
     },
