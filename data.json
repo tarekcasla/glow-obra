@@ -11429,6 +11429,298 @@
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 651 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
         }
+      },
+      "subrubros": {
+        "filas": [
+          {
+            "subrubro": "INST.ELECTRICA",
+            "tareas": 83,
+            "dias": 435,
+            "avance": 57.0,
+            "cerradas": 45,
+            "bloqueadas": 0,
+            "retrasadas": 6
+          },
+          {
+            "subrubro": "REVESTIMIENTO DE PISO",
+            "tareas": 23,
+            "dias": 239,
+            "avance": 63.1,
+            "cerradas": 3,
+            "bloqueadas": 4,
+            "retrasadas": 1
+          },
+          {
+            "subrubro": "ALBAÑILERIA",
+            "tareas": 44,
+            "dias": 229,
+            "avance": 81.6,
+            "cerradas": 37,
+            "bloqueadas": 2,
+            "retrasadas": 2
+          },
+          {
+            "subrubro": "IMPERMEABILIZACION",
+            "tareas": 14,
+            "dias": 215,
+            "avance": 87.6,
+            "cerradas": 13,
+            "bloqueadas": 1,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "HORMIGON ARMADO",
+            "tareas": 10,
+            "dias": 195,
+            "avance": 100.0,
+            "cerradas": 10,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "INST.AIRE ACONDICIONADO",
+            "tareas": 14,
+            "dias": 140,
+            "avance": 85.0,
+            "cerradas": 7,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "CONTRAPISO PROYECTADO",
+            "tareas": 26,
+            "dias": 132,
+            "avance": 54.4,
+            "cerradas": 20,
+            "bloqueadas": 1,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "PINTURA INTERIOR",
+            "tareas": 19,
+            "dias": 118,
+            "avance": 0.0,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "REVESTIMIENTO DE PARED",
+            "tareas": 7,
+            "dias": 107,
+            "avance": 89.3,
+            "cerradas": 5,
+            "bloqueadas": 2,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "PUERTAS INTERIORES",
+            "tareas": 33,
+            "dias": 80,
+            "avance": 53.8,
+            "cerradas": 11,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "INST. SANITARIA",
+            "tareas": 26,
+            "dias": 72,
+            "avance": 35.8,
+            "cerradas": 21,
+            "bloqueadas": 0,
+            "retrasadas": 1
+          },
+          {
+            "subrubro": "PLACA DE YESO",
+            "tareas": 16,
+            "dias": 70,
+            "avance": 5.7,
+            "cerradas": 1,
+            "bloqueadas": 0,
+            "retrasadas": 13
+          },
+          {
+            "subrubro": "REVOQUE CEMENTICIO PROYECTADO",
+            "tareas": 9,
+            "dias": 63,
+            "avance": 83.3,
+            "cerradas": 7,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "CARPINTERIA PVC.",
+            "tareas": 15,
+            "dias": 60,
+            "avance": 1.7,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 5
+          },
+          {
+            "subrubro": "MOBILIARIO COCINA Y PLACARES",
+            "tareas": 12,
+            "dias": 50,
+            "avance": 0.0,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "LOSA SANITARIA",
+            "tareas": 8,
+            "dias": 39,
+            "avance": 0.0,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "ZINGUERIA",
+            "tareas": 10,
+            "dias": 27,
+            "avance": 80.0,
+            "cerradas": 7,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "MAMPARAS Y ESPEJOS",
+            "tareas": 8,
+            "dias": 21,
+            "avance": 0.0,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "PISO RADIANTE ELECTRICO",
+            "tareas": 7,
+            "dias": 21,
+            "avance": 100.0,
+            "cerradas": 7,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "CORTINAS",
+            "tareas": 7,
+            "dias": 21,
+            "avance": 0.0,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "MARMOLERIA",
+            "tareas": 5,
+            "dias": 15,
+            "avance": 0.0,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "ELECTRODOMESTICOS",
+            "tareas": 7,
+            "dias": 15,
+            "avance": 0.0,
+            "cerradas": 0,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "GCBA",
+            "tareas": 11,
+            "dias": 0,
+            "avance": null,
+            "cerradas": 11,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "SERVICIOS",
+            "tareas": 6,
+            "dias": 0,
+            "avance": null,
+            "cerradas": 6,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "PROYECTO ARQ.",
+            "tareas": 4,
+            "dias": 0,
+            "avance": null,
+            "cerradas": 4,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "DEMOLICION",
+            "tareas": 6,
+            "dias": 0,
+            "avance": null,
+            "cerradas": 6,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "VARIOS PRELIMINARES",
+            "tareas": 6,
+            "dias": 0,
+            "avance": null,
+            "cerradas": 6,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          },
+          {
+            "subrubro": "MOV. DE SUELO",
+            "tareas": 10,
+            "dias": 0,
+            "avance": null,
+            "cerradas": 10,
+            "bloqueadas": 0,
+            "retrasadas": 0
+          }
+        ],
+        "nota": "Corte por gremio real. RUBRO tiene 10 categorías; SUBRUBRO tiene 48 y está cargado en el 82 % de las tareas. El tablero ya tiene una vista propia llamada «VISTA POR SUB RUBRO».",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18398874016 · dropdown_mm086nqq × % × DURACION, sobre ejecutables (sin HITO/FIN), agrupado con 4 tareas o más"
+        }
+      },
+      "saludTablero": {
+        "ultimoEvento": "2026-08-21",
+        "editorPrincipal": "Luis Fontana",
+        "pctEditor": 98.7,
+        "automatizacion": 58,
+        "eventos8sem": [
+          3079,
+          2253,
+          584,
+          355,
+          355,
+          122,
+          156,
+          35
+        ],
+        "nota": "El 58 % de los cambios de % los dispara una automatización de Monday, no una persona.",
+        "semanas": [
+          "29 jun",
+          "6 jul",
+          "13 jul",
+          "20 jul",
+          "27 jul",
+          "3 ago",
+          "10 ago",
+          "17 ago"
+        ],
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board de la obra · ranking de user_id y eventos por semana"
+        }
       }
     },
     "glow5": {
@@ -14133,6 +14425,37 @@
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 570 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
         }
+      },
+      "saludTablero": {
+        "ultimoEvento": "2026-08-20",
+        "editorPrincipal": "Juan Gardey",
+        "pctEditor": 88.3,
+        "automatizacion": null,
+        "eventos8sem": [
+          0,
+          1844,
+          2330,
+          597,
+          0,
+          205,
+          1,
+          825
+        ],
+        "nota": "Segundo editor: andres urteaga con el 10 %.",
+        "semanas": [
+          "29 jun",
+          "6 jul",
+          "13 jul",
+          "20 jul",
+          "27 jul",
+          "3 ago",
+          "10 ago",
+          "17 ago"
+        ],
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board de la obra · ranking de user_id y eventos por semana"
+        }
       }
     },
     "glow6": {
@@ -15781,6 +16104,37 @@
         "fuente": {
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 81 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
+        }
+      },
+      "saludTablero": {
+        "ultimoEvento": "2026-08-19",
+        "editorPrincipal": "Matías Moyano Ojea",
+        "pctEditor": 62.8,
+        "automatizacion": null,
+        "eventos8sem": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          12,
+          0,
+          531
+        ],
+        "nota": "Estuvo quieto hasta el 18/08, cuando alguien lo movió entero: 531 eventos en una semana.",
+        "semanas": [
+          "29 jun",
+          "6 jul",
+          "13 jul",
+          "20 jul",
+          "27 jul",
+          "3 ago",
+          "10 ago",
+          "17 ago"
+        ],
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board de la obra · ranking de user_id y eventos por semana"
         }
       }
     },
@@ -18797,6 +19151,37 @@
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 547 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
         }
+      },
+      "saludTablero": {
+        "ultimoEvento": "2026-08-11",
+        "editorPrincipal": "Santiago D. Anzani",
+        "pctEditor": 59.9,
+        "automatizacion": null,
+        "eventos8sem": [
+          0,
+          0,
+          0,
+          22,
+          0,
+          81,
+          143,
+          0
+        ],
+        "nota": "Acá el % se carga a mano: 491 de 547 cambios los hizo andres urteaga.",
+        "semanas": [
+          "29 jun",
+          "6 jul",
+          "13 jul",
+          "20 jul",
+          "27 jul",
+          "3 ago",
+          "10 ago",
+          "17 ago"
+        ],
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board de la obra · ranking de user_id y eventos por semana"
+        }
       }
     },
     "glow2": {
@@ -20679,6 +21064,37 @@
             "Marcar como frenada toda tarea trabada y anotar la causa, en vez de dejarla vencer en silencio.",
             "Asignar responsable donde figura sin contratista: hoy no hay a quién reclamarle."
           ]
+        }
+      },
+      "saludTablero": {
+        "ultimoEvento": "2026-04-07",
+        "editorPrincipal": "Pablo J. Chmielewsky",
+        "pctEditor": 60.8,
+        "automatizacion": null,
+        "eventos8sem": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nota": "Sin un solo evento desde el 07/04/2026. Cuatro meses y medio.",
+        "semanas": [
+          "29 jun",
+          "6 jul",
+          "13 jul",
+          "20 jul",
+          "27 jul",
+          "3 ago",
+          "10 ago",
+          "17 ago"
+        ],
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board de la obra · ranking de user_id y eventos por semana"
         }
       }
     }
