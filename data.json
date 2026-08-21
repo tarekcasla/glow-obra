@@ -16956,6 +16956,464 @@
           "tipo": "monday",
           "ref": "activity_logs del board de la obra · ranking de user_id y eventos por semana"
         }
+      },
+      "planVsReal": {
+        "meses": [
+          {
+            "mes": "2026-02",
+            "planificadas": 1,
+            "planificadasCrono": 1,
+            "realCerradas": 1,
+            "acumPlan": 0.2,
+            "acumReal": 0.2
+          },
+          {
+            "mes": "2026-03",
+            "planificadas": 11,
+            "planificadasCrono": 11,
+            "realCerradas": 3,
+            "acumPlan": 2.6,
+            "acumReal": 0.9
+          },
+          {
+            "mes": "2026-05",
+            "planificadas": 2,
+            "planificadasCrono": 2,
+            "realCerradas": 2,
+            "acumPlan": 3.0,
+            "acumReal": 1.3
+          },
+          {
+            "mes": "2026-06",
+            "planificadas": 3,
+            "planificadasCrono": 3,
+            "realCerradas": 3,
+            "acumPlan": 3.6,
+            "acumReal": 1.9
+          },
+          {
+            "mes": "2026-08",
+            "planificadas": 5,
+            "planificadasCrono": 5,
+            "realCerradas": 2,
+            "acumPlan": 4.7,
+            "acumReal": 2.3
+          },
+          {
+            "mes": "2026-09",
+            "planificadas": 2,
+            "planificadasCrono": 2,
+            "realCerradas": null,
+            "acumPlan": 5.1,
+            "acumReal": null
+          },
+          {
+            "mes": "2026-10",
+            "planificadas": 2,
+            "planificadasCrono": 2,
+            "realCerradas": null,
+            "acumPlan": 5.5,
+            "acumReal": null
+          },
+          {
+            "mes": "2026-11",
+            "planificadas": 3,
+            "planificadasCrono": 3,
+            "realCerradas": null,
+            "acumPlan": 6.2,
+            "acumReal": null
+          },
+          {
+            "mes": "2026-12",
+            "planificadas": 3,
+            "planificadasCrono": 3,
+            "realCerradas": null,
+            "acumPlan": 6.8,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-01",
+            "planificadas": 8,
+            "planificadasCrono": 8,
+            "realCerradas": null,
+            "acumPlan": 8.5,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-02",
+            "planificadas": 14,
+            "planificadasCrono": 14,
+            "realCerradas": null,
+            "acumPlan": 11.5,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-03",
+            "planificadas": 34,
+            "planificadasCrono": 34,
+            "realCerradas": null,
+            "acumPlan": 18.8,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-04",
+            "planificadas": 36,
+            "planificadasCrono": 36,
+            "realCerradas": null,
+            "acumPlan": 26.4,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-05",
+            "planificadas": 40,
+            "planificadasCrono": 40,
+            "realCerradas": null,
+            "acumPlan": 35.0,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-06",
+            "planificadas": 51,
+            "planificadasCrono": 51,
+            "realCerradas": null,
+            "acumPlan": 45.8,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-07",
+            "planificadas": 51,
+            "planificadasCrono": 51,
+            "realCerradas": null,
+            "acumPlan": 56.7,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-08",
+            "planificadas": 39,
+            "planificadasCrono": 39,
+            "realCerradas": null,
+            "acumPlan": 65.0,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-09",
+            "planificadas": 34,
+            "planificadasCrono": 34,
+            "realCerradas": null,
+            "acumPlan": 72.3,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-10",
+            "planificadas": 20,
+            "planificadasCrono": 20,
+            "realCerradas": null,
+            "acumPlan": 76.5,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-11",
+            "planificadas": 26,
+            "planificadasCrono": 26,
+            "realCerradas": null,
+            "acumPlan": 82.1,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-12",
+            "planificadas": 24,
+            "planificadasCrono": 24,
+            "realCerradas": null,
+            "acumPlan": 87.2,
+            "acumReal": null
+          },
+          {
+            "mes": "2028-01",
+            "planificadas": 23,
+            "planificadasCrono": 23,
+            "realCerradas": null,
+            "acumPlan": 92.1,
+            "acumReal": null
+          },
+          {
+            "mes": "2028-02",
+            "planificadas": 18,
+            "planificadasCrono": 18,
+            "realCerradas": null,
+            "acumPlan": 95.9,
+            "acumReal": null
+          },
+          {
+            "mes": "2028-03",
+            "planificadas": 14,
+            "planificadasCrono": 14,
+            "realCerradas": null,
+            "acumPlan": 98.9,
+            "acumReal": null
+          },
+          {
+            "mes": "2028-04",
+            "planificadas": 5,
+            "planificadasCrono": 5,
+            "realCerradas": null,
+            "acumPlan": 100.0,
+            "acumReal": null
+          }
+        ],
+        "mesActual": "2026-08",
+        "ejecutables": 469,
+        "referencia": "cronograma del 16/06 reconstruido del historial",
+        "nota": "La «línea base» declarada de esta obra <b>no sirve</b>: es una copia exacta del cronograma en los 469 ítems, sacada el 18/08. El desvío da cero por construcción, no por buena gestión. Se reconstruyó el cronograma al 16/06 desde el historial: <b>415 de 469 tareas tienen la misma fecha de fin que hoy</b>, y las 54 que se movieron se adelantaron. La conclusión es más incómoda que un atraso: <b>este cronograma no se está replanificando contra la realidad</b>. Además la fecha de fin de obra la fijan dos tareas del grupo PISO 8 mal nombradas «PISO 1 - …».",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board 18398672766 · timerange_mm6bm4pz vs cronograma reconstruido desde activity_logs al 16/06/2026, sobre 469 ejecutables con fecha"
+        }
+      },
+      "hitos": {
+        "total": 2,
+        "vencidos": 0,
+        "detalle": [
+          {
+            "nombre": "PISO 1 - PRUEBA HIDRAULICA IS",
+            "fecha": "2027-02-11",
+            "vencido": false
+          },
+          {
+            "nombre": "PISO 1 - PRUEBA HIDRAULICA IMPER.",
+            "fecha": "2027-03-01",
+            "vencido": false
+          }
+        ],
+        "nota": "GLOW 6+ no tiene etiqueta HITO. Los dos hitos reales están marcados como <i>milestone</i> dentro de la columna de cronograma, que no se ve como etiqueta pero sí en el Gantt. Ninguno venció todavía.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18398672766 · visualization_type milestone en timerange_mkyay6x2"
+        }
+      },
+      "subrubros": {
+        "filas": [
+          {
+            "subrubro": "INST.ELECTRICA",
+            "tareas": 130,
+            "dias": 780,
+            "avance": 1.9,
+            "cerradas": 2,
+            "retrasadas": 2,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "ALBAÑILERIA",
+            "tareas": 95,
+            "dias": 781,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 3,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PUERTAS INTERIORES",
+            "tareas": 48,
+            "dias": 270,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PLACA DE YESO",
+            "tareas": 39,
+            "dias": 312,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "INST. SANITARIA",
+            "tareas": 37,
+            "dias": 210,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 2,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "CARPINTERIA PVC.",
+            "tareas": 31,
+            "dias": 414,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PINTURA INTERIOR",
+            "tareas": 27,
+            "dias": 300,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "CONTRAPISO PROYECTADO",
+            "tareas": 26,
+            "dias": 144,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "REVESTIMIENTO DE PISO",
+            "tareas": 22,
+            "dias": 277,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "REVOQUE CEMENTICIO PROYECTADO",
+            "tareas": 21,
+            "dias": 190,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "IMPERMEABILIZACION",
+            "tareas": 21,
+            "dias": 182,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "HORMIGON ARMADO",
+            "tareas": 20,
+            "dias": 437,
+            "avance": 56.8,
+            "cerradas": 7,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MOBILIARIO COCINA Y PLACARES",
+            "tareas": 19,
+            "dias": 214,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MARMOLERIA",
+            "tareas": 19,
+            "dias": 100,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "ZINGUERIA",
+            "tareas": 15,
+            "dias": 110,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "ELECTRODOMESTICOS",
+            "tareas": 14,
+            "dias": 56,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "REVESTIMIENTO DE PARED",
+            "tareas": 13,
+            "dias": 152,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "LOSA SANITARIA",
+            "tareas": 13,
+            "dias": 140,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MAMPARAS Y ESPEJOS",
+            "tareas": 11,
+            "dias": 92,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "HERRERIA",
+            "tareas": 11,
+            "dias": 22,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "INST.AIRE ACONDICIONADO",
+            "tareas": 10,
+            "dias": 92,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PISO RADIANTE ELECTRICO",
+            "tareas": 10,
+            "dias": 88,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "CORTINAS",
+            "tareas": 10,
+            "dias": 44,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MOV. DE SUELO",
+            "tareas": 8,
+            "dias": 410,
+            "avance": 89.2,
+            "cerradas": 5,
+            "retrasadas": 2,
+            "bloqueadas": 0
+          }
+        ],
+        "nota": "Obra en etapa temprana: sólo hormigón armado y movimiento de suelo tienen avance. 236 tareas no tienen fecha de cronograma y quedan fuera del conteo de vencidas.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18398672766 · dropdown_mm086nqq × % × DURACION, gremios con 4 tareas o más"
+        }
       }
     },
     "glow7": {
@@ -20002,6 +20460,478 @@
           "tipo": "monday",
           "ref": "activity_logs del board de la obra · ranking de user_id y eventos por semana"
         }
+      },
+      "planVsReal": {
+        "meses": [
+          {
+            "mes": "2026-01",
+            "planificadas": 1,
+            "planificadasCrono": 1,
+            "realCerradas": 1,
+            "acumPlan": 0.2,
+            "acumReal": 0.2
+          },
+          {
+            "mes": "2026-03",
+            "planificadas": 3,
+            "planificadasCrono": 3,
+            "realCerradas": 1,
+            "acumPlan": 0.8,
+            "acumReal": 0.4
+          },
+          {
+            "mes": "2026-04",
+            "planificadas": 13,
+            "planificadasCrono": 13,
+            "realCerradas": 1,
+            "acumPlan": 3.5,
+            "acumReal": 0.6
+          },
+          {
+            "mes": "2026-05",
+            "planificadas": 20,
+            "planificadasCrono": 20,
+            "realCerradas": 2,
+            "acumPlan": 7.7,
+            "acumReal": 1.0
+          },
+          {
+            "mes": "2026-06",
+            "planificadas": 12,
+            "planificadasCrono": 12,
+            "realCerradas": 1,
+            "acumPlan": 10.2,
+            "acumReal": 1.2
+          },
+          {
+            "mes": "2026-07",
+            "planificadas": 12,
+            "planificadasCrono": 12,
+            "realCerradas": 2,
+            "acumPlan": 12.7,
+            "acumReal": 1.7
+          },
+          {
+            "mes": "2026-08",
+            "planificadas": 17,
+            "planificadasCrono": 17,
+            "realCerradas": 1,
+            "acumPlan": 16.2,
+            "acumReal": 1.9
+          },
+          {
+            "mes": "2026-09",
+            "planificadas": 24,
+            "planificadasCrono": 24,
+            "realCerradas": null,
+            "acumPlan": 21.2,
+            "acumReal": null
+          },
+          {
+            "mes": "2026-10",
+            "planificadas": 15,
+            "planificadasCrono": 15,
+            "realCerradas": null,
+            "acumPlan": 24.3,
+            "acumReal": null
+          },
+          {
+            "mes": "2026-11",
+            "planificadas": 32,
+            "planificadasCrono": 32,
+            "realCerradas": null,
+            "acumPlan": 30.9,
+            "acumReal": null
+          },
+          {
+            "mes": "2026-12",
+            "planificadas": 44,
+            "planificadasCrono": 44,
+            "realCerradas": null,
+            "acumPlan": 40.0,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-01",
+            "planificadas": 50,
+            "planificadasCrono": 50,
+            "realCerradas": null,
+            "acumPlan": 50.4,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-02",
+            "planificadas": 58,
+            "planificadasCrono": 58,
+            "realCerradas": null,
+            "acumPlan": 62.4,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-03",
+            "planificadas": 72,
+            "planificadasCrono": 72,
+            "realCerradas": null,
+            "acumPlan": 77.4,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-04",
+            "planificadas": 51,
+            "planificadasCrono": 51,
+            "realCerradas": null,
+            "acumPlan": 88.0,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-05",
+            "planificadas": 35,
+            "planificadasCrono": 35,
+            "realCerradas": null,
+            "acumPlan": 95.2,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-06",
+            "planificadas": 15,
+            "planificadasCrono": 15,
+            "realCerradas": null,
+            "acumPlan": 98.3,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-07",
+            "planificadas": 7,
+            "planificadasCrono": 7,
+            "realCerradas": null,
+            "acumPlan": 99.8,
+            "acumReal": null
+          },
+          {
+            "mes": "2027-08",
+            "planificadas": 1,
+            "planificadasCrono": 1,
+            "realCerradas": null,
+            "acumPlan": 100.0,
+            "acumReal": null
+          }
+        ],
+        "mesActual": "2026-08",
+        "ejecutables": 482,
+        "referencia": "línea base 27/05/2026",
+        "nota": "A agosto el plan pedía <b>16 %</b> cerrado y hay <b>2 %</b>. Es la brecha más grande de la cartera en proporción. Lo que agrava: la replanificación del 27/05 <b>comprimió</b> el plan en vez de asumir el atraso — adelantó el fin de obra de 08/12/2027 a 06/08/2027, mediana de −98 días en 371 tareas. Contra el plan de principios de mayo había 48 vencidas; contra el de fin de mayo hay 67. Se excluyó un ítem con fecha 2030 que es un error de carga.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board 18402983267 · fin de timerange_mm3rvr72 (base 27/05) vs ESTADO=Finalizada, sobre 482 ejecutables (excluido el ítem con fecha 2030)"
+        }
+      },
+      "hitos": {
+        "total": 12,
+        "vencidos": 1,
+        "detalle": [
+          {
+            "nombre": "PISO SUBSUELO · PRUEBA HIDRAULICA",
+            "fecha": "2026-07-15",
+            "vencido": true,
+            "dias": 37
+          },
+          {
+            "nombre": "PISO 1 · PRUEBA HIDRAULICA",
+            "fecha": "2026-08-28",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 2 · PRUEBA HIDRAULICA",
+            "fecha": "2026-09-24",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 3 · PRUEBA HIDRAULICA",
+            "fecha": "2026-10-23",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 4 · PRUEBA HIDRAULICA",
+            "fecha": "2026-11-23",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 5 · PRUEBA HIDRAULICA",
+            "fecha": "2026-12-22",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 6 · PRUEBA HIDRAULICA",
+            "fecha": "2027-01-20",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 7 · PRUEBA HIDRAULICA",
+            "fecha": "2027-02-17",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 8 · PRUEBA HIDRAULICA",
+            "fecha": "2027-03-18",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO 9 · PRUEBA HIDRAULICA",
+            "fecha": "2027-04-14",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "PISO PB · PRUEBA HIDRAULICA",
+            "fecha": "2027-05-28",
+            "vencido": false,
+            "dias": null
+          },
+          {
+            "nombre": "LOCAL · PRUEBA HIDRAULICA",
+            "fecha": "2027-06-21",
+            "vencido": false,
+            "dias": null
+          }
+        ],
+        "nota": "Doce hitos, uno por nivel, todos pruebas hidráulicas. <b>El primero venció hace 37 días y sigue en «Programada»</b>. Debajo tiene diez tareas de subsuelo vencidas en cadena: mampostería → canalización sanitaria → canalización eléctrica → cañerías → la prueba → contrapiso → carpeta. Todas en 0 %.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18402983267 · visualization_type milestone en timerange_mkyay6x2"
+        }
+      },
+      "subrubros": {
+        "filas": [
+          {
+            "subrubro": "INST.ELECTRICA",
+            "tareas": 111,
+            "dias": 754,
+            "avance": 2.7,
+            "cerradas": 4,
+            "retrasadas": 17,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "ALBAÑILERIA",
+            "tareas": 78,
+            "dias": 814,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 14,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PUERTAS INTERIORES",
+            "tareas": 41,
+            "dias": 161,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "INST. SANITARIA",
+            "tareas": 33,
+            "dias": 205,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 3,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PLACA DE YESO",
+            "tareas": 26,
+            "dias": 149,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 4,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PINTURA INTERIOR",
+            "tareas": 25,
+            "dias": 168,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 7,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "CARPINTERIA PVC.",
+            "tareas": 24,
+            "dias": 122,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 4,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "CONTRAPISO PROYECTADO",
+            "tareas": 24,
+            "dias": 91,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 2,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "REVESTIMIENTO DE PISO",
+            "tareas": 20,
+            "dias": 156,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "IMPERMEABILIZACION",
+            "tareas": 20,
+            "dias": 70,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 1,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MOBILIARIO COCINA Y PLACARES",
+            "tareas": 17,
+            "dias": 103,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "ZINGUERIA",
+            "tareas": 14,
+            "dias": 100,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 1,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "ELECTRODOMESTICOS",
+            "tareas": 14,
+            "dias": 59,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 3,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "HORMIGON ARMADO",
+            "tareas": 11,
+            "dias": 194,
+            "avance": 45.4,
+            "cerradas": 4,
+            "retrasadas": 1,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "REVOQUE CEMENTICIO PROYECTADO",
+            "tareas": 11,
+            "dias": 122,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "REVESTIMIENTO DE PARED",
+            "tareas": 11,
+            "dias": 102,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MOV. DE SUELO",
+            "tareas": 10,
+            "dias": 177,
+            "avance": 100.0,
+            "cerradas": 9,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "LOSA SANITARIA",
+            "tareas": 10,
+            "dias": 51,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MAMPARAS Y ESPEJOS",
+            "tareas": 10,
+            "dias": 24,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 1,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "INST.AIRE ACONDICIONADO",
+            "tareas": 9,
+            "dias": 43,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "CORTINAS",
+            "tareas": 9,
+            "dias": 31,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "PISO RADIANTE ELECTRICO",
+            "tareas": 9,
+            "dias": 23,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 1,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "MARMOLERIA",
+            "tareas": 8,
+            "dias": 119,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 0,
+            "bloqueadas": 0
+          },
+          {
+            "subrubro": "HERRERIA",
+            "tareas": 6,
+            "dias": 35,
+            "avance": 0.0,
+            "cerradas": 0,
+            "retrasadas": 3,
+            "bloqueadas": 0
+          }
+        ],
+        "nota": "Ojo con PUERTAS INTERIORES: sus 41 tareas no tienen fecha de cronograma, así que el gremio entero queda invisible en el conteo de vencidas pese a acumular 161 días de trabajo.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18402983267 · dropdown_mm086nqq × % × DURACION, gremios con 4 tareas o más"
+        }
       }
     },
     "glow2": {
@@ -22385,6 +23315,75 @@
     "Por qué el tablero no lo muestra": {
       "tipo": "informe",
       "ref": "§06 · por qué el tablero no lo muestra"
+    }
+  },
+  "carteraPlanVsReal": {
+    "filas": [
+      {
+        "obra": "GLOW 3",
+        "id": "glow3",
+        "plan": 57.6,
+        "real": 21.6,
+        "brecha": 36.0,
+        "referencia": "línea base 14/07/2026",
+        "ejecutables": 481,
+        "hitos": 63,
+        "hitosVencidos": 21,
+        "baseUtil": true
+      },
+      {
+        "obra": "GLOW 5",
+        "id": "glow5",
+        "plan": 99.4,
+        "real": 42.4,
+        "brecha": 57.0,
+        "referencia": "línea base 24/06/2026",
+        "ejecutables": 521,
+        "hitos": 20,
+        "hitosVencidos": 2,
+        "baseUtil": true
+      },
+      {
+        "obra": "GLOW 6+",
+        "id": "glow6",
+        "plan": 4.7,
+        "real": 2.3,
+        "brecha": 2.4,
+        "referencia": "cronograma del 16/06 reconstruido del historial",
+        "ejecutables": 469,
+        "hitos": 2,
+        "hitosVencidos": 0,
+        "baseUtil": false
+      },
+      {
+        "obra": "GLOW 7",
+        "id": "glow7",
+        "plan": 16.2,
+        "real": 1.9,
+        "brecha": 14.3,
+        "referencia": "línea base 27/05/2026",
+        "ejecutables": 482,
+        "hitos": 12,
+        "hitosVencidos": 1,
+        "baseUtil": true
+      },
+      {
+        "obra": "GLOW 2",
+        "id": "glow2",
+        "plan": 100.0,
+        "real": 25.1,
+        "brecha": 74.9,
+        "referencia": "cronograma actual (no hay línea base)",
+        "ejecutables": 338,
+        "hitos": 0,
+        "hitosVencidos": 0,
+        "baseUtil": false
+      }
+    ],
+    "nota": "La misma cuenta en las cinco obras: qué porcentaje de tareas debía estar cerrado según la línea base y qué porcentaje lo está. <b>Dos obras no tienen línea base utilizable</b> — GLOW 2 no tiene ninguna y la de GLOW 6+ es una copia del cronograma — así que su brecha no es comparable con las otras tres.",
+    "fuente": {
+      "tipo": "calculado",
+      "ref": "los 5 boards · fin de la línea base de cada obra vs estado terminado, al 21/08/2026"
     }
   }
 }
