@@ -5732,7 +5732,7 @@
       "bloqueadas": {
         "total": 15,
         "identificadas": 15,
-        "nota": "Leídas del tablero.",
+        "nota": "11 de las 15 tareas bloqueadas tienen el motivo escrito por el jefe de obra en los comentarios del ítem. Dos causas explican 10: la inspección de gas y las defensas de fachada. Las 4 restantes están marcadas como bloqueadas sin ninguna explicación cargada.",
         "sinResponsable": 15,
         "detalle": [
           {
@@ -5741,7 +5741,7 @@
             "avance": 30,
             "avanceLabel": "30 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Los balcones del frente, estan las defensas, hasta terminar revoque exterior y colocar barandas no se podra finalizar.",
             "certeza": "monday",
             "contratista": "Constructora",
             "rubro": "ALBAÑILERIA",
@@ -5750,6 +5750,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-17",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Defensas de fachada",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 17/07/2026"
             }
           },
           {
@@ -5767,7 +5774,8 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
-            }
+            },
+            "causaFamilia": null
           },
           {
             "sector": "PISO 1",
@@ -5775,7 +5783,7 @@
             "avance": 80,
             "avanceLabel": "80 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Hasta supuesta inspeccion del 31/08 de GAS no se puede terminar banquina del departamento A",
             "certeza": "monday",
             "contratista": "Constructora",
             "rubro": "ALBAÑILERIA",
@@ -5784,6 +5792,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-17",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Inspección de gas",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 17/07/2026"
             }
           },
           {
@@ -5792,7 +5807,7 @@
             "avance": 90,
             "avanceLabel": "90 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Hasta supuesta inspeccion del 31/08 de GAS no se puede terminar banquina del departamento A. SOLO COCINA",
             "certeza": "monday",
             "contratista": "Subcontrato",
             "rubro": "ALBAÑILERIA",
@@ -5801,6 +5816,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-17",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Inspección de gas",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 17/07/2026"
             }
           },
           {
@@ -5809,7 +5831,7 @@
             "avance": 80,
             "avanceLabel": "80 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Solo faltará banquina del dpto A por tema de inspección de gas",
             "certeza": "monday",
             "contratista": "Constructora",
             "rubro": "ALBAÑILERIA",
@@ -5818,6 +5840,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-17",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Inspección de gas",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 17/07/2026"
             }
           },
           {
@@ -5826,7 +5855,7 @@
             "avance": 70,
             "avanceLabel": "70 %",
             "exacto": true,
-            "causa": null,
+            "causa": "2A - Cocina por gas y baño ppal por defensas. 2A Baños por defensas. 2C - Falta cocina por defensas.",
             "certeza": "monday",
             "contratista": "Subcontrato",
             "rubro": "ALBAÑILERIA",
@@ -5835,6 +5864,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-24",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Defensas de fachada",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 24/07/2026"
             }
           },
           {
@@ -5843,7 +5879,7 @@
             "avance": 80,
             "avanceLabel": "80 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Falta baño ppal del A por defensas.",
             "certeza": "monday",
             "contratista": "Subcontrato",
             "rubro": "ALBAÑILERIA",
@@ -5852,6 +5888,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-24",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Defensas de fachada",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 24/07/2026"
             }
           },
           {
@@ -5860,7 +5903,7 @@
             "avance": 90,
             "avanceLabel": "90 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Falta cocina del A por tema de inspeccion de GAS",
             "certeza": "monday",
             "contratista": "Subcontrato",
             "rubro": "ALBAÑILERIA",
@@ -5869,6 +5912,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-02",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Inspección de gas",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 02/07/2026"
             }
           },
           {
@@ -5877,7 +5927,7 @@
             "avance": 80,
             "avanceLabel": "80 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Por defensas no se puede colocar cocina y baño del A y cocina del C",
             "certeza": "monday",
             "contratista": "Subcontrato",
             "rubro": "ALBAÑILERIA",
@@ -5886,6 +5936,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-24",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Defensas de fachada",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 24/07/2026"
             }
           },
           {
@@ -5894,7 +5951,7 @@
             "avance": 80,
             "avanceLabel": "80 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Por defensas no se puede colocar cocina y baño del A y cocina del C",
             "certeza": "monday",
             "contratista": "Subcontrato",
             "rubro": "ALBAÑILERIA",
@@ -5903,6 +5960,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-24",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Defensas de fachada",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 24/07/2026"
             }
           },
           {
@@ -5920,7 +5984,8 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
-            }
+            },
+            "causaFamilia": null
           },
           {
             "sector": "PISO 9",
@@ -5937,7 +6002,8 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
-            }
+            },
+            "causaFamilia": null
           },
           {
             "sector": "PISO 9 -AMENITIES",
@@ -5954,7 +6020,8 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
-            }
+            },
+            "causaFamilia": null
           },
           {
             "sector": "PISO 10",
@@ -5962,7 +6029,7 @@
             "avance": 95,
             "avanceLabel": "95 %",
             "exacto": true,
-            "causa": null,
+            "causa": "Esta sin terminar carpeta interior, por habilitaciones parciales de GAS.",
             "certeza": "monday",
             "contratista": "Constructora",
             "rubro": "ALBAÑILERIA",
@@ -5971,6 +6038,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-08-06",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Inspección de gas",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 06/08/2026"
             }
           },
           {
@@ -5979,7 +6053,7 @@
             "avance": 0,
             "avanceLabel": "sin cargar",
             "exacto": false,
-            "causa": null,
+            "causa": "Por falta de materiales de plomería no se pueden cerrar los plenos.",
             "certeza": "monday",
             "contratista": "Constructora",
             "rubro": "EXCAVACIONES",
@@ -5988,6 +6062,13 @@
             "fuente": {
               "tipo": "monday",
               "ref": "lectura directa"
+            },
+            "causaFecha": "2026-07-21",
+            "causaAutor": "Luis Fontana",
+            "causaFamilia": "Falta de material",
+            "causaFuente": {
+              "tipo": "monday",
+              "ref": "update del ítem, Luis Fontana, 21/07/2026"
             }
           }
         ],
@@ -6007,7 +6088,27 @@
           "tipo": "monday",
           "ref": "ESTADO = Bloqueada"
         },
-        "porContratista": {}
+        "porContratista": {},
+        "conCausa": 11,
+        "sinCausa": 4,
+        "familias": [
+          {
+            "familia": "Defensas de fachada",
+            "tareas": 5
+          },
+          {
+            "familia": "Inspección de gas",
+            "tareas": 5
+          },
+          {
+            "familia": "Falta de material",
+            "tareas": 1
+          }
+        ],
+        "fuenteCausas": {
+          "tipo": "monday",
+          "ref": "updates de los ítems con ESTADO = Bloqueada (índice 8) en el board 18398874016"
+        }
       },
       "retrasadas": {
         "total": 46,
