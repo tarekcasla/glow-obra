@@ -5735,7 +5735,7 @@
       "bloqueadas": {
         "total": 15,
         "identificadas": 15,
-        "nota": "11 de las 15 tareas bloqueadas tienen el motivo escrito por el jefe de obra en los comentarios del ítem. Dos causas explican 10: la inspección de gas y las defensas de fachada. Las 4 restantes están marcadas como bloqueadas sin ninguna explicación cargada.",
+        "nota": "De las 15 marcadas, sólo <b>2 son frentes detenidos</b>. Nueve están al 83 % de avance y esperan un remate acotado — casi siempre el departamento A del piso. Las otras 4 no tienen causa cargada. Ver la auditoría completa en la pestaña Cronograma.",
         "sinResponsable": 15,
         "detalle": [
           {
@@ -5760,7 +5760,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 17/07/2026"
-            }
+            },
+            "tipoBloqueo": "total",
+            "falta": null
           },
           {
             "sector": "PISO 1",
@@ -5778,7 +5780,9 @@
               "tipo": "monday",
               "ref": "lectura directa"
             },
-            "causaFamilia": null
+            "causaFamilia": null,
+            "tipoBloqueo": "sin causa",
+            "falta": null
           },
           {
             "sector": "PISO 1",
@@ -5802,7 +5806,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 17/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "banquina del depto A"
           },
           {
             "sector": "PISO 1",
@@ -5826,7 +5832,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 17/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "sólo la cocina del depto A"
           },
           {
             "sector": "PISO 2",
@@ -5850,7 +5858,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 17/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "sólo la banquina del depto A"
           },
           {
             "sector": "PISO 2",
@@ -5874,7 +5884,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 24/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "cocina y baño del 2A, cocina del 2C"
           },
           {
             "sector": "PISO 2",
@@ -5898,7 +5910,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 24/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "baño principal del A"
           },
           {
             "sector": "PISO 3",
@@ -5922,7 +5936,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 02/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "cocina del A"
           },
           {
             "sector": "PISO 6",
@@ -5946,7 +5962,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 24/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "cocina y baño del A, cocina del C"
           },
           {
             "sector": "PISO 6",
@@ -5970,7 +5988,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 24/07/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "cocina y baño del A, cocina del C"
           },
           {
             "sector": "PISO 9",
@@ -5988,7 +6008,9 @@
               "tipo": "monday",
               "ref": "lectura directa"
             },
-            "causaFamilia": null
+            "causaFamilia": null,
+            "tipoBloqueo": "sin causa",
+            "falta": null
           },
           {
             "sector": "PISO 9",
@@ -6006,7 +6028,9 @@
               "tipo": "monday",
               "ref": "lectura directa"
             },
-            "causaFamilia": null
+            "causaFamilia": null,
+            "tipoBloqueo": "sin causa",
+            "falta": null
           },
           {
             "sector": "PISO 9 -AMENITIES",
@@ -6024,7 +6048,9 @@
               "tipo": "monday",
               "ref": "lectura directa"
             },
-            "causaFamilia": null
+            "causaFamilia": null,
+            "tipoBloqueo": "sin causa",
+            "falta": null
           },
           {
             "sector": "PISO 10",
@@ -6048,7 +6074,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 06/08/2026"
-            }
+            },
+            "tipoBloqueo": "parcial",
+            "falta": "la carpeta interior"
           },
           {
             "sector": "PALLIERES",
@@ -6072,7 +6100,9 @@
             "causaFuente": {
               "tipo": "monday",
               "ref": "update del ítem, Luis Fontana, 21/07/2026"
-            }
+            },
+            "tipoBloqueo": "total",
+            "falta": null
           }
         ],
         "fuente": {
@@ -12379,7 +12409,162 @@
           "tipo": "monday",
           "ref": "board 18398874016 · updates y replies de los ítems en ESTADO Retrasada, Bloqueada o Iniciada con fecha vencida · texto literal del jefe de obra"
         }
-      }
+      },
+      "auditoriaBloqueo": {
+        "marcadas": 15,
+        "bloqueoTotal": 2,
+        "bloqueoParcial": 9,
+        "sinCausa": 4,
+        "avancePromedioParciales": 83,
+        "noMarcadas": 8,
+        "parciales": [
+          {
+            "tarea": "PISO 1 - BANQUINAS",
+            "avance": 80,
+            "falta": "banquina del depto A"
+          },
+          {
+            "tarea": "PISO 1 - REVESTIMIENTOS DE PISO PORCELANATO",
+            "avance": 90,
+            "falta": "sólo la cocina del depto A"
+          },
+          {
+            "tarea": "PISO 2 - BANQUINAS",
+            "avance": 80,
+            "falta": "sólo la banquina del depto A"
+          },
+          {
+            "tarea": "PISO 2 - REVESTIMIENTOS DE PISO PORCELANATO",
+            "avance": 70,
+            "falta": "cocina y baño del 2A, cocina del 2C"
+          },
+          {
+            "tarea": "PISO 2 - REVESTIMIENTOS DE PARED PORCELANATO",
+            "avance": 80,
+            "falta": "baño principal del A"
+          },
+          {
+            "tarea": "PISO 3 - REVESTIMIENTOS DE PISO PORCELANATO",
+            "avance": 90,
+            "falta": "cocina del A"
+          },
+          {
+            "tarea": "PISO 6 - REVESTIMIENTOS DE PISO PORCELANATO",
+            "avance": 80,
+            "falta": "cocina y baño del A, cocina del C"
+          },
+          {
+            "tarea": "PISO 6 - REVESTIMIENTOS DE PARED PORCELANATO",
+            "avance": 80,
+            "falta": "cocina y baño del A, cocina del C"
+          },
+          {
+            "tarea": "PISO 10 - CARPETA CEMENTICIA",
+            "avance": 95,
+            "falta": "la carpeta interior"
+          }
+        ],
+        "totales": [
+          {
+            "tarea": "PISO 1 - IMPERMEABILIZACION BALCONES",
+            "avance": 30,
+            "causa": "Defensas de fachada"
+          },
+          {
+            "tarea": "PA - MAMPOSTERIA DE CIERRE DE PLENOS",
+            "avance": 0,
+            "causa": "Falta de material de plomería"
+          }
+        ],
+        "sinCausaLista": [
+          {
+            "tarea": "PISO 1 - CARPETA CEMENTICIA BALCONES",
+            "avance": 15
+          },
+          {
+            "tarea": "PISO 9 - IMPERMEABILIZACION TERRAZAS",
+            "avance": 70
+          },
+          {
+            "tarea": "PISO 9 - REVESTIMIENTOS DE PISO PORCELANATO TERRAZA",
+            "avance": 0
+          },
+          {
+            "tarea": "A. - MAMPOSTERIA",
+            "avance": 90
+          }
+        ],
+        "siguieronAvanzando": [
+          {
+            "tarea": "PISO 2 - BANQUINAS",
+            "detalle": "70 → 80 % el 07/08, dieciséis días después de marcarse bloqueada"
+          },
+          {
+            "tarea": "PISO 1 - IMPERMEABILIZACION BALCONES",
+            "detalle": "50 → 0 → 30 % el mismo día 30/07"
+          },
+          {
+            "tarea": "PISO 2 - REVESTIMIENTOS DE PISO PORCELANATO",
+            "detalle": "85 → 70 % el 07/08: el avance se corrigió hacia abajo"
+          }
+        ],
+        "noMarcadasLista": [
+          {
+            "tarea": "PA - INSTALACION SANITARIAS",
+            "estado": "Retrasada",
+            "cita": "Falta de materiales. Pedido 102 Fecha 02/07/2026",
+            "causa": "Falta de material"
+          },
+          {
+            "tarea": "PA - INSTALACION GAS",
+            "estado": "Retrasada",
+            "cita": "Falta de materiales. Pedido 103 Fecha 08/07",
+            "causa": "Falta de material"
+          },
+          {
+            "tarea": "PISO PB - MAMPOSTERIA",
+            "estado": "Iniciada",
+            "cita": "Falta ladrillo del 12 celular. Pedido 103 fecha 08/07/2026",
+            "causa": "Falta de material"
+          },
+          {
+            "tarea": "L. - MAMPOSTERIA",
+            "estado": "Retrasada",
+            "cita": "Falta ladrillo del 12 celular. Pedido 103 fecha 08/07/2026",
+            "causa": "Falta de material"
+          },
+          {
+            "tarea": "L. - PRE INSTALACION Y CANALIZACION A.A",
+            "estado": "Retrasada",
+            "cita": "Retraso por equipo de albañilería por falta de materiales. Pedido 103 faltante ladrillo celular.",
+            "causa": "Falta de material"
+          },
+          {
+            "tarea": "PISO 9 - CARPETA CEMENTICIA BALCONES",
+            "estado": "Iniciada",
+            "cita": "Carpeta del A se realizara cuando se retiren defensas B.Juarez.",
+            "causa": "Defensas de fachada"
+          },
+          {
+            "tarea": "PISO 5 - CARPETA CEMENTICIA BALCONES",
+            "estado": "Iniciada",
+            "cita": "Carpeta del A se realizara cuando se retiren defensas B.Juarez.",
+            "causa": "Defensas de fachada"
+          },
+          {
+            "tarea": "PA - INSTALACIONES DE INCENDIO",
+            "estado": "Retrasada",
+            "cita": "Recien se puede contar con la roscadora jueves 23/07",
+            "causa": "Herramienta no disponible"
+          }
+        ],
+        "conclusion": "<b>De las 15 marcadas «Bloqueada», sólo 2 son frentes realmente detenidos.</b> Nueve están al 83 % de avance promedio y lo que falta es un remate acotado — casi siempre el departamento A de cada piso, esperando la inspección de gas o el retiro de las defensas. Las otras cuatro no tienen causa cargada, así que no se puede saber. <b>Y hay 8 tareas con causa de bloqueo explícita que no están marcadas como bloqueadas</b>, con la misma falta de material que sí bloqueó a otras. El campo ESTADO no se usa con un criterio único.",
+        "fuente": {
+          "tipo": "cruzado",
+          "ref": "board 18398874016 · ESTADO cruzado con el texto de los updates, el % actual y el historial de cambios de % posterior a la marca de bloqueo"
+        }
+      },
+      "kpisNota": "Las 15 «Bloqueada» no son 15 frentes parados: 9 están al 83 % esperando un remate."
     },
     "glow5": {
       "proyecto": {
