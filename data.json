@@ -12114,6 +12114,101 @@
           "tipo": "calculado",
           "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 221 tareas medidas"
         }
+      },
+      "desvioSectores": {
+        "filas": [
+          {
+            "sector": "PISO 1",
+            "tareas": 17,
+            "mediana": 17,
+            "peor": 35,
+            "aTiempo": 3
+          },
+          {
+            "sector": "PISO 2",
+            "tareas": 13,
+            "mediana": 16,
+            "peor": 30,
+            "aTiempo": 1
+          },
+          {
+            "sector": "PLANTA BAJA",
+            "tareas": 13,
+            "mediana": 14,
+            "peor": 28,
+            "aTiempo": 0
+          },
+          {
+            "sector": "LOCAL",
+            "tareas": 8,
+            "mediana": 14,
+            "peor": 28,
+            "aTiempo": 0
+          },
+          {
+            "sector": "Sin sector",
+            "tareas": 93,
+            "mediana": 12,
+            "peor": 97,
+            "aTiempo": 15
+          },
+          {
+            "sector": "PISO 3",
+            "tareas": 10,
+            "mediana": 9,
+            "peor": 36,
+            "aTiempo": 3
+          },
+          {
+            "sector": "SUBSUELO - SALA DE MAQUINA",
+            "tareas": 4,
+            "mediana": 7,
+            "peor": 11,
+            "aTiempo": 0
+          },
+          {
+            "sector": "PISO 6",
+            "tareas": 15,
+            "mediana": 4,
+            "peor": 105,
+            "aTiempo": 4
+          },
+          {
+            "sector": "PISO 7",
+            "tareas": 20,
+            "mediana": 3,
+            "peor": 103,
+            "aTiempo": 7
+          },
+          {
+            "sector": "PISO 5",
+            "tareas": 17,
+            "mediana": -2,
+            "peor": 32,
+            "aTiempo": 9
+          },
+          {
+            "sector": "PISO 4",
+            "tareas": 10,
+            "mediana": -5,
+            "peor": 24,
+            "aTiempo": 5
+          }
+        ],
+        "tareasMedidas": 221,
+        "medianaObra": 11,
+        "peorSector": "PISO 1",
+        "atrasoObra": 17,
+        "finCronograma": "2026-10-21",
+        "finProyectado": "2026-11-07",
+        "confiable": true,
+        "diasTareaPerdidos": 3387,
+        "nota": "El atraso de la obra lo fija el frente más atrasado, no la suma de todos: los sectores avanzan en paralelo y la obra no cierra hasta que cierra el último. Hoy ese frente es <b>PISO 1</b>, con +17 días de corrimiento típico sobre 17 tareas. La mediana de toda la obra es +11 días.",
+        "aviso": null,
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 221 tareas en 11 sectores"
+        }
       }
     },
     "glow5": {
@@ -15415,6 +15510,143 @@
           "tipo": "calculado",
           "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 388 tareas medidas"
         }
+      },
+      "desvioSectores": {
+        "filas": [
+          {
+            "sector": "SUBSUELO - SALA DE MAQUINA",
+            "tareas": 11,
+            "mediana": 85,
+            "peor": 106,
+            "aTiempo": 1
+          },
+          {
+            "sector": "PLANTA BAJA",
+            "tareas": 30,
+            "mediana": 63,
+            "peor": 152,
+            "aTiempo": 1
+          },
+          {
+            "sector": "AREAS COMUNES GRAL.",
+            "tareas": 10,
+            "mediana": 54,
+            "peor": 77,
+            "aTiempo": 0
+          },
+          {
+            "sector": "PISO 6 R1",
+            "tareas": 29,
+            "mediana": 49,
+            "peor": 140,
+            "aTiempo": 1
+          },
+          {
+            "sector": "PISO 4 R1",
+            "tareas": 27,
+            "mediana": 49,
+            "peor": 133,
+            "aTiempo": 1
+          },
+          {
+            "sector": "PISO 8 R1",
+            "tareas": 30,
+            "mediana": 48,
+            "peor": 144,
+            "aTiempo": 3
+          },
+          {
+            "sector": "PISO 7 R1",
+            "tareas": 28,
+            "mediana": 46,
+            "peor": 142,
+            "aTiempo": 2
+          },
+          {
+            "sector": "PISO 5 R1",
+            "tareas": 28,
+            "mediana": 45,
+            "peor": 135,
+            "aTiempo": 2
+          },
+          {
+            "sector": "PISO 1 R1",
+            "tareas": 31,
+            "mediana": 43,
+            "peor": 113,
+            "aTiempo": 1
+          },
+          {
+            "sector": "PISO 3 R1",
+            "tareas": 26,
+            "mediana": 42,
+            "peor": 129,
+            "aTiempo": 2
+          },
+          {
+            "sector": "PISO 2 R1",
+            "tareas": 28,
+            "mediana": 42,
+            "peor": 113,
+            "aTiempo": 2
+          },
+          {
+            "sector": "LOCAL",
+            "tareas": 19,
+            "mediana": 37,
+            "peor": 102,
+            "aTiempo": 2
+          },
+          {
+            "sector": "PISO 9 R1",
+            "tareas": 39,
+            "mediana": 31,
+            "peor": 143,
+            "aTiempo": 4
+          },
+          {
+            "sector": "PISO 10 COWORK",
+            "tareas": 28,
+            "mediana": 28,
+            "peor": 102,
+            "aTiempo": 5
+          },
+          {
+            "sector": "EXTERIOR",
+            "tareas": 5,
+            "mediana": 7,
+            "peor": 43,
+            "aTiempo": 2
+          },
+          {
+            "sector": "AREAS COMUNES ALBAÑILERIA",
+            "tareas": 7,
+            "mediana": 7,
+            "peor": 48,
+            "aTiempo": 0
+          },
+          {
+            "sector": "AREAS COMUNES INSTALACIONES",
+            "tareas": 12,
+            "mediana": 7,
+            "peor": 105,
+            "aTiempo": 2
+          }
+        ],
+        "tareasMedidas": 388,
+        "medianaObra": 44,
+        "peorSector": "SUBSUELO - SALA DE MAQUINA",
+        "atrasoObra": 85,
+        "finCronograma": "2026-12-31",
+        "finProyectado": "2027-03-26",
+        "confiable": true,
+        "diasTareaPerdidos": 17048,
+        "nota": "El atraso de la obra lo fija el frente más atrasado, no la suma de todos: los sectores avanzan en paralelo y la obra no cierra hasta que cierra el último. Hoy ese frente es <b>SUBSUELO - SALA DE MAQUINA</b>, con +85 días de corrimiento típico sobre 11 tareas. La mediana de toda la obra es +44 días.",
+        "aviso": null,
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 388 tareas en 17 sectores"
+        }
       }
     },
     "glow6": {
@@ -17611,6 +17843,31 @@
         "fuente": {
           "tipo": "calculado",
           "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 20 tareas medidas"
+        }
+      },
+      "desvioSectores": {
+        "filas": [
+          {
+            "sector": "Sin sector",
+            "tareas": 20,
+            "mediana": 38,
+            "peor": 150,
+            "aTiempo": 1
+          }
+        ],
+        "tareasMedidas": 20,
+        "medianaObra": 38,
+        "peorSector": "Sin sector",
+        "atrasoObra": 38,
+        "finCronograma": "2028-04-17",
+        "finProyectado": "2028-05-25",
+        "confiable": false,
+        "diasTareaPerdidos": 1377,
+        "nota": "El atraso de la obra lo fija el frente más atrasado, no la suma de todos: los sectores avanzan en paralelo y la obra no cierra hasta que cierra el último. Hoy ese frente es <b>Sin sector</b>, con +38 días de corrimiento típico sobre 20 tareas. La mediana de toda la obra es +38 días.",
+        "aviso": "Sólo 20 tareas tienen fecha de plan y desenlace medible: el corte por sector no es representativo.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 20 tareas en 1 sectores"
         }
       }
     },
@@ -21185,6 +21442,31 @@
           "tipo": "calculado",
           "ref": "fin de la línea base vs fecha real de cierre (activity_logs) o vs hoy si sigue vencida · 30 tareas medidas"
         }
+      },
+      "desvioSectores": {
+        "filas": [
+          {
+            "sector": "Sin sector",
+            "tareas": 30,
+            "mediana": 41,
+            "peor": 144,
+            "aTiempo": 0
+          }
+        ],
+        "tareasMedidas": 30,
+        "medianaObra": 41,
+        "peorSector": "Sin sector",
+        "atrasoObra": 41,
+        "finCronograma": "2027-08-06",
+        "finProyectado": "2027-09-16",
+        "confiable": false,
+        "diasTareaPerdidos": 1533,
+        "nota": "El atraso de la obra lo fija el frente más atrasado, no la suma de todos: los sectores avanzan en paralelo y la obra no cierra hasta que cierra el último. Hoy ese frente es <b>Sin sector</b>, con +41 días de corrimiento típico sobre 30 tareas. La mediana de toda la obra es +41 días.",
+        "aviso": "Sólo 30 tareas tienen fecha de plan y desenlace medible: el corte por sector no es representativo.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 30 tareas en 1 sectores"
+        }
       }
     },
     "glow2": {
@@ -23238,6 +23520,21 @@
           "tipo": "monday",
           "ref": "board 18403319169 · activity_logs sin eventos posteriores al 07/04/2026"
         }
+      },
+      "desvioSectores": {
+        "filas": [],
+        "tareasMedidas": 0,
+        "confiable": false,
+        "finCronograma": "2026-06-17",
+        "finProyectado": null,
+        "atrasoObra": null,
+        "medianaObra": null,
+        "nota": "Sin fecha real de cierre: el tablero no registra un cambio de estado desde el 07/04/2026.",
+        "aviso": "Tablero sin actividad desde abril de 2026.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18403319169 · activity_logs sin eventos posteriores al 07/04/2026"
+        }
       }
     }
   },
@@ -23736,41 +24033,45 @@
         "obra": "GLOW 5",
         "id": "glow5",
         "tareas": 388,
-        "neto": 16296,
-        "promedio": 42.0,
+        "neto": 85,
+        "promedio": 44,
         "finCronograma": "2026-12-31",
-        "finProyectado": "2027-02-11",
-        "confiable": true
+        "finProyectado": "2027-03-26",
+        "confiable": true,
+        "peorSector": "SUBSUELO - SALA DE MAQUINA"
       },
       {
         "obra": "GLOW 3",
         "id": "glow3",
         "tareas": 221,
-        "neto": 1638,
-        "promedio": 7.4,
+        "neto": 17,
+        "promedio": 11,
         "finCronograma": "2026-10-21",
-        "finProyectado": "2026-10-28",
-        "confiable": true
+        "finProyectado": "2026-11-07",
+        "confiable": true,
+        "peorSector": "PISO 1"
       },
       {
         "obra": "GLOW 7",
         "id": "glow7",
         "tareas": 30,
-        "neto": 1533,
-        "promedio": 51.1,
+        "neto": 41,
+        "promedio": 41,
         "finCronograma": "2027-08-06",
-        "finProyectado": "2027-09-26",
-        "confiable": false
+        "finProyectado": "2027-09-16",
+        "confiable": false,
+        "peorSector": "Sin sector"
       },
       {
         "obra": "GLOW 6+",
         "id": "glow6",
         "tareas": 20,
-        "neto": 1372,
-        "promedio": 68.6,
+        "neto": 38,
+        "promedio": 38,
         "finCronograma": "2028-04-17",
-        "finProyectado": "2028-06-25",
-        "confiable": false
+        "finProyectado": "2028-05-25",
+        "confiable": false,
+        "peorSector": "Sin sector"
       },
       {
         "obra": "GLOW 2",
@@ -23780,13 +24081,14 @@
         "promedio": null,
         "finCronograma": "2026-06-17",
         "finProyectado": null,
-        "confiable": false
+        "confiable": false,
+        "peorSector": null
       }
     ],
-    "nota": "Suma de días de atraso y adelanto tarea por tarea. <b>GLOW 5 acumula 16.296 días-tarea de atraso</b> contra 1.638 de GLOW 3, aunque GLOW 5 va más adelantada en obra: su plan era más exigente. GLOW 6+ y GLOW 7 tienen apenas 20 y 30 tareas medibles, así que su promedio no representa la obra.",
+    "nota": "El atraso de cada obra es el de su frente más atrasado, porque los sectores avanzan en paralelo y la obra cierra con el último. <b>GLOW 5 arrastra 85 días por la sala de máquinas del subsuelo</b>; GLOW 3, 17 por el piso 1. GLOW 6+ y GLOW 7 tienen muy pocas tareas con fecha y desenlace medible.",
     "fuente": {
       "tipo": "calculado",
-      "ref": "fin de línea base vs fecha real de cierre por tarea, en los 5 boards"
+      "ref": "mediana del desvío por sector en cada board · el sector peor fija el atraso de la obra"
     }
   }
 }
