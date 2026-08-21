@@ -3241,7 +3241,8 @@
     "metodo": "Lectura directa de los 5 tableros el 21/08/2026 · etiquetas leídas de cada tablero",
     "origen": "monday-lectura-directa",
     "cuenta": "nya-gestion.monday.com",
-    "boardId": "18398874016"
+    "boardId": "18398874016",
+    "historicoNota": "La serie se reconstruye de los activity_logs de Monday, que guardan valor anterior y valor nuevo de cada cambio. Hay 1.849 cambios de % registrados entre el 04/02 y el 20/08 de 2026 en las cuatro obras que tienen la columna. GLOW 2 no tiene columna de %, así que no tiene curva."
   },
   "proyecto": {
     "nombre": "GLOW 3",
@@ -11333,7 +11334,102 @@
           ]
         }
       },
-      "metodoNota": "De los 687 ítems con % cargado, 336 están en 100 y 304 en 0: sólo 47 tienen un valor intermedio. El % funciona como un booleano terminado/no terminado, así que el avance ponderado mide qué proporción de días-tarea está cerrada, no progreso gradual."
+      "metodoNota": "De los 687 ítems con % cargado, 336 están en 100 y 304 en 0: sólo 47 tienen un valor intermedio. El % funciona como un booleano terminado/no terminado, así que el avance ponderado mide qué proporción de días-tarea está cerrada, no progreso gradual.",
+      "evolucion": {
+        "puntos": [
+          {
+            "fecha": "2026-02-05",
+            "avance": 11.62
+          },
+          {
+            "fecha": "2026-02-13",
+            "avance": 31.12
+          },
+          {
+            "fecha": "2026-03-13",
+            "avance": 33.88
+          },
+          {
+            "fecha": "2026-03-27",
+            "avance": 34.26
+          },
+          {
+            "fecha": "2026-04-10",
+            "avance": 34.26
+          },
+          {
+            "fecha": "2026-04-24",
+            "avance": 38.87
+          },
+          {
+            "fecha": "2026-05-08",
+            "avance": 40.38
+          },
+          {
+            "fecha": "2026-05-22",
+            "avance": 42.16
+          },
+          {
+            "fecha": "2026-06-05",
+            "avance": 43.31
+          },
+          {
+            "fecha": "2026-06-19",
+            "avance": 43.46
+          },
+          {
+            "fecha": "2026-06-26",
+            "avance": 45.15
+          },
+          {
+            "fecha": "2026-07-03",
+            "avance": 43.55
+          },
+          {
+            "fecha": "2026-07-10",
+            "avance": 44.79
+          },
+          {
+            "fecha": "2026-07-17",
+            "avance": 44.79
+          },
+          {
+            "fecha": "2026-07-24",
+            "avance": 47.52
+          },
+          {
+            "fecha": "2026-07-31",
+            "avance": 49.0
+          },
+          {
+            "fecha": "2026-08-07",
+            "avance": 50.68
+          },
+          {
+            "fecha": "2026-08-14",
+            "avance": 52.55
+          },
+          {
+            "fecha": "2026-08-21",
+            "avance": 52.82
+          }
+        ],
+        "cambiosRegistrados": 651,
+        "desde": "2026-02-05",
+        "arranque": 11.62,
+        "hoy": 52.82,
+        "ganancia": 41.2,
+        "metrica": "avance promedio simple (no ponderado por duración)",
+        "advertencias": [
+          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
+          "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
+        ],
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 651 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
+        }
+      }
     },
     "glow5": {
       "proyecto": {
@@ -13950,6 +14046,93 @@
           "tipo": "monday",
           "ref": "board 18402983112 (vigente) · etiquetas de color_mkyaxv6j"
         }
+      },
+      "evolucion": {
+        "puntos": [
+          {
+            "fecha": "2026-03-13",
+            "avance": 26.51
+          },
+          {
+            "fecha": "2026-03-27",
+            "avance": 26.08
+          },
+          {
+            "fecha": "2026-04-10",
+            "avance": 26.08
+          },
+          {
+            "fecha": "2026-04-24",
+            "avance": 26.81
+          },
+          {
+            "fecha": "2026-05-08",
+            "avance": 31.78
+          },
+          {
+            "fecha": "2026-05-22",
+            "avance": 31.99
+          },
+          {
+            "fecha": "2026-06-05",
+            "avance": 39.54
+          },
+          {
+            "fecha": "2026-06-19",
+            "avance": 40.78
+          },
+          {
+            "fecha": "2026-06-26",
+            "avance": 40.86
+          },
+          {
+            "fecha": "2026-07-03",
+            "avance": 40.86
+          },
+          {
+            "fecha": "2026-07-10",
+            "avance": 40.86
+          },
+          {
+            "fecha": "2026-07-17",
+            "avance": 44.12
+          },
+          {
+            "fecha": "2026-07-24",
+            "avance": 44.12
+          },
+          {
+            "fecha": "2026-07-31",
+            "avance": 49.92
+          },
+          {
+            "fecha": "2026-08-07",
+            "avance": 53.51
+          },
+          {
+            "fecha": "2026-08-14",
+            "avance": 53.51
+          },
+          {
+            "fecha": "2026-08-21",
+            "avance": 61.89
+          }
+        ],
+        "cambiosRegistrados": 570,
+        "desde": "2026-03-10",
+        "arranque": 26.51,
+        "hoy": 61.89,
+        "ganancia": 35.4,
+        "metrica": "avance promedio simple (no ponderado por duración)",
+        "advertencias": [
+          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
+          "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
+        ],
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 570 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
+        }
       }
     },
     "glow6": {
@@ -15503,6 +15686,101 @@
             "Marcar como frenada toda tarea trabada y anotar la causa, en vez de dejarla vencer en silencio.",
             "Asignar responsable donde figura sin contratista: hoy no hay a quién reclamarle."
           ]
+        }
+      },
+      "evolucion": {
+        "puntos": [
+          {
+            "fecha": "2026-02-05",
+            "avance": 3.82
+          },
+          {
+            "fecha": "2026-02-13",
+            "avance": 3.82
+          },
+          {
+            "fecha": "2026-03-13",
+            "avance": 3.82
+          },
+          {
+            "fecha": "2026-03-27",
+            "avance": 4.17
+          },
+          {
+            "fecha": "2026-04-10",
+            "avance": 4.17
+          },
+          {
+            "fecha": "2026-04-24",
+            "avance": 4.17
+          },
+          {
+            "fecha": "2026-05-08",
+            "avance": 6.64
+          },
+          {
+            "fecha": "2026-05-22",
+            "avance": 6.64
+          },
+          {
+            "fecha": "2026-06-05",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-06-19",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-06-26",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-07-03",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-07-10",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-07-17",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-07-24",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-07-31",
+            "avance": 6.91
+          },
+          {
+            "fecha": "2026-08-07",
+            "avance": 7.68
+          },
+          {
+            "fecha": "2026-08-14",
+            "avance": 7.68
+          },
+          {
+            "fecha": "2026-08-21",
+            "avance": 7.69
+          }
+        ],
+        "cambiosRegistrados": 81,
+        "desde": "2026-02-04",
+        "arranque": 3.82,
+        "hoy": 7.69,
+        "ganancia": 3.9,
+        "metrica": "avance promedio simple (no ponderado por duración)",
+        "advertencias": [
+          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
+          "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
+        ],
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 81 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
         }
       }
     },
@@ -18431,6 +18709,93 @@
             "Marcar como frenada toda tarea trabada y anotar la causa, en vez de dejarla vencer en silencio.",
             "Asignar responsable donde figura sin contratista: hoy no hay a quién reclamarle."
           ]
+        }
+      },
+      "evolucion": {
+        "puntos": [
+          {
+            "fecha": "2026-03-13",
+            "avance": 2.27
+          },
+          {
+            "fecha": "2026-03-27",
+            "avance": 2.27
+          },
+          {
+            "fecha": "2026-04-10",
+            "avance": 2.27
+          },
+          {
+            "fecha": "2026-04-24",
+            "avance": 2.27
+          },
+          {
+            "fecha": "2026-05-08",
+            "avance": 2.43
+          },
+          {
+            "fecha": "2026-05-22",
+            "avance": 2.43
+          },
+          {
+            "fecha": "2026-06-05",
+            "avance": 2.43
+          },
+          {
+            "fecha": "2026-06-19",
+            "avance": 2.43
+          },
+          {
+            "fecha": "2026-06-26",
+            "avance": 2.59
+          },
+          {
+            "fecha": "2026-07-03",
+            "avance": 2.59
+          },
+          {
+            "fecha": "2026-07-10",
+            "avance": 2.59
+          },
+          {
+            "fecha": "2026-07-17",
+            "avance": 2.59
+          },
+          {
+            "fecha": "2026-07-24",
+            "avance": 2.59
+          },
+          {
+            "fecha": "2026-07-31",
+            "avance": 2.59
+          },
+          {
+            "fecha": "2026-08-07",
+            "avance": 7.47
+          },
+          {
+            "fecha": "2026-08-14",
+            "avance": 7.43
+          },
+          {
+            "fecha": "2026-08-21",
+            "avance": 7.43
+          }
+        ],
+        "cambiosRegistrados": 547,
+        "desde": "2026-03-07",
+        "arranque": 2.27,
+        "hoy": 7.43,
+        "ganancia": 5.2,
+        "metrica": "avance promedio simple (no ponderado por duración)",
+        "advertencias": [
+          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
+          "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
+        ],
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "activity_logs(column_ids:[numeric_mkya8gds]) del board de la obra · 547 cambios con previous_value y value, encadenados hacia atrás desde el valor actual · validación 100 %"
         }
       }
     },
