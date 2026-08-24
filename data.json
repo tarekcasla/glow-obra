@@ -12732,15 +12732,60 @@
         ],
         "nota": "La tarea que fija el fin está Programada, así que la fecha base es real. <b>Se movió 8 días desde el viernes</b>: el 21/08 empujaron un mes las nueve tareas de revestimiento de piso madera y la del piso 9 pasó a ser la última del cronograma. Antes de esa edición la proyección daba 13/11.",
         "corte": "2026-08-24",
-        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>Los adelantos no compensan atrasos:</b> cuando un frente se traba la cuadrilla se corre a una tarea futura y esa cierra antes de fecha, pero es reacomodamiento, no productividad — y esa holgura ya no va a estar disponible después. La mediana del sector se calcula sólo sobre las tareas que llegaron tarde. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>El atraso y el adelanto se miden por separado.</b> La mediana del sector usa sólo las tareas que llegaron tarde, porque un adelanto no arregla una demora. Pero el trabajo adelantado sí descuenta del volumen pendiente y se reporta aparte. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
         "fuente": {
           "tipo": "calculado",
           "ref": "board de la obra leído el 24/08/2026 · 244 tareas de 778 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
         }
       },
       "adelantos": {
-        "total": 1749,
         "tareas": 43,
+        "dias": 329,
+        "pendTareas": 383,
+        "pendDias": 1370,
+        "pctDelPendiente": 19.4,
+        "porSector": [
+          {
+            "sector": "PISO 5",
+            "tareas": 9,
+            "dias": 116
+          },
+          {
+            "sector": "PISO 7",
+            "tareas": 6,
+            "dias": 49
+          },
+          {
+            "sector": "PISO 6",
+            "tareas": 4,
+            "dias": 45
+          },
+          {
+            "sector": "PISO 1",
+            "tareas": 3,
+            "dias": 36
+          },
+          {
+            "sector": "PISO 3",
+            "tareas": 2,
+            "dias": 35
+          },
+          {
+            "sector": "PISO 4",
+            "tareas": 5,
+            "dias": 35
+          },
+          {
+            "sector": "PISO 2",
+            "tareas": 1,
+            "dias": 13
+          },
+          {
+            "sector": "Sin sector",
+            "tareas": 13,
+            "dias": 0
+          }
+        ],
         "ejemplos": [
           {
             "tarea": "PISO 4 - PISO RADIANTE ELEC. CABLEADO",
@@ -12779,27 +12824,10 @@
             "dias": -78
           }
         ],
-        "nota": "<b>Los adelantos son reales y son grandes.</b> En febrero la cuadrilla ejecutó trabajo del piso 4 planificado para mayo, junio y julio: hasta 175 días antes. Eso no es rendimiento, es que algo se trabó donde tenían que estar y se corrieron a un frente libre. Por eso el cálculo <b>no deja que un adelanto tape un atraso</b>: el piso 5 aparecía dos días adelantado y sus tareas atrasadas llevan catorce.",
-        "efecto": [
-          {
-            "sector": "PISO 5",
-            "compensada": -2,
-            "soloAtrasos": 14
-          },
-          {
-            "sector": "PISO 4",
-            "compensada": 3,
-            "soloAtrasos": 14
-          },
-          {
-            "sector": "PISO 7",
-            "compensada": 4,
-            "soloAtrasos": 13
-          }
-        ],
+        "nota": "<b>43 tareas se ejecutaron antes de la fecha del plan: 329 días de trabajo.</b> Contra los 1370 días que todavía quedan por hacer, es el <b>19.4 %</b> del pendiente a esta altura. Es trabajo que ya no hay que hacer: cuando llegue su fecha original, ese frente está libre. Por eso el adelanto no se descuenta del atraso —son cosas distintas— pero sí baja el volumen que queda.",
         "fuente": {
           "tipo": "calculado",
-          "ref": "board 18398874016 · fecha real de cierre (activity_logs) contra el fin de la línea base del 14/07 · 43 tareas cerradas antes de fecha"
+          "ref": "fecha real de cierre contra el fin de la línea base · suma de DURACION de las tareas cerradas antes de fecha"
         }
       }
     },
@@ -16425,10 +16453,100 @@
         ],
         "nota": "<b>La fecha base está depurada.</b> El fin literal del cronograma es 31/12/2026, pero lo fija una tarea <i>ya terminada</i> cuyo cronograma se movió después de cerrarla. Se usa la última tarea realmente pendiente: 11/11/2026. Con la fecha sucia la proyección daría 29/03/2027, cincuenta días más. Ojo: el atraso lo fijan sólo 10 tareas del subsuelo, cinco de ellas la cuadrilla eléctrica que hoy pasó a «Restringido por Mano de Obra». Si se destraban, la proyección baja de golpe.",
         "corte": "2026-08-24",
-        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>Los adelantos no compensan atrasos:</b> cuando un frente se traba la cuadrilla se corre a una tarea futura y esa cierra antes de fecha, pero es reacomodamiento, no productividad — y esa holgura ya no va a estar disponible después. La mediana del sector se calcula sólo sobre las tareas que llegaron tarde. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>El atraso y el adelanto se miden por separado.</b> La mediana del sector usa sólo las tareas que llegaron tarde, porque un adelanto no arregla una demora. Pero el trabajo adelantado sí descuenta del volumen pendiente y se reporta aparte. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
         "fuente": {
           "tipo": "calculado",
           "ref": "board de la obra leído el 24/08/2026 · 370 tareas de 542 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
+      },
+      "adelantos": {
+        "tareas": 30,
+        "dias": 282,
+        "pendTareas": 261,
+        "pendDias": 1333,
+        "pctDelPendiente": 17.5,
+        "porSector": [
+          {
+            "sector": "AREAS COMUNES INSTALACIONES",
+            "tareas": 2,
+            "dias": 180
+          },
+          {
+            "sector": "EXTERIOR",
+            "tareas": 2,
+            "dias": 30
+          },
+          {
+            "sector": "PISO 10 COWORK",
+            "tareas": 5,
+            "dias": 21
+          },
+          {
+            "sector": "LOCAL",
+            "tareas": 2,
+            "dias": 12
+          },
+          {
+            "sector": "PISO 9 R1",
+            "tareas": 4,
+            "dias": 10
+          },
+          {
+            "sector": "PISO 5 R1",
+            "tareas": 2,
+            "dias": 6
+          },
+          {
+            "sector": "PLANTA BAJA",
+            "tareas": 1,
+            "dias": 5
+          },
+          {
+            "sector": "PISO 2 R1",
+            "tareas": 2,
+            "dias": 4
+          },
+          {
+            "sector": "PISO 8 R1",
+            "tareas": 2,
+            "dias": 3
+          },
+          {
+            "sector": "PISO 3 R1",
+            "tareas": 2,
+            "dias": 3
+          },
+          {
+            "sector": "SUBSUELO - SALA DE MAQUINA",
+            "tareas": 1,
+            "dias": 3
+          },
+          {
+            "sector": "PISO 7 R1",
+            "tareas": 2,
+            "dias": 2
+          },
+          {
+            "sector": "PISO 6 R1",
+            "tareas": 1,
+            "dias": 1
+          },
+          {
+            "sector": "PISO 4 R1",
+            "tareas": 1,
+            "dias": 1
+          },
+          {
+            "sector": "PISO 1 R1",
+            "tareas": 1,
+            "dias": 1
+          }
+        ],
+        "ejemplos": null,
+        "nota": "<b>30 tareas se ejecutaron antes de la fecha del plan: 282 días de trabajo.</b> Contra los 1333 días que todavía quedan por hacer, es el <b>17.5 %</b> del pendiente a esta altura. Es trabajo que ya no hay que hacer: cuando llegue su fecha original, ese frente está libre. Por eso el adelanto no se descuenta del atraso —son cosas distintas— pero sí baja el volumen que queda.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "fecha real de cierre contra el fin de la línea base · suma de DURACION de las tareas cerradas antes de fecha"
         }
       }
     },
