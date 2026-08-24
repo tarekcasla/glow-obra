@@ -28,8 +28,8 @@
           "ref": "board 18398874016 · regenerado desde el dataset de la obra"
         },
         "ppc": 48.6,
-        "finTablero": "2026-10-15",
-        "finReal": "2026-11-07",
+        "finTablero": "2026-10-21",
+        "finReal": "2026-11-21",
         "alerta": "critico",
         "detalle": null,
         "avancePonderado": 58.2,
@@ -1608,7 +1608,8 @@
           "ref": "board 18402983112 · 546 ítems leídos y recalculados"
         },
         "vencidas": 60,
-        "finReal": "2027-03-26"
+        "finReal": "2027-02-07",
+        "finTablero": "2026-11-11"
       },
       {
         "id": "glow7",
@@ -2424,7 +2425,8 @@
           "ref": "board 18402983267 · 619 ítems leídos y recalculados"
         },
         "vencidas": 67,
-        "finReal": "2027-09-16"
+        "finReal": "2027-09-16",
+        "finTablero": "2027-08-06"
       },
       {
         "id": "glow6",
@@ -2769,7 +2771,8 @@
           "ref": "board 18398672766 · 726 ítems leídos y recalculados"
         },
         "vencidas": 10,
-        "finReal": "2028-05-25"
+        "finReal": "2028-06-09",
+        "finTablero": "2028-05-02"
       },
       {
         "id": "glow2",
@@ -3230,7 +3233,8 @@
           "tipo": "monday",
           "ref": "board 18403319169 · 81 ítems leídos y recalculados"
         },
-        "vencidas": 253
+        "vencidas": 253,
+        "finTablero": "2026-06-17"
       }
     ],
     "fuente": {
@@ -7657,22 +7661,22 @@
           }
         },
         "tableroActual": {
-          "fecha": "2026-10-15",
-          "label": "Tablero 07/08",
-          "tareas": "Inst. eléctrica artefactos de PB, Piso 7 y Piso 8",
+          "fecha": "2026-10-21",
+          "label": "Última tarea del cronograma",
+          "tareas": "PISO 9 - REVESTIMIENTOS DE PISO MADERA",
           "fuente": {
-            "tipo": "informe",
-            "ref": "§06 · fin de la última tarea, tablero 07/08"
+            "tipo": "monday",
+            "ref": "board 18398874016 · fin más lejano entre tareas no terminadas · 24/08/2026"
           }
         },
         "repropagada": {
-          "fecha": "2026-11-07",
-          "label": "Proyección por desvío real",
-          "diasCorridos": 17,
-          "semanas": 2.4,
+          "fecha": "2026-11-21",
+          "label": "Fin proyectado",
+          "diasCorridos": 31,
+          "semanas": 4.4,
           "fuente": {
             "tipo": "calculado",
-            "ref": "fin de cronograma + 17 días, el atraso del frente más atrasado (PISO 1)"
+            "ref": "fin de la última tarea pendiente (2026-10-21) + 31 días, el atraso mediano del sector PISO 9"
           }
         },
         "reprogramadas": {
@@ -12564,7 +12568,136 @@
           "ref": "board 18398874016 · ESTADO cruzado con el texto de los updates, el % actual y el historial de cambios de % posterior a la marca de bloqueo"
         }
       },
-      "kpisNota": "Las 15 «Bloqueada» no son 15 frentes parados: 9 están al 83 % esperando un remate."
+      "kpisNota": "Las 15 «Bloqueada» no son 15 frentes parados: 9 están al 83 % esperando un remate.",
+      "proyeccionFin": {
+        "sectorCritico": "PISO 9",
+        "atrasoDias": 31,
+        "tareasSector": 23,
+        "tareasMedidas": 244,
+        "universo": 778,
+        "finCronograma": "2026-10-21",
+        "finCronogramaTarea": "PISO 9 - REVESTIMIENTOS DE PISO MADERA",
+        "finProyectado": "2026-11-21",
+        "confianza": "alta",
+        "baseValida": true,
+        "sectores": [
+          {
+            "sector": "PISO 9",
+            "tareas": 23,
+            "mediana": 31,
+            "peor": 65
+          },
+          {
+            "sector": "PISO 9 - AMENITIES",
+            "tareas": 13,
+            "mediana": 24,
+            "peor": 38
+          },
+          {
+            "sector": "PISO 1",
+            "tareas": 17,
+            "mediana": 20,
+            "peor": 35
+          },
+          {
+            "sector": "PISO 2",
+            "tareas": 15,
+            "mediana": 19,
+            "peor": 33
+          },
+          {
+            "sector": "PLANTA BAJA",
+            "tareas": 13,
+            "mediana": 17,
+            "peor": 31
+          },
+          {
+            "sector": "LOCAL",
+            "tareas": 9,
+            "mediana": 17,
+            "peor": 31
+          },
+          {
+            "sector": "PALLIERES",
+            "tareas": 11,
+            "mediana": 17,
+            "peor": 65
+          },
+          {
+            "sector": "PISO 3",
+            "tareas": 13,
+            "mediana": 12,
+            "peor": 39
+          },
+          {
+            "sector": "PISO 4",
+            "tareas": 12,
+            "mediana": 12,
+            "peor": 27
+          },
+          {
+            "sector": "SUBSUELO - SALA DE MAQUINA",
+            "tareas": 4,
+            "mediana": 10,
+            "peor": 14
+          },
+          {
+            "sector": "PISO 6",
+            "tareas": 20,
+            "mediana": 10,
+            "peor": 105
+          },
+          {
+            "sector": "PISO 8",
+            "tareas": 20,
+            "mediana": 10,
+            "peor": 97
+          },
+          {
+            "sector": "EXTERIOR FACHADAS",
+            "tareas": 5,
+            "mediana": 10,
+            "peor": 24
+          },
+          {
+            "sector": "PISO 10",
+            "tareas": 17,
+            "mediana": 9,
+            "peor": 45
+          },
+          {
+            "sector": "PISO 7",
+            "tareas": 22,
+            "mediana": 8,
+            "peor": 106
+          },
+          {
+            "sector": "PISO 5",
+            "tareas": 18,
+            "mediana": 7,
+            "peor": 35
+          },
+          {
+            "sector": "ASCENSOR",
+            "tareas": 9,
+            "mediana": 5,
+            "peor": 31
+          },
+          {
+            "sector": "CAJA DE ESCALERA",
+            "tareas": 3,
+            "mediana": 3,
+            "peor": 24
+          }
+        ],
+        "nota": "La tarea que fija el fin está Programada, así que la fecha base es real. <b>Se movió 8 días desde el viernes</b>: el 21/08 empujaron un mes las nueve tareas de revestimiento de piso madera y la del piso 9 pasó a ser la última del cronograma. Antes de esa edición la proyección daba 13/11.",
+        "corte": "2026-08-24",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board de la obra leído el 24/08/2026 · 244 tareas de 778 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
+      }
     },
     "glow5": {
       "proyecto": {
@@ -16002,6 +16135,129 @@
           "tipo": "calculado",
           "ref": "por tarea: fecha real de cierre (activity_logs) o hoy si sigue vencida, contra el fin de la línea base · mediana por sector · 388 tareas en 17 sectores"
         }
+      },
+      "proyeccionFin": {
+        "sectorCritico": "SUBSUELO - SALA DE MAQUINA",
+        "atrasoDias": 88,
+        "tareasSector": 10,
+        "tareasMedidas": 370,
+        "universo": 542,
+        "finCronograma": "2026-11-11",
+        "finCronogramaTarea": "PISO 7 - MAMPARAS Y ESPEJOS DE BAÑO",
+        "finProyectado": "2027-02-07",
+        "confianza": "media",
+        "baseValida": true,
+        "sectores": [
+          {
+            "sector": "SUBSUELO - SALA DE MAQUINA",
+            "tareas": 10,
+            "mediana": 88,
+            "peor": 109
+          },
+          {
+            "sector": "AREAS COMUNES GRAL.",
+            "tareas": 9,
+            "mediana": 59,
+            "peor": 80
+          },
+          {
+            "sector": "PLANTA BAJA",
+            "tareas": 29,
+            "mediana": 55,
+            "peor": 152
+          },
+          {
+            "sector": "PISO 9 R1",
+            "tareas": 35,
+            "mediana": 54,
+            "peor": 146
+          },
+          {
+            "sector": "PISO 8 R1",
+            "tareas": 28,
+            "mediana": 53,
+            "peor": 147
+          },
+          {
+            "sector": "PISO 7 R1",
+            "tareas": 27,
+            "mediana": 53,
+            "peor": 145
+          },
+          {
+            "sector": "PISO 6 R1",
+            "tareas": 28,
+            "mediana": 52,
+            "peor": 143
+          },
+          {
+            "sector": "PISO 4 R1",
+            "tareas": 25,
+            "mediana": 52,
+            "peor": 136
+          },
+          {
+            "sector": "PISO 5 R1",
+            "tareas": 28,
+            "mediana": 48,
+            "peor": 138
+          },
+          {
+            "sector": "PISO 3 R1",
+            "tareas": 28,
+            "mediana": 46,
+            "peor": 132
+          },
+          {
+            "sector": "PISO 1 R1",
+            "tareas": 30,
+            "mediana": 44,
+            "peor": 111
+          },
+          {
+            "sector": "PISO 2 R1",
+            "tareas": 28,
+            "mediana": 42,
+            "peor": 110
+          },
+          {
+            "sector": "LOCAL",
+            "tareas": 17,
+            "mediana": 40,
+            "peor": 102
+          },
+          {
+            "sector": "PISO 10 COWORK",
+            "tareas": 27,
+            "mediana": 28,
+            "peor": 102
+          },
+          {
+            "sector": "AREAS COMUNES INSTALACIONES",
+            "tareas": 11,
+            "mediana": 10,
+            "peor": 108
+          },
+          {
+            "sector": "AREAS COMUNES ALBAÑILERIA",
+            "tareas": 6,
+            "mediana": 7,
+            "peor": 10
+          },
+          {
+            "sector": "EXTERIOR",
+            "tareas": 4,
+            "mediana": -4,
+            "peor": 43
+          }
+        ],
+        "nota": "<b>La fecha base está depurada.</b> El fin literal del cronograma es 31/12/2026, pero lo fija una tarea <i>ya terminada</i> cuyo cronograma se movió después de cerrarla. Se usa la última tarea realmente pendiente: 11/11/2026. Con la fecha sucia la proyección daría 29/03/2027, cincuenta días más. Ojo: el atraso lo fijan sólo 10 tareas del subsuelo, cinco de ellas la cuadrilla eléctrica que hoy pasó a «Restringido por Mano de Obra». Si se destraban, la proyección baja de golpe.",
+        "corte": "2026-08-24",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board de la obra leído el 24/08/2026 · 370 tareas de 542 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
       }
     },
     "glow6": {
@@ -18303,6 +18559,51 @@
         "fuente": {
           "tipo": "monday",
           "ref": "board 18398672766 · grupos FUNDACIONES, SUBSUELO 1 y SUBSUELO 2 · tareas de hormigón, submuración y excavación"
+        }
+      },
+      "proyeccionFin": {
+        "sectorCritico": "SUBSUELO 1",
+        "atrasoDias": 38,
+        "tareasSector": 4,
+        "tareasMedidas": 19,
+        "universo": 726,
+        "finCronograma": "2028-05-02",
+        "finCronogramaTarea": "PISO 8 (dos tareas mal nombradas «PISO 1»)",
+        "finProyectado": "2028-06-09",
+        "confianza": "baja",
+        "baseValida": false,
+        "sectores": [
+          {
+            "sector": "SUBSUELO 1",
+            "tareas": 4,
+            "mediana": 38,
+            "peor": 55
+          },
+          {
+            "sector": "SUBSUELO 2",
+            "tareas": 5,
+            "mediana": 7,
+            "peor": 15
+          },
+          {
+            "sector": "AMENITIES",
+            "tareas": 4,
+            "mediana": 151,
+            "peor": 153
+          },
+          {
+            "sector": "LOCAL",
+            "tareas": 3,
+            "mediana": 151,
+            "peor": 152
+          }
+        ],
+        "nota": "<b>Depurado de fechas huérfanas.</b> El método estricto daba AMENITIES con 151 días, pero ahí sólo 4 de 42 tareas tienen fecha y son terminaciones fechadas en marzo de 2026 en una obra que recién excava fundaciones. Miden un error de carga, no atraso. <b>Hoy a las 19:18 replanificaron 443 tareas de golpe, +15 a +17 días</b>, y el fin de obra pasó de 17/04 a 02/05/2028. Sólo 19 tareas de 726 son medibles: leelo como piso, no como pronóstico. Todo el hormigón del frente todavía no arrancó y no aportó un solo dato.",
+        "corte": "2026-08-24",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board de la obra leído el 24/08/2026 · 19 tareas de 726 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
         }
       }
     },
@@ -21976,6 +22277,51 @@
           "tipo": "monday",
           "ref": "board 18402983267 · grupos FUNDACIONES y SUBSUELO · tareas de hormigón y excavación"
         }
+      },
+      "proyeccionFin": {
+        "sectorCritico": "SUBSUELO",
+        "atrasoDias": 41,
+        "tareasSector": 9,
+        "tareasMedidas": 29,
+        "universo": 618,
+        "finCronograma": "2027-08-06",
+        "finCronogramaTarea": "PISO SUBSUELO - PINTURA INTERIOR ETAPA 1",
+        "finProyectado": "2027-09-16",
+        "confianza": "baja",
+        "baseValida": true,
+        "sectores": [
+          {
+            "sector": "SUBSUELO",
+            "tareas": 9,
+            "mediana": 41,
+            "peor": 151
+          },
+          {
+            "sector": "PISO 1",
+            "tareas": 13,
+            "mediana": 18,
+            "peor": 54
+          },
+          {
+            "sector": "PLANTA BAJA",
+            "tareas": 2,
+            "mediana": 57,
+            "peor": 87
+          },
+          {
+            "sector": "LOCAL",
+            "tareas": 2,
+            "mediana": 127,
+            "peor": 132
+          }
+        ],
+        "nota": "<b>Depurado de 42 tareas de plantilla congeladas</b>: tienen la misma fecha en el cronograma y en las dos líneas base — nunca las tocó ninguna replanificación — y están fechadas en marzo de 2026 en pisos cuya estructura se hormigona recién a fin de año. Sin sacarlas, el sector que fijaba era PISO 7 con 97 días y la proyección daba 11/11/2027. También se excluye un ítem con fecha 2030 que es error de carga. Quedan 29 tareas medidas sobre 618: es un indicador direccional, no una fecha contractual.",
+        "corte": "2026-08-24",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board de la obra leído el 24/08/2026 · 29 tareas de 618 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
       }
     },
     "glow2": {
@@ -24044,6 +24390,111 @@
           "tipo": "monday",
           "ref": "board 18403319169 · activity_logs sin eventos posteriores al 07/04/2026"
         }
+      },
+      "proyeccionFin": {
+        "sectorCritico": "COMPRAS Y CONTRATACIONES",
+        "atrasoDias": 134,
+        "tareasSector": 8,
+        "tareasMedidas": 337,
+        "universo": 351,
+        "finCronograma": "2026-06-17",
+        "finCronogramaTarea": "Pintura epoxi en pisos y zócalos",
+        "finProyectado": null,
+        "confianza": "nula",
+        "baseValida": false,
+        "sectores": [
+          {
+            "sector": "COMPRAS Y CONTRATACIONES",
+            "tareas": 8,
+            "mediana": 134,
+            "peor": 150
+          },
+          {
+            "sector": "ENTREGAS Y SUBCONTRATOS",
+            "tareas": 26,
+            "mediana": 129,
+            "peor": 154
+          },
+          {
+            "sector": "8° PISO",
+            "tareas": 31,
+            "mediana": 125,
+            "peor": 146
+          },
+          {
+            "sector": "9° PISO",
+            "tareas": 34,
+            "mediana": 123,
+            "peor": 147
+          },
+          {
+            "sector": "7° PISO",
+            "tareas": 24,
+            "mediana": 122,
+            "peor": 138
+          },
+          {
+            "sector": "6° PISO",
+            "tareas": 23,
+            "mediana": 117,
+            "peor": 136
+          },
+          {
+            "sector": "PLANTA BAJA",
+            "tareas": 31,
+            "mediana": 115,
+            "peor": 151
+          },
+          {
+            "sector": "10° PISO",
+            "tareas": 18,
+            "mediana": 114,
+            "peor": 138
+          },
+          {
+            "sector": "5° PISO",
+            "tareas": 23,
+            "mediana": 111,
+            "peor": 133
+          },
+          {
+            "sector": "1° PISO",
+            "tareas": 31,
+            "mediana": 110,
+            "peor": 139
+          },
+          {
+            "sector": "4° PISO",
+            "tareas": 24,
+            "mediana": 109,
+            "peor": 145
+          },
+          {
+            "sector": "3° PISO",
+            "tareas": 24,
+            "mediana": 104,
+            "peor": 143
+          },
+          {
+            "sector": "SUBSUELO",
+            "tareas": 13,
+            "mediana": 103,
+            "peor": 137
+          },
+          {
+            "sector": "2° PISO",
+            "tareas": 27,
+            "mediana": 94,
+            "peor": 132
+          }
+        ],
+        "nota": "<b>No es una fecha de obra.</b> El tablero no registra un evento desde el 22/04/2026. De las 337 tareas medidas, 253 aportan un atraso que es calendario corrido desde entonces. El cálculo daría 30/10/2026, pero mide hace cuánto que nadie toca el tablero, no cómo va la obra.",
+        "corte": "2026-08-24",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board de la obra leído el 24/08/2026 · 337 tareas de 351 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
       }
     }
   },
@@ -24629,6 +25080,60 @@
     "fuente": {
       "tipo": "cruzado",
       "ref": "boards 18398672766 y 18402983267 · secuencia de tareas de hormigón con su estado y fecha real de cierre"
+    }
+  },
+  "carteraFin": {
+    "filas": [
+      {
+        "obra": "GLOW 3",
+        "id": "glow3",
+        "finProyectado": "2026-11-21",
+        "finCronograma": "2026-10-21",
+        "atraso": 31,
+        "sector": "PISO 9",
+        "confianza": "alta",
+        "medidas": 244,
+        "universo": 778
+      },
+      {
+        "obra": "GLOW 5",
+        "id": "glow5",
+        "finProyectado": "2027-02-07",
+        "finCronograma": "2026-11-11",
+        "atraso": 88,
+        "sector": "SUBSUELO - SALA DE MAQUINA",
+        "confianza": "media",
+        "medidas": 370,
+        "universo": 542
+      },
+      {
+        "obra": "GLOW 7",
+        "id": "glow7",
+        "finProyectado": "2027-09-16",
+        "finCronograma": "2027-08-06",
+        "atraso": 41,
+        "sector": "SUBSUELO",
+        "confianza": "baja",
+        "medidas": 29,
+        "universo": 618
+      },
+      {
+        "obra": "GLOW 6+",
+        "id": "glow6",
+        "finProyectado": "2028-06-09",
+        "finCronograma": "2028-05-02",
+        "atraso": 38,
+        "sector": "SUBSUELO 1",
+        "confianza": "baja",
+        "medidas": 19,
+        "universo": 726
+      }
+    ],
+    "corte": "2026-08-24",
+    "nota": "Fin proyectado al 24/08/2026. La confianza depende de cuántas tareas tienen fecha de plan y desenlace medible: <b>GLOW 3 se apoya en 244 de 778 tareas; GLOW 6+ en 19 de 726</b>. Las de confianza baja son indicadores direccionales, no fechas contractuales. GLOW 2 queda fuera: su tablero está congelado desde abril.",
+    "fuente": {
+      "tipo": "calculado",
+      "ref": "los 5 boards leídos el 24/08/2026 · delta por tarea contra el plan · mediana del peor sector con muestra suficiente"
     }
   }
 }
