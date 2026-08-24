@@ -12597,25 +12597,41 @@
             "sector": "PISO 1",
             "tareas": 17,
             "mediana": 20,
-            "peor": 35
+            "peor": 35,
+            "atrasadas": 14,
+            "adelantadas": 3,
+            "medCompensada": 20,
+            "medAtrasos": 20
           },
           {
             "sector": "PISO 2",
             "tareas": 15,
             "mediana": 19,
-            "peor": 33
+            "peor": 33,
+            "atrasadas": 13,
+            "adelantadas": 1,
+            "medCompensada": 19,
+            "medAtrasos": 19
           },
           {
             "sector": "PLANTA BAJA",
             "tareas": 13,
             "mediana": 17,
-            "peor": 31
+            "peor": 31,
+            "atrasadas": 13,
+            "adelantadas": 0,
+            "medCompensada": 17,
+            "medAtrasos": 17
           },
           {
             "sector": "LOCAL",
             "tareas": 9,
             "mediana": 17,
-            "peor": 31
+            "peor": 31,
+            "atrasadas": 9,
+            "adelantadas": 0,
+            "medCompensada": 17,
+            "medAtrasos": 17
           },
           {
             "sector": "PALLIERES",
@@ -12627,25 +12643,41 @@
             "sector": "PISO 3",
             "tareas": 13,
             "mediana": 12,
-            "peor": 39
+            "peor": 39,
+            "atrasadas": 10,
+            "adelantadas": 2,
+            "medCompensada": 8,
+            "medAtrasos": 12
           },
           {
             "sector": "PISO 4",
             "tareas": 12,
             "mediana": 12,
-            "peor": 27
+            "peor": 27,
+            "atrasadas": 6,
+            "adelantadas": 5,
+            "medCompensada": 3,
+            "medAtrasos": 14
           },
           {
             "sector": "SUBSUELO - SALA DE MAQUINA",
             "tareas": 4,
             "mediana": 10,
-            "peor": 14
+            "peor": 14,
+            "atrasadas": 4,
+            "adelantadas": 0,
+            "medCompensada": 10,
+            "medAtrasos": 10
           },
           {
             "sector": "PISO 6",
             "tareas": 20,
             "mediana": 10,
-            "peor": 105
+            "peor": 105,
+            "atrasadas": 11,
+            "adelantadas": 4,
+            "medCompensada": 7,
+            "medAtrasos": 10
           },
           {
             "sector": "PISO 8",
@@ -12669,13 +12701,21 @@
             "sector": "PISO 7",
             "tareas": 22,
             "mediana": 8,
-            "peor": 106
+            "peor": 106,
+            "atrasadas": 14,
+            "adelantadas": 6,
+            "medCompensada": 4,
+            "medAtrasos": 13
           },
           {
             "sector": "PISO 5",
             "tareas": 18,
             "mediana": 7,
-            "peor": 35
+            "peor": 35,
+            "atrasadas": 8,
+            "adelantadas": 9,
+            "medCompensada": -2,
+            "medAtrasos": 14
           },
           {
             "sector": "ASCENSOR",
@@ -12692,10 +12732,74 @@
         ],
         "nota": "La tarea que fija el fin está Programada, así que la fecha base es real. <b>Se movió 8 días desde el viernes</b>: el 21/08 empujaron un mes las nueve tareas de revestimiento de piso madera y la del piso 9 pasó a ser la última del cronograma. Antes de esa edición la proyección daba 13/11.",
         "corte": "2026-08-24",
-        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>Los adelantos no compensan atrasos:</b> cuando un frente se traba la cuadrilla se corre a una tarea futura y esa cierra antes de fecha, pero es reacomodamiento, no productividad — y esa holgura ya no va a estar disponible después. La mediana del sector se calcula sólo sobre las tareas que llegaron tarde. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
         "fuente": {
           "tipo": "calculado",
           "ref": "board de la obra leído el 24/08/2026 · 244 tareas de 778 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
+      },
+      "adelantos": {
+        "total": 1749,
+        "tareas": 43,
+        "ejemplos": [
+          {
+            "tarea": "PISO 4 - PISO RADIANTE ELEC. CABLEADO",
+            "plan": "2026-07-31",
+            "real": "2026-02-06",
+            "dias": -175
+          },
+          {
+            "tarea": "PISO 4 - INST. PISO RADIANTE ELEC. CAÑERIAS",
+            "plan": "2026-07-07",
+            "real": "2026-02-06",
+            "dias": -151
+          },
+          {
+            "tarea": "PISO 4 - CARPETA CEMENTICIA",
+            "plan": "2026-05-19",
+            "real": "2026-02-06",
+            "dias": -102
+          },
+          {
+            "tarea": "PISO 4 - BANQUINAS",
+            "plan": "2026-06-05",
+            "real": "2026-02-26",
+            "dias": -99
+          },
+          {
+            "tarea": "PISO 4 - INST. ELECTRICA CABLEADO",
+            "plan": "2026-07-28",
+            "real": "2026-04-20",
+            "dias": -99
+          },
+          {
+            "tarea": "PISO 4 - PISO RADIANTE ELEC. CABLEADO",
+            "plan": "2026-07-30",
+            "real": "2026-05-13",
+            "dias": -78
+          }
+        ],
+        "nota": "<b>Los adelantos son reales y son grandes.</b> En febrero la cuadrilla ejecutó trabajo del piso 4 planificado para mayo, junio y julio: hasta 175 días antes. Eso no es rendimiento, es que algo se trabó donde tenían que estar y se corrieron a un frente libre. Por eso el cálculo <b>no deja que un adelanto tape un atraso</b>: el piso 5 aparecía dos días adelantado y sus tareas atrasadas llevan catorce.",
+        "efecto": [
+          {
+            "sector": "PISO 5",
+            "compensada": -2,
+            "soloAtrasos": 14
+          },
+          {
+            "sector": "PISO 4",
+            "compensada": 3,
+            "soloAtrasos": 14
+          },
+          {
+            "sector": "PISO 7",
+            "compensada": 4,
+            "soloAtrasos": 13
+          }
+        ],
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board 18398874016 · fecha real de cierre (activity_logs) contra el fin de la línea base del 14/07 · 43 tareas cerradas antes de fecha"
         }
       }
     },
@@ -16152,108 +16256,176 @@
             "sector": "SUBSUELO - SALA DE MAQUINA",
             "tareas": 10,
             "mediana": 88,
-            "peor": 109
+            "peor": 109,
+            "atrasadas": 10,
+            "adelantadas": 1,
+            "medCompensada": 88,
+            "medAtrasos": 88
           },
           {
             "sector": "AREAS COMUNES GRAL.",
             "tareas": 9,
             "mediana": 59,
-            "peor": 80
+            "peor": 80,
+            "atrasadas": 10,
+            "adelantadas": 0,
+            "medCompensada": 54,
+            "medAtrasos": 54
           },
           {
             "sector": "PLANTA BAJA",
             "tareas": 29,
             "mediana": 55,
-            "peor": 152
+            "peor": 152,
+            "atrasadas": 30,
+            "adelantadas": 1,
+            "medCompensada": 64,
+            "medAtrasos": 65
           },
           {
             "sector": "PISO 9 R1",
             "tareas": 35,
             "mediana": 54,
-            "peor": 146
+            "peor": 146,
+            "atrasadas": 35,
+            "adelantadas": 4,
+            "medCompensada": 33,
+            "medAtrasos": 52
           },
           {
             "sector": "PISO 8 R1",
             "tareas": 28,
             "mediana": 53,
-            "peor": 147
+            "peor": 147,
+            "atrasadas": 28,
+            "adelantadas": 2,
+            "medCompensada": 48,
+            "medAtrasos": 51
           },
           {
             "sector": "PISO 7 R1",
             "tareas": 27,
             "mediana": 53,
-            "peor": 145
+            "peor": 145,
+            "atrasadas": 26,
+            "adelantadas": 2,
+            "medCompensada": 48,
+            "medAtrasos": 51
           },
           {
             "sector": "PISO 6 R1",
             "tareas": 28,
             "mediana": 52,
-            "peor": 143
+            "peor": 143,
+            "atrasadas": 29,
+            "adelantadas": 1,
+            "medCompensada": 50,
+            "medAtrasos": 52
           },
           {
             "sector": "PISO 4 R1",
             "tareas": 25,
             "mediana": 52,
-            "peor": 136
+            "peor": 136,
+            "atrasadas": 26,
+            "adelantadas": 1,
+            "medCompensada": 49,
+            "medAtrasos": 50
           },
           {
             "sector": "PISO 5 R1",
             "tareas": 28,
             "mediana": 48,
-            "peor": 138
+            "peor": 138,
+            "atrasadas": 26,
+            "adelantadas": 2,
+            "medCompensada": 47,
+            "medAtrasos": 48
           },
           {
             "sector": "PISO 3 R1",
             "tareas": 28,
             "mediana": 46,
-            "peor": 132
+            "peor": 132,
+            "atrasadas": 25,
+            "adelantadas": 2,
+            "medCompensada": 42,
+            "medAtrasos": 46
           },
           {
             "sector": "PISO 1 R1",
             "tareas": 30,
             "mediana": 44,
-            "peor": 111
+            "peor": 111,
+            "atrasadas": 30,
+            "adelantadas": 1,
+            "medCompensada": 46,
+            "medAtrasos": 47
           },
           {
             "sector": "PISO 2 R1",
             "tareas": 28,
             "mediana": 42,
-            "peor": 110
+            "peor": 110,
+            "atrasadas": 27,
+            "adelantadas": 2,
+            "medCompensada": 42,
+            "medAtrasos": 46
           },
           {
             "sector": "LOCAL",
             "tareas": 17,
             "mediana": 40,
-            "peor": 102
+            "peor": 102,
+            "atrasadas": 17,
+            "adelantadas": 2,
+            "medCompensada": 40,
+            "medAtrasos": 40
           },
           {
             "sector": "PISO 10 COWORK",
             "tareas": 27,
             "mediana": 28,
-            "peor": 102
+            "peor": 102,
+            "atrasadas": 24,
+            "adelantadas": 5,
+            "medCompensada": 28,
+            "medAtrasos": 34
           },
           {
             "sector": "AREAS COMUNES INSTALACIONES",
             "tareas": 11,
             "mediana": 10,
-            "peor": 108
+            "peor": 108,
+            "atrasadas": 11,
+            "adelantadas": 2,
+            "medCompensada": 10,
+            "medAtrasos": 10
           },
           {
             "sector": "AREAS COMUNES ALBAÑILERIA",
             "tareas": 6,
             "mediana": 7,
-            "peor": 10
+            "peor": 10,
+            "atrasadas": 7,
+            "adelantadas": 0,
+            "medCompensada": 10,
+            "medAtrasos": 10
           },
           {
             "sector": "EXTERIOR",
             "tareas": 4,
             "mediana": -4,
-            "peor": 43
+            "peor": 43,
+            "atrasadas": 3,
+            "adelantadas": 2,
+            "medCompensada": 7,
+            "medAtrasos": 20
           }
         ],
         "nota": "<b>La fecha base está depurada.</b> El fin literal del cronograma es 31/12/2026, pero lo fija una tarea <i>ya terminada</i> cuyo cronograma se movió después de cerrarla. Se usa la última tarea realmente pendiente: 11/11/2026. Con la fecha sucia la proyección daría 29/03/2027, cincuenta días más. Ojo: el atraso lo fijan sólo 10 tareas del subsuelo, cinco de ellas la cuadrilla eléctrica que hoy pasó a «Restringido por Mano de Obra». Si se destraban, la proyección baja de golpe.",
         "corte": "2026-08-24",
-        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
+        "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>Los adelantos no compensan atrasos:</b> cuando un frente se traba la cuadrilla se corre a una tarea futura y esa cierra antes de fecha, pero es reacomodamiento, no productividad — y esa holgura ya no va a estar disponible después. La mediana del sector se calcula sólo sobre las tareas que llegaron tarde. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
         "fuente": {
           "tipo": "calculado",
           "ref": "board de la obra leído el 24/08/2026 · 370 tareas de 542 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
