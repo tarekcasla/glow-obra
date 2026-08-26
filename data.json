@@ -12829,6 +12829,156 @@
           "tipo": "calculado",
           "ref": "fecha real de cierre contra el fin de la línea base · suma de DURACION de las tareas cerradas antes de fecha"
         }
+      },
+      "causasEnTiempo": {
+        "semanas": [
+          "13–19 jul",
+          "20–26 jul",
+          "27 jul–2 ago",
+          "3–9 ago",
+          "10–16 ago",
+          "17–23 ago"
+        ],
+        "series": [
+          {
+            "causa": "Falta de material",
+            "acumulado": [
+              0,
+              10,
+              15,
+              15,
+              15,
+              15
+            ],
+            "sinSemana": 2,
+            "total": 17
+          },
+          {
+            "causa": "Defensas de fachada",
+            "acumulado": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2
+            ],
+            "sinSemana": 2,
+            "total": 4
+          },
+          {
+            "causa": "Clima",
+            "acumulado": [
+              0,
+              0,
+              0,
+              0,
+              2,
+              2
+            ],
+            "sinSemana": 0,
+            "total": 2
+          },
+          {
+            "causa": "Inspección de gas",
+            "acumulado": [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "sinSemana": 1,
+            "total": 2
+          },
+          {
+            "causa": "Recursos a otra obra",
+            "acumulado": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2
+            ],
+            "sinSemana": 0,
+            "total": 2
+          },
+          {
+            "causa": "Falta de personal",
+            "acumulado": [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "sinSemana": 0,
+            "total": 1
+          },
+          {
+            "causa": "Balancín / GCBA",
+            "acumulado": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            "sinSemana": 0,
+            "total": 1
+          },
+          {
+            "causa": "Izaje de carpintería",
+            "acumulado": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "sinSemana": 0,
+            "total": 1
+          }
+        ],
+        "porSemana": [
+          1,
+          12,
+          6,
+          1,
+          4,
+          1
+        ],
+        "sinSemana": 5,
+        "nota": "Cada línea acumula las veces que una causa apareció como motivo de no cumplimiento. <b>La falta de material saltó de 0 a 10 en la semana del 20 de julio y sumó 5 más en la siguiente; después se detuvo.</b> Fue un pico de dos semanas, no un problema permanente. <b>Las defensas de fachada son las que se repiten</b>: aparecen en la primera semana del registro y vuelven en la última, cruzando los dos meses. Hay 5 registros más sin semana asignada que no entran en la serie.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18398874030 · columna Semana (week_mm5g3xqz) × «Restricciones o causas de no cumplimiento» (text_mm5ghwkw) · 30 registros con causa clasificados en 8 familias"
+        }
+      },
+      "ultimaTarea": {
+        "tarea": "PISO 9 - REVESTIMIENTOS DE PISO MADERA",
+        "sector": "PISO 9",
+        "fecha": "2026-10-21",
+        "estado": "Programada",
+        "avance": 0,
+        "limpia": true,
+        "situacion": "no arrancó",
+        "antes": [
+          "PISO 8 - REVESTIMIENTOS DE PISO MADERA · 16/10",
+          "PISO PB - FIN · 15/10"
+        ],
+        "nota": "La fecha se lee limpia: la tarea está pendiente y es realmente la última del plan. El 21/08 la empujaron un mes junto con las otras ocho de revestimiento de piso madera, y ahí pasó a fijar el fin de obra.",
+        "diasRestantes": 56,
+        "vencida": false,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+        }
       }
     },
     "glow5": {
@@ -16548,6 +16698,25 @@
           "tipo": "calculado",
           "ref": "fecha real de cierre contra el fin de la línea base · suma de DURACION de las tareas cerradas antes de fecha"
         }
+      },
+      "ultimaTarea": {
+        "tarea": "MAMPARAS Y ESPEJOS DE BAÑO",
+        "sector": "pisos 3, 4, 5 y 6",
+        "fecha": "2026-11-06",
+        "estado": "Programada",
+        "avance": 0,
+        "limpia": false,
+        "situacion": "no arrancó",
+        "antes": [
+          "Las cuatro comparten la misma fecha de fin"
+        ],
+        "nota": "El cronograma literal dice 31/12/2026, pero esa fecha la fija una tarea <b>ya terminada</b> cuyo cronograma se movió después de cerrarla. La última tarea realmente pendiente cierra el 06/11: casi dos meses antes.",
+        "diasRestantes": 72,
+        "vencida": false,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+        }
       }
     },
     "glow6": {
@@ -18894,6 +19063,25 @@
         "fuente": {
           "tipo": "calculado",
           "ref": "board de la obra leído el 24/08/2026 · 19 tareas de 726 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
+      },
+      "ultimaTarea": {
+        "tarea": "PISO 1 - INSTALACION ELECTRODOMESTICOS y PISO 1 - CORTINAS",
+        "sector": "grupo PISO 8",
+        "fecha": "2028-05-02",
+        "estado": "Programado",
+        "avance": 0,
+        "limpia": false,
+        "situacion": "no arrancó",
+        "antes": [
+          "Todo el hormigón del frente, sin arrancar"
+        ],
+        "nota": "Las dos tareas que fijan el fin están en el grupo PISO 8 pero se llaman «PISO 1 - …»: nombres mal heredados de una duplicación. Y la fecha se movió del 17/04 al 02/05 el 24/08, cuando corrieron 443 tareas quince días en bloque.",
+        "diasRestantes": 615,
+        "vencida": false,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
         }
       }
     },
@@ -22612,6 +22800,26 @@
           "tipo": "calculado",
           "ref": "board de la obra leído el 24/08/2026 · 29 tareas de 618 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
         }
+      },
+      "ultimaTarea": {
+        "tarea": "PISO SUBSUELO - PINTURA INTERIOR ETAPA 1",
+        "sector": "SUBSUELO",
+        "fecha": "2027-08-06",
+        "estado": "Programada",
+        "avance": 0,
+        "limpia": false,
+        "situacion": "no arrancó",
+        "antes": [
+          "PISO PB - PINTURA INTERIOR ETAPA 1 · 30/07/2027",
+          "L. - PRE INSTALACION A.A · 29/07/2027"
+        ],
+        "nota": "Hay un ítem con cronograma en <b>noviembre de 2030</b> (PISO 1 - CIELORRASOS EXTERIORES) que es error de carga. Si no se excluye, cualquier lectura automática da 2030 como fin de obra.",
+        "diasRestantes": 345,
+        "vencida": false,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+        }
       }
     },
     "glow2": {
@@ -24784,6 +24992,25 @@
         "fuente": {
           "tipo": "calculado",
           "ref": "board de la obra leído el 24/08/2026 · 337 tareas de 351 con fecha de plan y desenlace medible · activity_logs de ESTADO para la fecha real de cierre"
+        }
+      },
+      "ultimaTarea": {
+        "tarea": "Pintura epoxi en pisos y zócalos",
+        "sector": "SUBSUELO",
+        "fecha": "2026-06-17",
+        "estado": "Programada",
+        "avance": 0,
+        "limpia": true,
+        "situacion": "vencida",
+        "antes": [
+          "253 de 346 tareas están vencidas"
+        ],
+        "nota": "<b>La fecha de fin del plan venció hace más de dos meses</b> y la tarea nunca arrancó. El tablero no registra un cambio desde el 26/03: no es que la obra esté parada, es que nadie lo actualiza.",
+        "diasRestantes": -70,
+        "vencida": true,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
         }
       }
     }
