@@ -1,7 +1,7 @@
 {
   "cartera": {
     "titulo": "Tableros de obra",
-    "nota": "Las cuatro obras en ejecución, leídas del workspace.",
+    "nota": "Las 4 obras en ejecución, leídas del workspace.",
     "obras": [
       {
         "id": "glow3",
@@ -261,7 +261,7 @@
           {
             "titulo": "La base del edificio quedo sin cerrar mientras la torre subia",
             "cantidad": 73,
-            "detalle": "Los tres sectores de cota baja suman 73 tareas ejecutables con avance ponderado 24.9% y solo 6 Finalizadas: PLANTA BAJA 31 tareas al 27.0% con 3 finalizadas y 6 retrasadas, LOCAL 21 tareas al 18.3% con 0 finalizadas y 5 retrasadas, SUBSUELO - SALA DE MAQUINA 21 tareas al 28.6% con 3 finalizadas y 1 retrasada. En el mismo tablero, los 533 items de PISO 1 a PISO 10 van 65.6% ponderado. LOCAL es el unico sector del tablero sin una sola tarea cerrada. Ademas 11 de las 46 retrasadas (23.9%) estan en PLANTA BAJA y LOCAL, que juntos son solo 52 de 715 tareas (7.3%).",
+            "detalle": "Los 3 sectores de cota baja suman 73 tareas ejecutables con avance ponderado 24.9% y solo 6 Finalizadas: PLANTA BAJA 31 tareas al 27.0% con 3 finalizadas y 6 retrasadas, LOCAL 21 tareas al 18.3% con 0 finalizadas y 5 retrasadas, SUBSUELO - SALA DE MAQUINA 21 tareas al 28.6% con 3 finalizadas y 1 retrasada. En el mismo tablero, los 533 items de PISO 1 a PISO 10 van 65.6% ponderado. LOCAL es el unico sector del tablero sin una sola tarea cerrada. Ademas 11 de las 46 retrasadas (23.9%) estan en PLANTA BAJA y LOCAL, que juntos son solo 52 de 715 tareas (7.3%).",
             "lectura": "Planta baja y local son lo primero que ve el comprador y lo ultimo que se toco. Concentran 3 veces mas retraso del que les corresponde por tamano. Ademas la base es lo que habilita la entrega: sin planta baja terminada no hay final de obra por mas que los pisos esten al 70%.",
             "comoSeCalculo": "Sobre los 715 ejecutables: se agruparon los items cuyo grupo del tablero es 'PLANTA BAJA', 'LOCAL' o 'SUBSUELO - SALA DE MAQUINA' (73 items) y se calculo Sum(avance x duracion)/Sum(duracion) sobre los que tienen duracion. Contra el mismo calculo sobre los items cuyo grupo empieza con 'PISO ' (533 items)."
           },
@@ -283,7 +283,7 @@
             "titulo": "Obra ejecutada arriba del 70% que no se puede certificar",
             "cantidad": 21,
             "detalle": "21 tareas ejecutables tienen avance entre 70% y 99% y no estan Finalizadas: 11 Bloqueadas, 6 Iniciadas y 4 Retrasadas. 18 de las 21 son rubro ALBANILERIA (las otras 3 son ventilaciones e instalaciones sanitarias y de gas). Estan repartidas en 11 sectores, con PISO 2 y PISO 9 aportando 3 cada uno. Las mas altas: PISO 10 - CARPETA CEMENTICIA 95%, PINTURA - FACHADA MARCOS PAZ 92%, y cuatro en 90% (revestimiento de piso de PISO 1 y PISO 3, yeso muros de PISO 9, mamposteria de AMENITIES).",
-            "lectura": "Es plata puesta que no se puede cobrar ni liberar. La carpeta de PISO 10 al 95% bloqueada y la mamposteria de amenities al 90% bloqueada tapan al gremio siguiente en dos sectores completos. El patron dominante es albanileria humeda que llego al remate y ahi se freno.",
+            "lectura": "Es plata puesta que no se puede cobrar ni liberar. La carpeta de PISO 10 al 95% bloqueada y la mamposteria de amenities al 90% bloqueada tapan al gremio siguiente en 2 sectores completos. El patron dominante es albanileria humeda que llego al remate y ahi se freno.",
             "comoSeCalculo": "Sobre los 715 ejecutables: filtro numeric_mkya8gds entre 70 y 99 inclusive, con valor cargado, y status distinto de 'Finalizada'. Da 21. Se verifico ademas que no hay ninguna tarea 'Finalizada' con avance menor a 100 (0 casos) y que hay 4 tareas con avance 100 que no estan marcadas Finalizada."
           }
         ],
@@ -303,7 +303,7 @@
           "sinContratista": 653,
           "sinRubro": 0,
           "dependenciasCargadas": 0,
-          "notas": "Verificacion de integridad OK: la suma de estados (Finalizada 332 + Programada 296 + Retrasada 46 + HITO 45 + Iniciada 26 + FIN 18 + Bloqueada 15) da exactamente 778, igual a items_count del board. Los 778 items se trajeron en 2 paginas (400 + 378), sin faltantes. || Base de calculo: los cortes por sector, rubro y contratista y los promedios usan los 715 ejecutables (778 menos 45 HITO y 18 FIN). Los conteos de calidad de dato de este bloque (sinAvance 91, sinDuracion 147, sinContratista 653, sinRubro 0) son sobre los 778 items del board. Sobre los 715 ejecutables: 45 sin avance, 147 sin duracion (los 147 caen todos en ejecutables: los 63 HITO/FIN tienen duracion cargada), 592 sin contratista, 0 sin rubro. || DEPENDENCIAS: 0 de 778. Verificado dos veces: se pidio linked_item_ids de dependency_mm08tktm para los 778 items y todos vinieron vacios, y el filtro items_page con operator is_empty sobre esa columna devuelve cursor con total 778 (y is_not_empty devuelve 0 items). Sin dependencias no hay camino critico calculable ni forma de saber que tarea traba a cual: la clasificacion Bloqueada es manual, no derivada. || SOBRE EL 58.1%: el ponderado se calculo Sum(avance x duracion)/Sum(duracion) sobre los 568 ejecutables que tienen duracion cargada, con Sum(duracion)=4603 dias. Quedaron afuera 147 ejecutables (20.6%) por no tener duracion. Dentro de los 568 que si entran, 44 no tienen avance cargado y se computaron como 0; si se los excluye tambien, el ponderado sube a 63.5% sobre 524 tareas. El 58.1% es entonces un piso, no un valor exacto: la banda real esta entre 58.1% y 63.5% segun como se traten esos 44. || Los 147 sin duracion no son aleatorios: 46 son sectores enteros ya cerrados (DEMOLICION 15, PROYECTO 9, TAREAS PRELIMINARES 9, FUNDACIONES 7, ADM. EXCAVACIONES 6, todos sin ningun dia cargado) y los otros 101 estan repartidos en pisos (PISO 3 15, PISO 4 15, PRE CONSTRUCCION 12, PISO 5 12, PISO 1 9, PISO 6 8, PISO 7 7, PISO 8 7, PISO 9 5, AMENITIES 5, PALLIERES 3, PISO 2 2, PISO 10 1). Como los 46 sin duracion de sectores cerrados estan al 100% y no pesan, el ponderado subestima el avance real. || avanceSimple 50.7 = promedio de los 715 ejecutables contando como 0 las 45 sin avance cargado. Si se promedian solo las 670 con valor, da 54.1. El ponderado (58.1) esta 7.4 puntos por encima del simple (50.7): las tareas largas estan mas avanzadas que las cortas, o sea que lo que queda sin hacer es mucha tarea corta de terminacion. || porSector: DEMOLICION, PROYECTO, TAREAS PRELIMINARES, FUNDACIONES y ADM. EXCAVACIONES no tienen NINGUNA duracion cargada, asi que su avancePonderado es imposible de calcular; en esos 5 casos el campo lleva el promedio simple (100.0, 88.9, 100.0, 100.0, 100.0 respectivamente) y no un ponderado. Todos los demas sectores llevan ponderado real. || El grupo SOLICITUDES existe en el board pero tiene 0 items, por eso no aparece en porSector. El grupo HITOS tiene los 45 HITO; los 18 FIN estan repartidos, uno por cada sector fisico. || porContratista se reporta sobre los 715 ejecutables (592+74+49=715). Sobre los 778 del board seria sinCargar 653, Constructora 75, Subcontrato 50. || Lo que NO se pudo medir: la columna formula_mm586xc5 (Diferencia contra la linea base timerange_mm58xj5v del 14 Jul 26) devuelve texto vacio por API, asi que el desvio en dias contra linea base NO esta calculado en este informe. Todo lo que sigue es avance fisico declarado, no desvio de plazo. Tampoco se leyeron fechas de CRONOGRAMA, asi que 'Retrasada' es la etiqueta que puso la obra, no un calculo propio contra el calendario."
+          "notas": "Verificacion de integridad OK: la suma de estados (Finalizada 332 + Programada 296 + Retrasada 46 + HITO 45 + Iniciada 26 + FIN 18 + Bloqueada 15) da exactamente 778, igual a items_count del board. Los 778 items se trajeron en 2 paginas (400 + 378), sin faltantes. || Base de calculo: los cortes por sector, rubro y contratista y los promedios usan los 715 ejecutables (778 menos 45 HITO y 18 FIN). Los conteos de calidad de dato de este bloque (sinAvance 91, sinDuracion 147, sinContratista 653, sinRubro 0) son sobre los 778 items del board. Sobre los 715 ejecutables: 45 sin avance, 147 sin duracion (los 147 caen todos en ejecutables: los 63 HITO/FIN tienen duracion cargada), 592 sin contratista, 0 sin rubro. || DEPENDENCIAS: 0 de 778. Verificado 2 veces: se pidio linked_item_ids de dependency_mm08tktm para los 778 items y todos vinieron vacios, y el filtro items_page con operator is_empty sobre esa columna devuelve cursor con total 778 (y is_not_empty devuelve 0 items). Sin dependencias no hay camino critico calculable ni forma de saber que tarea traba a cual: la clasificacion Bloqueada es manual, no derivada. || SOBRE EL 58.1%: el ponderado se calculo Sum(avance x duracion)/Sum(duracion) sobre los 568 ejecutables que tienen duracion cargada, con Sum(duracion)=4603 dias. Quedaron afuera 147 ejecutables (20.6%) por no tener duracion. Dentro de los 568 que si entran, 44 no tienen avance cargado y se computaron como 0; si se los excluye tambien, el ponderado sube a 63.5% sobre 524 tareas. El 58.1% es entonces 1 piso, no un valor exacto: la banda real esta entre 58.1% y 63.5% segun como se traten esos 44. || Los 147 sin duracion no son aleatorios: 46 son sectores enteros ya cerrados (DEMOLICION 15, PROYECTO 9, TAREAS PRELIMINARES 9, FUNDACIONES 7, ADM. EXCAVACIONES 6, todos sin ningun dia cargado) y los otros 101 estan repartidos en pisos (PISO 3 15, PISO 4 15, PRE CONSTRUCCION 12, PISO 5 12, PISO 1 9, PISO 6 8, PISO 7 7, PISO 8 7, PISO 9 5, AMENITIES 5, PALLIERES 3, PISO 2 2, PISO 10 1). Como los 46 sin duracion de sectores cerrados estan al 100% y no pesan, el ponderado subestima el avance real. || avanceSimple 50.7 = promedio de los 715 ejecutables contando como 0 las 45 sin avance cargado. Si se promedian solo las 670 con valor, da 54.1. El ponderado (58.1) esta 7.4 puntos por encima del simple (50.7): las tareas largas estan mas avanzadas que las cortas, o sea que lo que queda sin hacer es mucha tarea corta de terminacion. || porSector: DEMOLICION, PROYECTO, TAREAS PRELIMINARES, FUNDACIONES y ADM. EXCAVACIONES no tienen NINGUNA duracion cargada, asi que su avancePonderado es imposible de calcular; en esos 5 casos el campo lleva el promedio simple (100.0, 88.9, 100.0, 100.0, 100.0 respectivamente) y no un ponderado. Todos los demas sectores llevan ponderado real. || El grupo SOLICITUDES existe en el board pero tiene 0 items, por eso no aparece en porSector. El grupo HITOS tiene los 45 HITO; los 18 FIN estan repartidos, uno por cada sector fisico. || porContratista se reporta sobre los 715 ejecutables (592+74+49=715). Sobre los 778 del board seria sinCargar 653, Constructora 75, Subcontrato 50. || Lo que NO se pudo medir: la columna formula_mm586xc5 (Diferencia contra la linea base timerange_mm58xj5v del 14 Jul 26) devuelve texto vacio por API, asi que el desvio en dias contra linea base NO esta calculado en este informe. Todo lo que sigue es avance fisico declarado, no desvio de plazo. Tampoco se leyeron fechas de CRONOGRAMA, asi que 'Retrasada' es la etiqueta que puso la obra, no un calculo propio contra el calendario."
         },
         "listaCasi": [
           {
@@ -1110,10 +1110,10 @@
             "comoSeCalculo": "Agrupe los 546 items por la etiqueta de color_mkyaxv6j y me quede con los grupos donde TODAS las tareas tienen numeric_mkya8gds igual a 0 (tratando vacio como 0). Dieron exactamente 5 grupos: VIDRIERO(11), MARMOLERO(19), CORTINAS(9), ELECTRODOMESTICOS(9), POTENZA INST.(11). Suma 59."
           },
           {
-            "titulo": "Los balcones quedaron al 95% en los nueve pisos, sin cerrar en ninguno",
+            "titulo": "Los balcones quedaron al 95% en los 9 pisos, sin cerrar en ninguno",
             "cantidad": 21,
             "detalle": "De las 38 tareas entre 70% y 99% sin finalizar, 17 son trabajo de balcon: 9 TARQUINI BALCONES al 95% (pisos 1 al 9, todos ROLANDO), 4 BARANDAS BALCONES al 85% (pisos 1, 6, 7 y 8, todos BALDINO) y 4 MAQUILLAJE HORMIGON BALCON al 80% (pisos 5 al 8, ROLANDO). Sumando las 4 de herreria de escalera y parrilla del mismo bloque de cierre dan 21. En todo el tablero hay 62 tareas de balcon, con 89.2% de avance ponderado sobre 280 dias.",
-            "lectura": "Es el caso de manual de obra ejecutada que no se puede certificar: el revoque tarquini esta hecho en los nueve pisos y falta el ultimo 5% en cada uno. Un solo equipo de ROLANDO cerrando pisos de arriba hacia abajo libera nueve tareas y destraba las barandas de BALDINO que vienen detras. Es el trabajo con mejor relacion entre esfuerzo pendiente y avance certificable de todo el tablero.",
+            "lectura": "Es el caso de manual de obra ejecutada que no se puede certificar: el revoque tarquini esta hecho en los 9 pisos y falta el ultimo 5% en cada uno. Un solo equipo de ROLANDO cerrando pisos de arriba hacia abajo libera 9 tareas y destraba las barandas de BALDINO que vienen detras. Es el trabajo con mejor relacion entre esfuerzo pendiente y avance certificable de todo el tablero.",
             "comoSeCalculo": "Filtre numeric_mkya8gds entre 70 y 99 con status distinto de Finalizada: 38 items. Sobre esos 38 conte por coincidencia de texto en el nombre: TARQUINI 9, BARANDAS 4, MAQUILLAJE 4, mas PARRILLA HERRERIA y las dos de escalera del bloque de herreria de cierre. Los 62 del universo total salen de filtrar los 546 nombres que contienen BALCON o TARQUINI."
           },
           {
@@ -1134,11 +1134,11 @@
             "titulo": "La obra bajo de arriba hacia abajo y la planta baja quedo como el frente crudo",
             "cantidad": 61,
             "detalle": "PISO 10 COWORK 94.3% ponderado con 29 de 36 cerradas y PISO 9 87.7% con 38 de 62. Del piso 8 al 1 el ponderado cae a una meseta de 61.9% a 86.0%. Abajo: PLANTA BAJA 53.6% con 8 cerradas de 33 y 17 Programadas, LOCAL 45.3% con 9 de 28 y 18 Programadas. Entre PLANTA BAJA y LOCAL suman 61 tareas con solo 17 cerradas.",
-            "lectura": "El patron de ejecucion fue descendente y coherente, pero PLANTA BAJA y LOCAL son los dos sectores que definen la habilitacion y la imagen de entrega, y son los que estan mas atras. Ademas concentran los desvios mas grandes contra la linea base: PISO PB - PUERTA INGRESO PRINCIPAL +161 dias, PISO PB - YESO MUROS PROY. +157, PISO PB - PUERTAS INTERIORES +155. Terminar pisos altos que ya estan al 90% suma poco al numero global; el riesgo de fecha esta abajo.",
+            "lectura": "El patron de ejecucion fue descendente y coherente, pero PLANTA BAJA y LOCAL son los 2 sectores que definen la habilitacion y la imagen de entrega, y son los que estan mas atras. Ademas concentran los desvios mas grandes contra la linea base: PISO PB - PUERTA INGRESO PRINCIPAL +161 dias, PISO PB - YESO MUROS PROY. +157, PISO PB - PUERTAS INTERIORES +155. Terminar pisos altos que ya estan al 90% suma poco al numero global; el riesgo de fecha esta abajo.",
             "comoSeCalculo": "Agrupe por group.title y calcule para cada grupo suma(% x duracion)/suma(duracion) usando solo items con ambos valores cargados. El corrimiento por tarea sale de restar la fecha fin de timerange_mkyay6x2 menos la fecha fin de timerange_mm4mfdkj y ordenar descendente."
           },
           {
-            "titulo": "Pintura y puertas interiores: dos frentes de terminacion practicamente sin abrir",
+            "titulo": "Pintura y puertas interiores: 2 frentes de terminacion practicamente sin abrir",
             "cantidad": 71,
             "detalle": "Subrubro PINTURA INTERIOR: 30 tareas, 20 en 0%, solo 8 finalizadas, 38.8% ponderado; el contratista PINTOR tiene 34 tareas en total y 25.4% ponderado con 3 cerradas. Subrubro PUERTAS INTERIORES: 41 tareas, 22 en 0%, 11 finalizadas, 26.0% ponderado, repartidas entre POTENZA INST. (11, todas en 0%), C DEBILES HUGO (10), PINTOR (8), DEFAULT (11) y RESPONSABLE 1 (1). Entre ambos subrubros, 71 tareas y 42 en cero.",
             "lectura": "Son los dos gremios que tocan absolutamente todas las unidades y los dos estan casi sin empezar. Puertas ademas esta partido entre cuatro contratistas distintos sin un dueño unico del frente, que es la receta para que nadie lo destrabe. Mientras pintura y puertas no arranquen no se puede entregar ninguna unidad completa, por mas que el ponderado general diga 72.4%.",
@@ -1161,7 +1161,7 @@
           "sinContratista": 119,
           "sinRubro": 0,
           "dependenciasCargadas": 223,
-          "notas": "CONTEO: el board declara items_count=546, no 545. Suma de estados 298+166+56+24+2=546, cierra exacto contra el total. VOCABULARIO DE ESTADO DISTINTO AL TEMPLATE: el settings_str de la columna status de GLOW 5 tiene solo 6 etiquetas -> 0=Iniciada, 1=Finalizada, 2=Pendiente (rojo), 5=Sin programar, 7=Programada, y el indice 3 con etiqueta vacia. NO existe la etiqueta Retrasada, NO existe Bloqueada (indice 8 no esta definido), NO existen HITO ni FIN. Por eso: (a) el array retrasadas contiene las 24 tareas en Pendiente, que es la etiqueta roja que ocupa el indice 2, el mismo slot donde el template pone Retrasada — no es una tarea literalmente rotulada Retrasada; (b) bloqueadas va vacio porque la etiqueta no existe en este tablero, no porque nadie este bloqueado. CONTRATISTA: la columna no tiene el juego Subcontrato/Listo/Detenido/Constructora del template sino 22 nombres reales de subcontratos. Ningun item tiene la celda vacia, pero 119 tienen la etiqueta DEFAULT, que es el placeholder de Monday: esas 119 son las que cuento como sinContratista. RUBRO: 0 vacios, pero la etiqueta EXCAVACIONES (56 items) esta claramente mal usada como cajon de sastre en un edificio ya estructurado — sus subrubros son REVOQUE EXTERIOR (20), REVESTIMIENTO DE PISO (10), PINTURA INTERIOR, HERRERIA, INST. SANITARIA. El corte por rubro sirve poco hasta que se limpie. EXCLUIDOS DEL PONDERADO: 109 de 546 (20.0%) quedaron fuera del calculo — 105 por no tener DURACION y 6 por no tener % (2 items se solapan). De esas 105 sin duracion, 101 estan Finalizadas y 90 tienen contratista DEFAULT, o sea el hueco esta casi todo en obra vieja ya cerrada, no en el frente activo; por eso el 72.4% sigue siendo utilizable, aunque su denominador cubre 437 tareas y no 546. Ademas 21 items tienen DURACION=0 (14 de ellos en Pendiente): entran al numerador y al denominador con peso cero, no distorsionan pero tampoco aportan. AVANCE SIMPLE: 62.4% calculado sobre las 540 tareas con % cargado; si se cuentan los 6 vacios como 0 da 61.7%. SUPERVICION: la columna multiple_person_mkzerbc5 existe pero esta vacia en los 546 items (filtro is_empty devuelve 546), asi que no se puede cortar por supervisor. FORMULA: la columna Diferencia (formula_mm4m3wmr) devuelve texto vacio por API, como estaba avisado; el desvio contra linea base lo calcule yo restando fechas fin de timerange_mkyay6x2 menos timerange_mm4mfdkj. CRONOGRAMA: 122 items sin fechas y 145 sin linea base. INCONSISTENCIA: 3 tareas estan en Finalizada con 0% (PISO 7/8/9 - CARPINTERIA CONTRAMARCOS Y CUARTO DE CAÑA, contratista BALDINO); no hay ningun caso inverso (100% sin cerrar). GRUPOS VACIOS: el board declara 19 grupos y solo 17 tienen items; SOLICITUDES y BALCONES estan creados y vacios. Del board gemelo 18418778949 no lei nada, segun instruccion."
+          "notas": "CONTEO: el board declara items_count=546, no 545. Suma de estados 298+166+56+24+2=546, cierra exacto contra el total. VOCABULARIO DE ESTADO DISTINTO AL TEMPLATE: el settings_str de la columna status de GLOW 5 tiene solo 6 etiquetas -> 0=Iniciada, 1=Finalizada, 2=Pendiente (rojo), 5=Sin programar, 7=Programada, y el indice 3 con etiqueta vacia. NO existe la etiqueta Retrasada, NO existe Bloqueada (indice 8 no esta definido), NO existen HITO ni FIN. Por eso: (a) el array retrasadas contiene las 24 tareas en Pendiente, que es la etiqueta roja que ocupa el indice 2, el mismo slot donde el template pone Retrasada — no es 1 tarea literalmente rotulada Retrasada; (b) bloqueadas va vacio porque la etiqueta no existe en este tablero, no porque nadie este bloqueado. CONTRATISTA: la columna no tiene el juego Subcontrato/Listo/Detenido/Constructora del template sino 22 nombres reales de subcontratos. Ningun item tiene la celda vacia, pero 119 tienen la etiqueta DEFAULT, que es el placeholder de Monday: esas 119 son las que cuento como sinContratista. RUBRO: 0 vacios, pero la etiqueta EXCAVACIONES (56 items) esta claramente mal usada como cajon de sastre en un edificio ya estructurado — sus subrubros son REVOQUE EXTERIOR (20), REVESTIMIENTO DE PISO (10), PINTURA INTERIOR, HERRERIA, INST. SANITARIA. El corte por rubro sirve poco hasta que se limpie. EXCLUIDOS DEL PONDERADO: 109 de 546 (20.0%) quedaron fuera del calculo — 105 por no tener DURACION y 6 por no tener % (2 items se solapan). De esas 105 sin duracion, 101 estan Finalizadas y 90 tienen contratista DEFAULT, o sea el hueco esta casi todo en obra vieja ya cerrada, no en el frente activo; por eso el 72.4% sigue siendo utilizable, aunque su denominador cubre 437 tareas y no 546. Ademas 21 items tienen DURACION=0 (14 de ellos en Pendiente): entran al numerador y al denominador con peso cero, no distorsionan pero tampoco aportan. AVANCE SIMPLE: 62.4% calculado sobre las 540 tareas con % cargado; si se cuentan los 6 vacios como 0 da 61.7%. SUPERVICION: la columna multiple_person_mkzerbc5 existe pero esta vacia en los 546 items (filtro is_empty devuelve 546), asi que no se puede cortar por supervisor. FORMULA: la columna Diferencia (formula_mm4m3wmr) devuelve texto vacio por API, como estaba avisado; el desvio contra linea base lo calcule yo restando fechas fin de timerange_mkyay6x2 menos timerange_mm4mfdkj. CRONOGRAMA: 122 items sin fechas y 145 sin linea base. INCONSISTENCIA: 3 tareas estan en Finalizada con 0% (PISO 7/8/9 - CARPINTERIA CONTRAMARCOS Y CUARTO DE CAÑA, contratista BALDINO); no hay ningun caso inverso (100% sin cerrar). GRUPOS VACIOS: el board declara 19 grupos y solo 17 tienen items; SOLICITUDES y BALCONES estan creados y vacios. Del board gemelo 18418778949 no lei nada, segun instruccion."
         },
         "listaCasi": [
           {
@@ -2105,7 +2105,7 @@
             "titulo": "El replan del 27-May adelanto la obra 99 dias en el papel",
             "cantidad": 299,
             "detalle": "Hay 483 tareas con CRONOGRAMA y ambas lineas base. Contra la base del 07-May-26: 402 tareas quedaron ANTES de lo que decia esa base, 68 igual y 13 despues; promedio -87.3 dias, mediana -99 dias, y 299 tareas se corrieron exactamente -99 dias. Contra la base del 27-May-26: 375 antes, 108 igual, 0 despues; promedio -3.2 dias, mediana -1 dia. Extremos: SUBSUELO -228 dias promedio contra la base de mayo-07 (minimo -447).",
-            "lectura": "El cronograma actual practicamente ES la base del 27-May (mediana 1 dia de diferencia). Lo que se movio fue entre las dos bases: en 20 dias de mayo el plan se adelanto ~3.3 meses en bloque. Una obra no se adelanta 99 dias en 20 dias corridos: se reemplazo el plan. La base del 07-May quedo obsoleta y medir contra ella da una recuperacion ficticia.",
+            "lectura": "El cronograma actual practicamente ES la base del 27-May (mediana 1 dia de diferencia). Lo que se movio fue entre las dos bases: en 20 dias de mayo el plan se adelanto ~3.3 meses en bloque. 1 obra no se adelanta 99 dias en 20 dias corridos: se reemplazo el plan. La base del 07-May quedo obsoleta y medir contra ella da una recuperacion ficticia.",
             "comoSeCalculo": "para cada item con las tres timelines, dias = inicio(CRONOGRAMA) - inicio(base); negativo = el cronograma actual arranca antes que la base. Distribucion contada sobre los 483 items comparables."
           },
           {
@@ -2689,13 +2689,13 @@
             "titulo": "Las tres AREAS COMUNES están 100% sin programar y sin duración",
             "cantidad": 24,
             "detalle": "AREAS COMUNES INSTALACIONES (11 ítems), AREAS COMUNES GRAL. (6) y AREAS COMUNES ALBAÑILERIA (7) suman 24 ítems. Los 24 están en estado 'Sin programar', los 24 sin duración, los 24 sin cronograma, los 24 sin contratista y los 24 con avance 0. Son 24 de los 30 'Sin programar' del tablero; los otros 6 son 5 de EXTERIOR y EXCAVACIÓN PARA PISCINA.",
-            "lectura": "Una etapa entera de la obra está fuera del plan: no tiene fecha, no tiene duración y por lo tanto no entra en el avance ponderado ni en el camino crítico. El 10.7% se calcula sobre una obra que todavía no incluye sus áreas comunes.",
+            "lectura": "Una etapa entera de la obra está fuera del plan: no tiene fecha, no tiene duración y por lo tanto no entra en el avance ponderado ni en el camino crítico. El 10.7% se calcula sobre 1 obra que todavía no incluye sus áreas comunes.",
             "comoSeCalculo": "Filtro grupo en {AREAS COMUNES INSTALACIONES, AREAS COMUNES GRAL., AREAS COMUNES ALBAÑILERIA} → 24 ítems. Verifiqué estado=='Sin programar', numeric_mkyap28c nulo, timerange_mkyay6x2 vacío y color_mkyaxv6j vacío en los 24."
           },
           {
-            "titulo": "9 tareas ya vencidas contra su propio cronograma, 7 de ellas hace casi 5 meses",
+            "titulo": "9 tareas ya vencidas contra su propio cronograma, 7 de ellas hace",
             "cantidad": 9,
-            "detalle": "Tomando la fecha de hoy (19-ago-2026), hay 9 tareas cuya fecha de fin de CRONOGRAMA ya pasó y siguen con avance menor a 100. Siete de ellas vencieron entre el 24 y el 27 de marzo de 2026 — casi 5 meses — y siguen en estado 'Programado' con avance 0: 4 de AMENITIES y 3 de LOCAL. Las otras dos son EXCAVACIÓN VIGAS Y ZAPATAS (venció 03-ago, avance 95, Iniciada) y REMITO 125 (venció 27-mar, avance 50, Pendiente). Reparto por sector: AMENITIES 4, LOCAL 3, FUNDACIONES 1, MATERIALES 1.",
+            "detalle": "Tomando la fecha de hoy (19-ago-2026), hay 9 tareas cuya fecha de fin de CRONOGRAMA ya pasó y siguen con avance menor a 100. Siete de ellas vencieron entre el 24 y el 27 de marzo de 2026 — — y siguen en estado 'Programado' con avance 0: 4 de AMENITIES y 3 de LOCAL. Las otras dos son EXCAVACIÓN VIGAS Y ZAPATAS (venció 03-ago, avance 95, Iniciada) y REMITO 125 (venció 27-mar, avance 50, Pendiente). Reparto por sector: AMENITIES 4, LOCAL 3, FUNDACIONES 1, MATERIALES 1.",
             "lectura": "Este es el atraso real y el tablero no lo muestra por ningún lado: el estado dice 'Programado', la línea base dice desvío 0 y sólo 1 ítem está marcado en rojo. Hay 7 tareas con 5 meses de vencimiento invisibles en todos los indicadores nativos.",
             "comoSeCalculo": "Parseé timerange_mkyay6x2 como 'YYYY-MM-DD - YYYY-MM-DD'. Filtro: fecha_fin < 2026-08-19 Y (numeric_mkya8gds o 0) < 100. Sobre los 469 ítems que tienen cronograma cargado da 9."
           },
@@ -2704,7 +2704,7 @@
             "cantidad": 19,
             "detalle": "PISO 1 tiene 19 de sus 55 tareas con contratista (JUANCITO 5, ELECTRICISTA 5, SANITARISTA 4, RESPONSABLE 1 2, IMPER 2, A.A 1). Cada uno de los pisos 2 al 8 tiene exactamente 6 de 54 (RESPONSABLE 1 ×3 y JUANCITO ×3) y ninguno más. A nivel tablero hay 95 ítems con contratista sobre 726, o sea 13.1%.",
             "lectura": "PISO 1 se usó como piso piloto para cargar responsables y el trabajo nunca se replicó. Como los 8 pisos son clones del mismo template, la carga de los otros 7 es mecánica: copiar el mapeo de PISO 1. Es la corrección de datos de mayor retorno del tablero.",
-            "comoSeCalculo": "Conté color_mkyaxv6j no vacío por grupo. PISO 1 = 19/55; PISO 2..PISO 8 = 6/54 cada uno; total del tablero con contratista = 726−631 = 95."
+            "comoSeCalculo": "Conté color_mkyaxv6j no vacío por grupo. PISO 1 = 19/55; PISO 2.PISO 8 = 6/54 cada uno; total del tablero con contratista = 726−631 = 95."
           },
           {
             "titulo": "527 de 726 tareas viven en subrubros donde nadie arrancó nada",
@@ -2722,14 +2722,14 @@
           }
         ],
         "hallazgosObra": [
-          "Las dos columnas numeric_mm1kz7fz 'mano de obra' y numeric_mm1k7tmk 'oficina tecnica' no existen en el board 18398672766 ni en ninguno de los otros 5 tableros GLOW: la consulta columns(ids:[...]) devolvió [] en las 6 verificaciones. No hay nada que analizar ahí.",
+          "Las dos columnas numeric_mm1kz7fz 'mano de obra' y numeric_mm1k7tmk 'oficina tecnica' no existen en el board 18398672766 ni en ninguno de los otros 5 tableros GLOW: la consulta columns(ids:[..]) devolvió [] en las 6 verificaciones. No hay nada que analizar ahí.",
           "Las etiquetas de ESTADO de este tablero no son las del encargo. Las reales son: 0=Iniciada, 1=Finalizada, 2=Pendiente, 5=Sin programar, 7=Programado. No existen HITO, FIN, Retrasada, Revisar ni Bloqueada.",
           "Suma de estados verificada: 639+53+30+3+1 = 726 = items_count del board. Cross-check independiente con el truco del cursor por cada índice de estado: Programado 639, Finalizada 53, Sin programar 30, Iniciada 3, Pendiente 1. Coincide exacto.",
           "Avance ponderado por duración = 10.7% (Σ avance×duración = 62.515 sobre Σ duración = 5.858 días, 637 tareas).",
           "Avance simple = 7.7% sobre las 726 tareas. La diferencia de 3.0 puntos contra el ponderado se explica porque las pocas tareas avanzadas tienen duraciones largas (188 y 175 días en FUNDACIONES).",
           "89 tareas quedaron fuera del cálculo ponderado: 82 con la celda DURACION vacía y 7 con duración 0 (las 7 son 'PRUEBA HIDRAULICA' de distintos sectores). Es el 12.3% del tablero.",
           "GLOW 6+ es el único tablero GLOW con línea base: timerange_mm6bm4pz 'Referencia de CRONOGRAMA (18 Aug '26)'. La premisa 'SIN línea base' del encargo es incorrecta.",
-          "La línea base no informa nada: los 469 ítems que tienen cronograma y referencia cargados tienen las dos fechas idénticas en el 100% de los casos (diferencia de inicio 0 y de fin 0 en los 469). Se sacó el 18-ago-2026, un día antes de hoy."
+          "La línea base no informa nada: los 469 ítems que tienen cronograma y referencia cargados tienen las dos fechas idénticas en el 100% de los casos (diferencia de inicio 0 y de fin 0 en los 469). Se sacó el 18-ago-2026, 1 día antes de hoy."
         ],
         "calidad": {
           "sinAvance": 0,
@@ -2737,7 +2737,7 @@
           "sinContratista": 631,
           "sinRubro": 0,
           "dependenciasCargadas": 0,
-          "notas": "COBERTURA: las 726 tareas tienen % de avance cargado (0 nulos) pero 669 están en 0, así que el dato existe y no informa. Las 726 tienen RUBRO cargado — es la única columna con 100% de cobertura útil. SIN DURACION son 89 = 82 con la celda vacía + 7 con duración 0 (las 7 'PRUEBA HIDRAULICA'); las excluí del ponderado porque aportan 0 al numerador y al denominador. Los 82 sin duración se concentran en los sectores ya cerrados o no planificados: DEMOLICION 15, PRE CONSTRUCCION 13, AREAS COMUNES INSTALACIONES 11, PROYECTO 9, TAREAS PRELIMINARES 9, AREAS COMUNES ALBAÑILERIA 7, ADM. EXCAVACIONES 6, AREAS COMUNES GRAL. 6, EXTERIOR 5, FUNDACIONES 1. Como el 12.3% excluido es casi todo obra ya terminada (DEMOLICION, PRE CONSTRUCCION, TAREAS PRELIMINARES y ADM. EXCAVACIONES están al 100%) o etapa no planificada (AREAS COMUNES al 0%), el 10.7% ponderado subestima levemente lo ejecutado y sobreestima lo planificado; el sesgo neto es chico pero existe y no se puede cuantificar sin cargar esas 82 duraciones. || METODO EN LOS CORTES: en porSector y porRubro el campo avancePonderado es Σ(avance×duración)/Σ(duración) siempre que el grupo tenga al menos una tarea con duración>0. Para los grupos donde NINGUNA tarea tiene duración caí a promedio simple de %, porque el ponderado es indefinido: son DEMOLICION (100), PRE CONSTRUCCION (100), TAREAS PRELIMINARES (100), ADM. EXCAVACIONES (100), AREAS COMUNES INSTALACIONES (0), AREAS COMUNES GRAL. (0), AREAS COMUNES ALBAÑILERIA (0) y PROYECTO (0). En esos 8 casos el valor no es comparable con el resto. En porRubro pasa lo mismo con DEMOLICION, PRE CONST., TAREAS PRELIMINARES y PROYECTO. || RETRASADAS Y BLOQUEADAS: este tablero no tiene los estados Retrasada ni Bloqueada. bloqueadas va vacío porque la etiqueta no existe, no porque no haya ninguna. En retrasadas puse el único ítem del índice 2 de status, que es el mismo slot rojo (#df2f4a) que en los otros tableros se llama 'Retrasada' pero acá está renombrado 'Pendiente' — es 1 solo ítem. El atraso real del tablero NO está en la columna ESTADO: hay que leerlo contra el cronograma, y ahí aparecen 9 tareas vencidas (ver patrón 6), de las cuales 7 llevan casi 5 meses vencidas y siguen figurando como 'Programado'. Quien mire sólo la columna ESTADO ve una sola tarea en rojo. || LO QUE NO SE PUEDE CALCULAR: (1) desvío contra línea base, porque la referencia es una copia del mismo día y da 0 en los 469 ítems que la tienen; (2) camino crítico y propagación de atrasos, porque hay 0 dependencias cargadas; (3) cualquier corte por supervisor, porque SUPERVICION está en 1 de 726; (4) todo lo pedido sobre 'mano de obra' y 'oficina tecnica', porque esas columnas no existen; (5) la columna formula_mm6bv19w 'Diferencia' devuelve texto vacío por API — igual la recalculé a mano desde las dos columnas de timeline. || FECHA DE CORTE usada para vencidas y en curso: 19-ago-2026."
+          "notas": "COBERTURA: las 726 tareas tienen % de avance cargado (0 nulos) pero 669 están en 0, así que el dato existe y no informa. Las 726 tienen RUBRO cargado — es la única columna con 100% de cobertura útil. SIN DURACION son 89 = 82 con la celda vacía + 7 con duración 0 (las 7 'PRUEBA HIDRAULICA'); las excluí del ponderado porque aportan 0 al numerador y al denominador. Los 82 sin duración se concentran en los sectores ya cerrados o no planificados: DEMOLICION 15, PRE CONSTRUCCION 13, AREAS COMUNES INSTALACIONES 11, PROYECTO 9, TAREAS PRELIMINARES 9, AREAS COMUNES ALBAÑILERIA 7, ADM. EXCAVACIONES 6, AREAS COMUNES GRAL. 6, EXTERIOR 5, FUNDACIONES 1. Como el 12.3% excluido es casi todo obra ya terminada (DEMOLICION, PRE CONSTRUCCION, TAREAS PRELIMINARES y ADM. EXCAVACIONES están al 100%) o etapa no planificada (AREAS COMUNES al 0%), el 10.7% ponderado subestima levemente lo ejecutado y sobreestima lo planificado; el sesgo neto es chico pero existe y no se puede cuantificar sin cargar esas 82 duraciones. || METODO EN LOS CORTES: en porSector y porRubro el campo avancePonderado es Σ(avance×duración)/Σ(duración) siempre que el grupo tenga al menos 1 tarea con duración>0. Para los grupos donde NINGUNA tarea tiene duración caí a promedio simple de %, porque el ponderado es indefinido: son DEMOLICION (100), PRE CONSTRUCCION (100), TAREAS PRELIMINARES (100), ADM. EXCAVACIONES (100), AREAS COMUNES INSTALACIONES (0), AREAS COMUNES GRAL. (0), AREAS COMUNES ALBAÑILERIA (0) y PROYECTO (0). En esos 8 casos el valor no es comparable con el resto. En porRubro pasa lo mismo con DEMOLICION, PRE CONST., TAREAS PRELIMINARES y PROYECTO. || RETRASADAS Y BLOQUEADAS: este tablero no tiene los estados Retrasada ni Bloqueada. bloqueadas va vacío porque la etiqueta no existe, no porque no haya ninguna. En retrasadas puse el único ítem del índice 2 de status, que es el mismo slot rojo (#df2f4a) que en los otros tableros se llama 'Retrasada' pero acá está renombrado 'Pendiente' — es 1 solo ítem. El atraso real del tablero NO está en la columna ESTADO: hay que leerlo contra el cronograma, y ahí aparecen 9 tareas vencidas (ver patrón 6), de las cuales 7 llevan vencidas y siguen figurando como 'Programado'. Quien mire sólo la columna ESTADO ve una sola tarea en rojo. || LO QUE NO SE PUEDE CALCULAR: (1) desvío contra línea base, porque la referencia es una copia del mismo día y da 0 en los 469 ítems que la tienen; (2) camino crítico y propagación de atrasos, porque hay 0 dependencias cargadas; (3) cualquier corte por supervisor, porque SUPERVICION está en 1 de 726; (4) todo lo pedido sobre 'mano de obra' y 'oficina tecnica', porque esas columnas no existen; (5) la columna formula_mm6bv19w 'Diferencia' devuelve texto vacío por API — igual la recalculé a mano desde las dos columnas de timeline. || FECHA DE CORTE usada para vencidas y en curso: 19-ago-2026."
         },
         "listaCasi": [
           {
@@ -2765,7 +2765,7 @@
           }
         ],
         "listaBloqueadas": [],
-        "exclusivo": "Las dos columnas que el encargo pedía analizar NO EXISTEN. No hay ninguna columna \"mano de obra\" ni \"oficina tecnica\" en ningún tablero activo del workspace (listé los 35 tableros activos). No se puede analizar qué miden ni cuántas tareas las tienen cargadas. || LO QUE SÍ ES EXCLUSIVO DE GLOW 6+: la columna timerange_mm6bm4pz \"Referencia de CRONOGRAMA (18 Aug '26)\" — una LÍNEA BASE — más la fórmula formula_mm6bv19w \"Diferencia\" = DAYS({timerange_mkyay6x2#End},{timerange_mm6bm4pz#End}). Ninguno de los otros cinco tableros GLOW tiene esas dos columnas. O sea que la premisa \"SIN línea base\" es falsa: GLOW 6+ es el ÚNICO tablero que tiene línea base. PERO la línea base no sirve todavía: de los 469 ítems que tienen cargadas ambas fechas, los 469 tienen fecha de inicio y fecha de fin IDÉNTICAS entre cronograma y referencia (diferencia inicio=0 y diferencia fin=0 en el 100% de los casos). Es una foto sacada el 18-ago-2026, un día antes de hoy. El desvío da cero por construcción, no por buena performance. Es la misma trampa que ya detectamos en GLOW 3. Además la columna SUPERVICION (multiple_person_mkzerbc5) existe pero está cargada en 1 de 726 ítems (Luis Fontana), así que no permite ningún corte por supervisor.",
+        "exclusivo": "Las dos columnas que el encargo pedía analizar NO EXISTEN. No hay ninguna columna \"mano de obra\" ni \"oficina tecnica\" en ningún tablero activo del workspace (listé los 35 tableros activos). No se puede analizar qué miden ni cuántas tareas las tienen cargadas. || LO QUE SÍ ES EXCLUSIVO DE GLOW 6+: la columna timerange_mm6bm4pz \"Referencia de CRONOGRAMA (18 Aug '26)\" — una LÍNEA BASE — más la fórmula formula_mm6bv19w \"Diferencia\" = DAYS({timerange_mkyay6x2#End},{timerange_mm6bm4pz#End}). Ninguno de los otros cinco tableros GLOW tiene esas dos columnas. O sea que la premisa \"SIN línea base\" es falsa: GLOW 6+ es el ÚNICO tablero que tiene línea base. PERO la línea base no sirve todavía: de los 469 ítems que tienen cargadas ambas fechas, los 469 tienen fecha de inicio y fecha de fin IDÉNTICAS entre cronograma y referencia (diferencia inicio=0 y diferencia fin=0 en el 100% de los casos). Es una foto sacada el 18-ago-2026, 1 día antes de hoy. El desvío da cero por construcción, no por buena performance. Es la misma trampa que ya detectamos en GLOW 3. Además la columna SUPERVICION (multiple_person_mkzerbc5) existe pero está cargada en 1 de 726 ítems (Luis Fontana), así que no permite ningún corte por supervisor.",
         "fuenteAnalisis": {
           "tipo": "monday",
           "ref": "board 18398672766 · 726 ítems leídos y recalculados"
@@ -2787,7 +2787,7 @@
     "origen": "monday-lectura-directa",
     "cuenta": "nya-gestion.monday.com",
     "boardId": "18398874016",
-    "historicoNota": "La serie se reconstruye de los activity_logs de Monday, que guardan valor anterior y valor nuevo de cada cambio. Hay 1.849 cambios de % registrados entre el 04/02 y el 20/08 de 2026 en las cuatro obras que tienen la columna."
+    "historicoNota": "La serie se reconstruye de los activity_logs de Monday, que guardan valor anterior y valor nuevo de cada cambio. Hay 1.849 cambios de % registrados entre el 04/02 y el 20/08 de 2026 en las 4 obras que tienen la columna."
   },
   "proyecto": {
     "nombre": "GLOW 3",
@@ -2817,7 +2817,7 @@
   },
   "alerta": {
     "nivel": "critico",
-    "titulo": "Once días después, ninguna de las 15 bloqueadas se destrabó.",
+    "titulo": ", ninguna de las 15 bloqueadas se destrabó.",
     "cuerpo": "",
     "fuentes": [
       {
@@ -2892,7 +2892,7 @@
       "sentido": "positivo",
       "estado": "neutro",
       "nota": "147 tareas sin duración quedan fuera",
-      "detalle": "El cálculo propio sobre el tablero da 58.1 %, el mismo número del informe del 07/08. Es un piso: 147 tareas ejecutables no tienen duración cargada y quedan afuera.",
+      "detalle": "El cálculo propio sobre el tablero da 58.1 %, el mismo número del informe del 07/08. Es 1 piso: 147 tareas ejecutables no tienen duración cargada y quedan afuera.",
       "fuente": {
         "tipo": "calculado",
         "ref": "Σ(avance×duración)/Σ(duración) sobre 568 tareas · Σdur 4603 días"
@@ -2934,7 +2934,7 @@
       "sentido": "positivo",
       "estado": "neutro",
       "nota": "de 715 ejecutables",
-      "detalle": "Trece cierres desde el informe del 07/08.",
+      "detalle": "13 cierres desde el informe del 07/08.",
       "fuente": {
         "tipo": "monday",
         "ref": "ESTADO = Finalizada"
@@ -2955,7 +2955,7 @@
       "sentido": "neutro",
       "estado": "critico",
       "nota": "sin cambio desde el 07/08",
-      "detalle": "Ninguna se destrabó en once días.",
+      "detalle": "Ninguna se destrabó en 11 días.",
       "fuente": {
         "tipo": "monday",
         "ref": "ESTADO = Bloqueada · las 15 están detalladas"
@@ -3098,8 +3098,8 @@
         "ref": "§04 · 38 tareas reprogramadas, hasta 39 días"
       }
     },
-    "explicacion": "Ninguno de los 778 ítems tiene dependencias cargadas: mover una tarea no arrastra a sus sucesoras. Las tareas de cierre de cada piso conservaron su fecha original y se comieron toda la holgura.",
-    "robustez": "Si las restricciones se liberan hoy o dentro de dos semanas, la fecha global sigue siendo el 21/12. El cuello de botella no son las tareas bloqueadas sino la cadena de terminaciones que quedó sin holgura detrás del durlock y la pintura.",
+    "explicacion": "Ninguno de los 778 ítems tiene dependencias cargadas: mover 1 tarea no arrastra a sus sucesoras. Las tareas de cierre de cada piso conservaron su fecha original y se comieron toda la holgura.",
+    "robustez": "Si las restricciones se liberan hoy o dentro de 2 semanas, la fecha global sigue siendo el 21/12. El cuello de botella no son las tareas bloqueadas sino la cadena de terminaciones que quedó sin holgura detrás del durlock y la pintura.",
     "fuente": {
       "tipo": "informe",
       "ref": "§06 · Look-ahead sobre el cronograma vigente"
@@ -3300,7 +3300,7 @@
       "responsable": "Dirección",
       "responsableNota": "asignación entre obras",
       "gestionable": true,
-      "efecto": "Hace dos semanas y media se envía medio jornal de capataz más un oficial a Campana. El Equipo Pablo es el de menor confiabilidad de la obra (PPC 30 %); el cableado del Piso 4 se corrió al 04/09.",
+      "efecto": "Hace 2 semanas y media se envía medio jornal de capataz más un oficial a Campana. El Equipo Pablo es el de menor confiabilidad de la obra (PPC 30 %); el cableado del Piso 4 se corrió al 04/09.",
       "desde": "Hace dos semanas y media",
       "cadena": [
         "Cableado Piso 4, corrido al 04/09"
@@ -3879,7 +3879,7 @@
       "dias": 73,
       "fuente": {
         "tipo": "informe",
-        "ref": "§06 · los cinco sectores que fijan la fecha"
+        "ref": "§06 · los 5 sectores que fijan la fecha"
       }
     },
     {
@@ -3888,7 +3888,7 @@
       "dias": 69,
       "fuente": {
         "tipo": "informe",
-        "ref": "§06 · los cinco sectores que fijan la fecha"
+        "ref": "§06 · los 5 sectores que fijan la fecha"
       }
     },
     {
@@ -3897,7 +3897,7 @@
       "dias": 61,
       "fuente": {
         "tipo": "informe",
-        "ref": "§06 · los cinco sectores que fijan la fecha"
+        "ref": "§06 · los 5 sectores que fijan la fecha"
       }
     },
     {
@@ -3906,7 +3906,7 @@
       "dias": 48,
       "fuente": {
         "tipo": "informe",
-        "ref": "§06 · los cinco sectores que fijan la fecha"
+        "ref": "§06 · los 5 sectores que fijan la fecha"
       }
     },
     {
@@ -3915,7 +3915,7 @@
       "dias": 47,
       "fuente": {
         "tipo": "informe",
-        "ref": "§06 · los cinco sectores que fijan la fecha"
+        "ref": "§06 · los 5 sectores que fijan la fecha"
       }
     }
   ],
@@ -3934,7 +3934,7 @@
   },
   "diagnostico": {
     "titulo": "Por qué el tablero no lo muestra",
-    "cuerpo": "El tablero informa desvío cero en los 45 hitos y en los 18 cierres de sector, todos anclados a la línea base del 14/07/2026, mientras 120 tareas acumulan 18,4 días de desvío promedio. Además de la falta de dependencias, al mover las tareas de a una el plan perdió coherencia constructiva: hay pisos donde hoy figura la pintura antes del emplacado y otros donde el emplacado figura antes de montar la perfilería. Mientras el tablero siga así, la dirección no tiene alerta temprana: seguirá informando una obra en fecha que no lo está."
+    "cuerpo": "El tablero informa desvío cero en los 45 hitos y en los 18 cierres de sector, todos anclados a la línea base del 14/07/2026, mientras 120 tareas acumulan 18,4 días de desvío promedio. Además de la falta de dependencias, al mover las tareas de a una el plan perdió coherencia constructiva: hay pisos donde hoy figura la pintura antes del emplacado y otros donde el emplacado figura antes de montar la perfilería. Mientras el tablero siga así, la dirección no tiene alerta temprana: seguirá informando 1 obra en fecha que no lo está."
   },
   "metodo": "Recálculo hacia adelante sobre las 715 tareas ejecutables, conservando las relaciones de precedencia y la holgura implícitas en la línea base del 14/07, con duración remanente proporcional al avance cargado en cada tarea, calendario de lunes a viernes y arranque no anterior al 07/08/2026. No incorpora atrasos futuros ni recuperación por refuerzo de equipos: es el plazo que resulta de los movimientos ya registrados en el tablero.",
   "personas": [
@@ -4599,7 +4599,7 @@
         ],
         "total": 29,
         "detalle": "GLOW 5: contratista MARMOLERO con 19 tareas, las 19 en 0%, dentro del grupo de 5 subcontratos que no pusieron un pie en la obra; ademas el hito FIN de AREAS COMUNES ALBAÑILERIA esta asignado a MARMOLERO y esta en rojo al 0%. GLOW 3: subrubro MARMOLERIA 9 tareas, las 9 en estado Programada y las 9 en 0%.",
-        "lectura": "La mesada es medicion en obra: no se puede comprar antes de que esten los muebles, asi que este freno esta encadenado al de placares. Es una sola compra para tres obras.",
+        "lectura": "La mesada es medicion en obra: no se puede comprar antes de que esten los muebles, asi que este freno esta encadenado al de placares. Es una sola compra para 3 obras.",
         "fuente": {
           "tipo": "calculado",
           "ref": "agrupación por nombre de tarea y subrubro en los 5 tableros"
@@ -4613,7 +4613,7 @@
         ],
         "total": 58,
         "detalle": "GLOW 5: NORAY es el segundo contratista mas cargado del tablero con 39 tareas, y sus dos hitos de cierre (FIN NORAY en PISO 9 y FIN en PISO 8) estan en rojo al 0%. GLOW 3: subrubro MOBILIARIO COCINA Y PLACARES con 17 tareas, las 17 en Programada y las 17 en 0%.",
-        "lectura": "Es el mismo proveedor de placares y cocinas para las tres obras y hoy no esta entregando en ninguna.",
+        "lectura": "Es el mismo proveedor de placares y cocinas para las 3 obras y hoy no esta entregando en ninguna.",
         "fuente": {
           "tipo": "calculado",
           "ref": "agrupación por nombre de tarea y subrubro en los 5 tableros"
@@ -4626,7 +4626,7 @@
         ],
         "total": 104,
         "detalle": "GLOW 5: SIELPROM es el subcontrato con mas carga del tablero, 60 tareas, 51.0% ponderado, con 26 todavia en Programada; tiene tareas al 95% (PISO 6 - INST. ELECTRICA BOCAS Y TOMAS), 90% (PB - CABLEADO) y 80% (tableros de areas comunes). con leds en cocinas, iluminacion y senaletica en palieres, e iluminacion y sensores de movimiento en escalera.",
-        "lectura": "Mismo electricista, dos obras, 51.0% contra 6.8%.",
+        "lectura": "Mismo electricista, 2 obras, 51.0% contra 6.8%.",
         "fuente": {
           "tipo": "calculado",
           "ref": "agrupación por nombre de tarea y subrubro en los 5 tableros"
@@ -4640,7 +4640,7 @@
           "GLOW 5"
         ],
         "total": 78,
-        "detalle": "GLOW 3: subrubro PLACA DE YESO con 24 tareas ejecutables, 17 Retrasadas (el 37.0% de las 46 retrasadas del tablero), las 17 con contratista Subcontrato y las 17 en 0%, repartidas en 9 pisos (1, 2, 3, 4, 5, 6, 7, 9 y 10, estructura y emplacado). 22 de las 24 en 0%. GLOW 6+: PLACA DE YESO con 39 tareas, las 39 en 0% (es el tercer subrubro mas grande de los 33 que estan enteros en cero). GLOW 5: contratista DURLOCK con 15 tareas, la unica de las tres obras donde el yeso avanzo. Ademas en GLOW 6+ la etiqueta de contratista 'YESO' esta cargada en los 15 items del grupo DEMOLICION, que es carga erronea.",
+        "detalle": "GLOW 3: subrubro PLACA DE YESO con 24 tareas ejecutables, 17 Retrasadas (el 37.0% de las 46 retrasadas del tablero), las 17 con contratista Subcontrato y las 17 en 0%, repartidas en 9 pisos (1, 2, 3, 4, 5, 6, 7, 9 y 10, estructura y emplacado). 22 de las 24 en 0%. GLOW 6+: PLACA DE YESO con 39 tareas, las 39 en 0% (es el tercer subrubro mas grande de los 33 que estan enteros en cero). GLOW 5: contratista DURLOCK con 15 tareas, la unica de las 3 obras donde el yeso avanzo. Ademas en GLOW 6+ la etiqueta de contratista 'YESO' esta cargada en los 15 items del grupo DEMOLICION, que es carga erronea.",
         "lectura": "En GLOW 3 el yeso trabado no es un atraso propio: el emplacado tapa instalaciones, y detras vienen las 97 tareas de terminacion de esa obra (402 dias, 8.7% del plan) que hoy figuran 'Programada' en 0%. En GLOW 6+ las 39 tareas ni siquiera tienen a quien reclamarle. GLOW 5 muestra que con DURLOCK el frente corre, asi que el problema de GLOW 3 es de contrato, no de gremio.",
         "fuente": {
           "tipo": "calculado",
@@ -4656,8 +4656,8 @@
           "GLOW 5"
         ],
         "total": 264,
-        "detalle": "El rubro EQUIPAMIENTO esta en cero y sin dueno en tres obras: GLOW 6+ 108 tareas, las 108 en 0% y las 108 sin contratista; GLOW 7 76 tareas en 0% con 16 en el estado rojo (enchapados de puerta principal y cerraduras electricas de los pisos 1 a 9); GLOW 3 80 tareas con 9.9% ponderado, 76 en 0% y 79 de 80 sin contratista, 242 dias de plan. GLOW 5 es la excepcion con 69.3% ponderado en el rubro.",
-        "lectura": "Es el rubro que se compra, no el que se ejecuta, y el plazo de entrega de equipamiento importado suele ser mas largo que la obra que falta. 264 tareas sin orden de compra registrada en tres obras a la vez es un unico paquete de compras de cartera, y es el candidato numero uno a explotar sobre el final en las tres.",
+        "detalle": "El rubro EQUIPAMIENTO esta en cero y sin dueno en 3 obras: GLOW 6+ 108 tareas, las 108 en 0% y las 108 sin contratista; GLOW 7 76 tareas en 0% con 16 en el estado rojo (enchapados de puerta principal y cerraduras electricas de los pisos 1 a 9); GLOW 3 80 tareas con 9.9% ponderado, 76 en 0% y 79 de 80 sin contratista, 242 dias de plan. GLOW 5 es la excepcion con 69.3% ponderado en el rubro.",
+        "lectura": "Es el rubro que se compra, no el que se ejecuta, y el plazo de entrega de equipamiento importado suele ser mas largo que la obra que falta. 264 tareas sin orden de compra registrada en 3 obras a la vez es un unico paquete de compras de cartera, y es el candidato numero uno a explotar sobre el final en las tres.",
         "fuente": {
           "tipo": "calculado",
           "ref": "agrupación por nombre de tarea y subrubro en los 5 tableros"
@@ -4671,7 +4671,7 @@
         ],
         "total": 20,
         "detalle": "GLOW 5: SERVAS con 8 tareas; 'INSTALACION PUERTAS Y PUESTA EN MARCHA' del PISO 9 al 75% sin cerrar, el hito FIN INSTALACION ASCENSOR en rojo al 0% y otro FIN del PISO 6 tambien suyo en rojo. GLOW 3: sector ASCENSOR con 11 tareas y 46.0% ponderado, con 'ASC - COLOCACION DE PUERTAS' Retrasada, sin avance cargado y con rubro mal etiquetado como EQUIPAMIENTO.",
-        "lectura": "El ascensor es condicion de habilitacion y esta a mitad de camino en las tres obras que lo tienen empezado.",
+        "lectura": "El ascensor es condicion de habilitacion y esta a mitad de camino en las 3 obras que lo tienen empezado.",
         "fuente": {
           "tipo": "calculado",
           "ref": "agrupación por nombre de tarea y subrubro en los 5 tableros"
@@ -4712,7 +4712,7 @@
       {
         "obra": "GLOW 6+",
         "nivel": "MEDIO-BAJO",
-        "porque": "Es la mas nueva y la que todavia esta a tiempo de armarse bien, pero su indicador principal es fragil y su linea base es decorativa. El 10.7% ponderado se sostiene en 4 tareas de FUNDACIONES que aportan el 57.1% del numerador, dos de ellas con 188 y 175 dias cargados a mano contra un promedio de 9 dias por tarea en los pisos: sacando FUNDACIONES el avance cae a 4.9%. La linea base del 18-ago-2026 se saco un dia antes del corte y da desvio 0 en los 469 items que la tienen, o sea que informa cero por construccion. El atraso real (9 tareas vencidas, 7 de ellas hace casi 5 meses, 4 de AMENITIES y 3 de LOCAL, todas en 'Programado' y 0%) no aparece en ningun indicador nativo. Delante: los 8 pisos tipo son 433 tareas identicas en 0% que se llevan 4.006 de los 5.858 dias del plan (68.4%), 165 tareas de EQUIPAMIENTO y CARPINTERIA sin un solo responsable, y las 3 AREAS COMUNES (24 items) enteras fuera del plan, sin fecha ni duracion.",
+        "porque": "Es la mas nueva y la que todavia esta a tiempo de armarse bien, pero su indicador principal es fragil y su linea base es decorativa. El 10.7% ponderado se sostiene en 4 tareas de FUNDACIONES que aportan el 57.1% del numerador, dos de ellas con 188 y 175 dias cargados a mano contra un promedio de 9 dias por tarea en los pisos: sacando FUNDACIONES el avance cae a 4.9%. La linea base del 18-ago-2026 se saco un dia antes del corte y da desvio 0 en los 469 items que la tienen, o sea que informa cero por construccion. El atraso real (9 tareas vencidas, 7 de ellas hace, 4 de AMENITIES y 3 de LOCAL, todas en 'Programado' y 0%) no aparece en ningun indicador nativo. Delante: los 8 pisos tipo son 433 tareas identicas en 0% que se llevan 4.006 de los 5.858 dias del plan (68.4%), 165 tareas de EQUIPAMIENTO y CARPINTERIA sin un solo responsable, y las 3 AREAS COMUNES (24 items) enteras fuera del plan, sin fecha ni duracion.",
         "numero": "57.1% del avance sale de 4 tareas; sin ellas cae a 4.9%",
         "fuente": {
           "tipo": "calculado",
@@ -4722,7 +4722,7 @@
     ],
     "capital": {
       "tareas": 62,
-      "detalle": "62 frentes con avance entre 70 % y 99 % en las cuatro obras que tienen columna de avance.",
+      "detalle": "62 frentes con avance entre 70 % y 99 % en las 4 obras que tienen columna de avance.",
       "porObra": {
         "GLOW 5": 38,
         "GLOW 3": 21,
@@ -4778,7 +4778,7 @@
         "ponderado": 7,
         "simple": 7.4,
         "cerradas": 7.3,
-        "lectura": "Es la unica obra de la cartera donde el ponderado queda POR DEBAJO del simple, y eso tambien es artefacto de dato: de las 62 tareas sin duracion, 36 estan Finalizadas al 100% (DEMOLICION 15, TAREAS PRELIMINARES 9, FUNDACIONES 7, ADM. EXCAVACIONES 6). Dandoles la duracion promedio del tablero (7.3 dias) el ponderado pasa de 7.0% a 12.7%. Corregidas las dos obras nuevas, GLOW 7 (12.7%) queda por encima de GLOW 6+ (4.9%): el orden real entre las dos es el inverso al que muestran los tableros.",
+        "lectura": "Es la unica obra de la cartera donde el ponderado queda POR DEBAJO del simple, y eso tambien es artefacto de dato: de las 62 tareas sin duracion, 36 estan Finalizadas al 100% (DEMOLICION 15, TAREAS PRELIMINARES 9, FUNDACIONES 7, ADM. EXCAVACIONES 6). Dandoles la duracion promedio del tablero (7.3 dias) el ponderado pasa de 7.0% a 12.7%. Corregidas las 2 obras nuevas, GLOW 7 (12.7%) queda por encima de GLOW 6+ (4.9%): el orden real entre las dos es el inverso al que muestran los tableros.",
         "fuente": {
           "tipo": "calculado",
           "ref": "Σ(avance×duración)/Σ(duración) sobre ejecutables"
@@ -4798,7 +4798,7 @@
       {
         "obra": "GLOW 3",
         "puedeMedirse": "Se puede medir avance fisico con una banda, no con un punto: 58.1% ponderado sobre 568 tareas y 4.603 dias, que sube a 63.5% si se excluyen las 44 tareas sin avance que hoy computan como 0. El sesgo esta acotado y es conocido: los 147 ejecutables sin duracion incluyen 46 de sectores enteros ya cerrados al 100% (DEMOLICION, PROYECTO, TAREAS PRELIMINARES, FUNDACIONES, ADM. EXCAVACIONES), asi que el 58.1% es piso. La extraccion cierra exacto (778 items, suma de estados = items_count). Es el unico tablero con hitos (45 HITO) y cierres de sector (18 FIN), asi que es el unico donde se puede leer el cierre de un sector como evento y no como promedio.",
-        "falta": "Desvio de plazo: TIENE linea base (timerange del 14-jul-26) y la columna formula de Diferencia devuelve vacio por API, asi que el unico tablero con con que medir desvio es justamente el que no lo deja leer. Hay que replicar el calculo a mano restando fechas fin, como se hizo en GLOW 5. CONTRATISTA sin cargar en 592 de 715 ejecutables (82.8%): no se puede atribuir responsabilidad en 4 de cada 5 tareas, y las etiquetas genericas 'Subcontrato'/'Constructora' no permiten reclamarle a nadie con nombre. Sospecha de sesgo de carga: entre las 592 sin contratista hay 0 bloqueadas y solo 6 retrasadas, demasiado limpio para ser real; parece que la etiqueta se pone recien cuando algo se complica. 0 dependencias en 778 items, verificado dos veces. 147 duraciones sin cargar. El rubro EXCAVACIONES tiene 84 tareas de las que solo 13 son excavacion real: 71 estan mal etiquetadas (PALLIERES 18, PLANTA BAJA 8, AMENITIES 8) y 65 de las 84 tampoco tienen SUBRUBRO. No existe columna SUPERVICION. PALLIERES tiene 14 de 23 tareas sin avance cargado: es el sector menos medible.",
+        "falta": "Desvio de plazo: TIENE linea base (timerange del 14-jul-26) y la columna formula de Diferencia devuelve vacio por API, asi que el unico tablero con con que medir desvio es justamente el que no lo deja leer. Hay que replicar el calculo a mano restando fechas fin, como se hizo en GLOW 5. CONTRATISTA sin cargar en 592 de 715 ejecutables (82.8%): no se puede atribuir responsabilidad en 4 de cada 5 tareas, y las etiquetas genericas 'Subcontrato'/'Constructora' no permiten reclamarle a nadie con nombre. Sospecha de sesgo de carga: entre las 592 sin contratista hay 0 bloqueadas y solo 6 retrasadas, demasiado limpio para ser real; parece que la etiqueta se pone recien cuando algo se complica. 0 dependencias en 778 items, verificado 2 veces. 147 duraciones sin cargar. El rubro EXCAVACIONES tiene 84 tareas de las que solo 13 son excavacion real: 71 estan mal etiquetadas (PALLIERES 18, PLANTA BAJA 8, AMENITIES 8) y 65 de las 84 tampoco tienen SUBRUBRO. No existe columna SUPERVICION. PALLIERES tiene 14 de 23 tareas sin avance cargado: es el sector menos medible.",
         "fuente": {
           "tipo": "monday",
           "ref": "cobertura de columnas del tablero"
@@ -4825,7 +4825,7 @@
     ],
     "hallazgos": [
       {
-        "t": "Cartera consolidada: 32.1% de avance ponderado sobre las cuatro obras del template. Sale de sumar los numeradores reales (2.674,3 dias-equivalentes en GLOW 3 + 1.917,2 en GLOW 5 + 625,2 en GLOW 6+ + 285,0 en GLOW 7 = 5.501,7) sobre los 17.161 dias de duracion total (4.603 + 2.648 + 5.858 + 4.052). No es el promedio de los cuatro porcentajes: ponderado por dias, GLOW 6+ y GLOW 7 pesan el 57.8% del plan de la cartera y estan en 10.7% y 7.0%.",
+        "t": "Cartera consolidada: 32.1% de avance ponderado sobre las 4 obras del template. Sale de sumar los numeradores reales (2.674,3 dias-equivalentes en GLOW 3 + 1.917,2 en GLOW 5 + 625,2 en GLOW 6+ + 285,0 en GLOW 7 = 5.501,7) sobre los 17.161 dias de duracion total (4.603 + 2.648 + 5.858 + 4.052). No es el promedio de los cuatro porcentajes: ponderado por dias, GLOW 6+ y GLOW 7 pesan el 57.8% del plan de la cartera y estan en 10.7% y 7.0%.",
         "fuente": {
           "tipo": "calculado",
           "ref": "síntesis sobre los 5 análisis"
@@ -4839,7 +4839,7 @@
         }
       },
       {
-        "t": "GLOW 6+ y GLOW 7 empatan exacto en tareas cerradas (53 de 726 y 45 de 619, las dos en 7.3%) y el ponderado las separa por defecto de dato, no por obra. Corregidas las dos distorsiones (sacar FUNDACIONES de GLOW 6+, que aporta el 57.1% del numerador con 4 tareas, y darle duracion promedio a las 36 finalizadas sin duracion de GLOW 7), GLOW 6+ cae a 4.9% y GLOW 7 sube a 12.7%: el orden real entre las dos obras nuevas es el inverso al que publican los tableros.",
+        "t": "GLOW 6+ y GLOW 7 empatan exacto en tareas cerradas (53 de 726 y 45 de 619, las dos en 7.3%) y el ponderado las separa por defecto de dato, no por obra. Corregidas las dos distorsiones (sacar FUNDACIONES de GLOW 6+, que aporta el 57.1% del numerador con 4 tareas, y darle duracion promedio a las 36 finalizadas sin duracion de GLOW 7), GLOW 6+ cae a 4.9% y GLOW 7 sube a 12.7%: el orden real entre las 2 obras nuevas es el inverso al que publican los tableros.",
         "fuente": {
           "tipo": "calculado",
           "ref": "síntesis sobre los 5 análisis"
@@ -4860,7 +4860,7 @@
         }
       },
       {
-        "t": "El estado del tablero no informa atraso en tres de las cinco obras. Son 327 tareas vencidas que ningun semaforo armado sobre la columna ESTADO va a mostrar. Cualquier tablero de direccion tiene que calcular el atraso contra fecha, no leerlo.",
+        "t": "El estado del tablero no informa atraso en tres de las 5 obras. Son 327 tareas vencidas que ningun semaforo armado sobre la columna ESTADO va a mostrar. Cualquier tablero de direccion tiene que calcular el atraso contra fecha, no leerlo.",
         "fuente": {
           "tipo": "calculado",
           "ref": "síntesis sobre los 5 análisis"
@@ -4888,7 +4888,7 @@
         }
       },
       {
-        "t": "El rubro EXCAVACIONES se usa como cajon de sastre en tres de las cuatro obras del template y arruina cualquier corte por rubro a nivel cartera. GLOW 3: 84 tareas de las que solo 13 son excavacion real, las otras 71 estan en PALLIERES (18), PLANTA BAJA (8), AMENITIES (8), SUBSUELO (7) y CAJA DE ESCALERA (7), e incluyen instalacion de gas y colocacion de puertas de ascensor. GLOW 5: 56 items con subrubros REVOQUE EXTERIOR (20) y REVESTIMIENTO DE PISO (10) en un edificio ya estructurado, y el rubro reporta 87.0% de avance. GLOW 7: 4 tareas (mobiliario bajo mesada de los pisos 8 y 9, hojas de puertas interiores, termotanque del local). GLOW 6+ es el unico limpio con 12. Un dashboard por rubro de la cartera va a mostrar una excavacion atrasada que no existe en GLOW 3 y una excavacion al 87% que tampoco.",
+        "t": "El rubro EXCAVACIONES se usa como cajon de sastre en tres de las 4 obras del template y arruina cualquier corte por rubro a nivel cartera. GLOW 3: 84 tareas de las que solo 13 son excavacion real, las otras 71 estan en PALLIERES (18), PLANTA BAJA (8), AMENITIES (8), SUBSUELO (7) y CAJA DE ESCALERA (7), e incluyen instalacion de gas y colocacion de puertas de ascensor. GLOW 5: 56 items con subrubros REVOQUE EXTERIOR (20) y REVESTIMIENTO DE PISO (10) en un edificio ya estructurado, y el rubro reporta 87.0% de avance. GLOW 7: 4 tareas (mobiliario bajo mesada de los pisos 8 y 9, hojas de puertas interiores, termotanque del local). GLOW 6+ es el unico limpio con 12. Un dashboard por rubro de la cartera va a mostrar una excavacion atrasada que no existe en GLOW 3 y una excavacion al 87% que tampoco.",
         "fuente": {
           "tipo": "calculado",
           "ref": "síntesis sobre los 5 análisis"
@@ -4902,7 +4902,7 @@
         }
       },
       {
-        "t": "La base del edificio queda ultima en las tres obras que estan en terminacion, y es lo que habilita el final de obra. GLOW 3: PLANTA BAJA 27.0% y LOCAL 18.3% con 0 tareas cerradas de 21, contra 65.6% de los pisos 1 al 10; PB y LOCAL concentran 11 de las 46 retrasadas siendo solo el 7.3% de las tareas. GLOW 5: PLANTA BAJA 53.6% y LOCAL 45.3% contra PISO 10 al 94.3% y PISO 9 al 87.7%, y los tres desvios mas grandes contra linea base son de PB (PUERTA INGRESO PRINCIPAL +161 dias, YESO MUROS PROY. +157, PUERTAS INTERIORES +155). Tres obras, mismo patron: se ejecuta de arriba hacia abajo y lo primero que ve el comprador es lo ultimo que se toca.",
+        "t": "La base del edificio queda ultima en las 3 obras que estan en terminacion, y es lo que habilita el final de obra. GLOW 3: PLANTA BAJA 27.0% y LOCAL 18.3% con 0 tareas cerradas de 21, contra 65.6% de los pisos 1 al 10; PB y LOCAL concentran 11 de las 46 retrasadas siendo solo el 7.3% de las tareas. GLOW 5: PLANTA BAJA 53.6% y LOCAL 45.3% contra PISO 10 al 94.3% y PISO 9 al 87.7%, y los tres desvios mas grandes contra linea base son de PB (PUERTA INGRESO PRINCIPAL +161 dias, YESO MUROS PROY. +157, PUERTAS INTERIORES +155). 3 obras, mismo patron: se ejecuta de arriba hacia abajo y lo primero que ve el comprador es lo ultimo que se toca.",
         "fuente": {
           "tipo": "calculado",
           "ref": "síntesis sobre los 5 análisis"
@@ -4942,7 +4942,7 @@
         "glow7": 470
       },
       "estado": "verificado",
-      "texto": "Cada tablero se consultó dos veces por vías distintas (linked_item_ids e is_not_empty) y coincidieron.",
+      "texto": "Cada tablero se consultó 2 veces por vías distintas (linked_item_ids e is_not_empty) y coincidieron.",
       "fuente": {
         "tipo": "calculado",
         "ref": "doble verificación en la re-extracción del 21/08"
@@ -4980,7 +4980,7 @@
       },
       "alerta": {
         "nivel": "critico",
-        "titulo": "Once días después, ninguna de las 15 bloqueadas se destrabó.",
+        "titulo": ", ninguna de las 15 bloqueadas se destrabó.",
         "cuerpo": "",
         "fuentes": [
           {
@@ -6947,7 +6947,7 @@
           "responsable": "Equipo Cesar, Equipo Troche",
           "responsableNota": "",
           "gestionable": null,
-          "efecto": "Se reprograma tarea y se debe modificar ajustes defensas · Cuando el balancin pase al sector de fachada de dpto A (por interferencia con contrapesos) + Solo se realizará hasta lo estipulado en plano municipal, puesto que este sector no esta habilitado por GCB · En departamentos frente estan las defensas .",
+          "efecto": "Se reprograma tarea y se debe modificar ajustes defensas · Cuando el balancin pase al sector de fachada de dpto A (por interferencia con contrapesos) + Solo se realizará hasta lo estipulado en plano municipal, puesto que este sector no esta habilitado por GCB · En departamentos frente estan las defensas.",
           "desde": null,
           "desvio": null,
           "cadena": [],
@@ -7093,7 +7093,7 @@
           "dias": 73,
           "fuente": {
             "tipo": "informe",
-            "ref": "§06 · los cinco sectores que fijan la fecha"
+            "ref": "§06 · los 5 sectores que fijan la fecha"
           }
         },
         {
@@ -7102,7 +7102,7 @@
           "dias": 69,
           "fuente": {
             "tipo": "informe",
-            "ref": "§06 · los cinco sectores que fijan la fecha"
+            "ref": "§06 · los 5 sectores que fijan la fecha"
           }
         },
         {
@@ -7111,7 +7111,7 @@
           "dias": 61,
           "fuente": {
             "tipo": "informe",
-            "ref": "§06 · los cinco sectores que fijan la fecha"
+            "ref": "§06 · los 5 sectores que fijan la fecha"
           }
         },
         {
@@ -7120,7 +7120,7 @@
           "dias": 48,
           "fuente": {
             "tipo": "informe",
-            "ref": "§06 · los cinco sectores que fijan la fecha"
+            "ref": "§06 · los 5 sectores que fijan la fecha"
           }
         },
         {
@@ -7129,7 +7129,7 @@
           "dias": 47,
           "fuente": {
             "tipo": "informe",
-            "ref": "§06 · los cinco sectores que fijan la fecha"
+            "ref": "§06 · los 5 sectores que fijan la fecha"
           }
         }
       ],
@@ -7188,8 +7188,8 @@
             "ref": "§04 · 38 tareas reprogramadas, hasta 39 días"
           }
         },
-        "explicacion": "Dependencias cargadas: 0 de 778. Vía 1: se pidió column_values(ids:[\"dependency_mm08tktm\"]){ ... on DependencyValue { linked_item_ids } } sobre los 778 ítems (2 páginas de items_page)",
-        "robustez": "Si las restricciones se liberan hoy o dentro de dos semanas, la fecha global sigue siendo el 21/12. El cuello de botella no son las tareas bloqueadas sino la cadena de terminaciones que quedó sin holgura detrás del durlock y la pintura.",
+        "explicacion": "Dependencias cargadas: 0 de 778. Vía 1: se pidió column_values(ids:[\"dependency_mm08tktm\"]){.. on DependencyValue { linked_item_ids } } sobre los 778 ítems (2 páginas de items_page)",
+        "robustez": "Si las restricciones se liberan hoy o dentro de 2 semanas, la fecha global sigue siendo el 21/12. El cuello de botella no son las tareas bloqueadas sino la cadena de terminaciones que quedó sin holgura detrás del durlock y la pintura.",
         "fuente": {
           "tipo": "monday",
           "ref": "CRONOGRAMA del tablero"
@@ -7509,7 +7509,7 @@
       "metodo": "Lectura del board 18398874016 el 21/08/2026. Avance ponderado = Σ(% × DURACION) ÷ Σ(DURACION) sobre los ítems ejecutables (778 totales − 45 \"HITO\" − 18 \"FIN\" = 715). Entran los 567 ejecutables con DURACION > 0 (Σ DURACION = 4.598 días); el % vacío se computa como 0",
       "diagnostico": {
         "titulo": "Por qué el tablero no lo muestra",
-        "cuerpo": "El tablero informa desvío cero en los 45 hitos y en los 18 cierres de sector, todos anclados a la línea base del 14/07/2026, mientras 120 tareas acumulan 18,4 días de desvío promedio. Además de la falta de dependencias, al mover las tareas de a una el plan perdió coherencia constructiva: hay pisos donde hoy figura la pintura antes del emplacado y otros donde el emplacado figura antes de montar la perfilería. Mientras el tablero siga así, la dirección no tiene alerta temprana: seguirá informando una obra en fecha que no lo está."
+        "cuerpo": "El tablero informa desvío cero en los 45 hitos y en los 18 cierres de sector, todos anclados a la línea base del 14/07/2026, mientras 120 tareas acumulan 18,4 días de desvío promedio. Además de la falta de dependencias, al mover las tareas de a una el plan perdió coherencia constructiva: hay pisos donde hoy figura la pintura antes del emplacado y otros donde el emplacado figura antes de montar la perfilería. Mientras el tablero siga así, la dirección no tiene alerta temprana: seguirá informando 1 obra en fecha que no lo está."
       },
       "ppc": {
         "semanaEnCurso": {
@@ -7673,7 +7673,7 @@
             "total": 11,
             "ppc": 11
           },
-          "lectura": "Los equipos de obra cumplen el 60 % de lo que se comprometen. Las liberaciones —destrabar material, conseguir una inspección, cerrar una compra— cumplen el 11 %: 1 de 9. Seis de esas once liberaciones son de Compras. El cuello de botella no está en la cuadrilla sino aguas arriba.",
+          "lectura": "Los equipos de obra cumplen el 60 % de lo que se comprometen. Las liberaciones —destrabar material, conseguir una inspección, cerrar una compra— cumplen el 11 %: 1 de 9. 6 de las 11 liberaciones son de Compras. El cuello de botella no está en la cuadrilla sino aguas arriba.",
           "fuente": {
             "tipo": "monday",
             "ref": "board 18398874030 · columna Tipo (color_mm5gf5k) × «Se cumplió o no»"
@@ -7870,7 +7870,7 @@
             }
           }
         ],
-        "lectura": "En cuatro de los cinco pisos con porcelanato bloqueado, la baranda está retrasada. El Piso 9 tiene el porcelanato bloqueado sin baranda retrasada: ahí la explicación es otra.",
+        "lectura": "En cuatro de los 5 pisos con porcelanato bloqueado, la baranda está retrasada. El Piso 9 tiene el porcelanato bloqueado sin baranda retrasada: ahí la explicación es otra.",
         "fuente": {
           "tipo": "cruzado",
           "ref": "4 de los 5 pisos con porcelanato bloqueado tienen baranda retrasada · no hay dependencia en Monday que lo confirme"
@@ -9096,7 +9096,7 @@
                 "responsable": "ALBAÑILERIA"
               },
               {
-                "tarea": "L.  - PRUEBA HIDRAULICA",
+                "tarea": "L. - PRUEBA HIDRAULICA",
                 "inicio": "2026-08-24",
                 "fin": "2026-08-25",
                 "clase": "porVenir",
@@ -11068,7 +11068,7 @@
         "ganancia": 41.2,
         "metrica": "avance promedio simple (no ponderado por duración)",
         "advertencias": [
-          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "La reconstrucción no sabe cuándo nació cada tarea: 1 tarea creada en julio aparece en la foto de febrero con su valor de julio.",
           "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
           "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
         ],
@@ -11624,7 +11624,7 @@
             "cerradas": 16
           }
         ],
-        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos 3 meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
         "fuente": {
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 23.7/mes"
@@ -11820,7 +11820,7 @@
           },
           {
             "causa": "Contrato de durlock retrasado",
-            "detalle": "La contratación del yesero se demoró y arrastró la placa de yeso de cuatro pisos. Es el gremio con más tareas retrasadas de la obra: 13 de 16.",
+            "detalle": "La contratación del yesero se demoró y arrastró la placa de yeso de 4 pisos. Es el gremio con más tareas retrasadas de la obra: 13 de 16.",
             "cita": "Se retraso el contrato de durlock.",
             "autor": "Luis Fontana",
             "fecha": "2026-07-30",
@@ -12001,15 +12001,15 @@
         "siguieronAvanzando": [
           {
             "tarea": "PISO 2 - BANQUINAS",
-            "detalle": "70 → 80 % el 07/08, dieciséis días después de marcarse bloqueada"
+            "detalle": "70 → 80 % el 07/08"
           },
           {
             "tarea": "PISO 1 - IMPERMEABILIZACION BALCONES",
-            "detalle": "50 → 0 → 30 % el mismo día 30/07"
+            "detalle": "50 → 0 → 30 %"
           },
           {
             "tarea": "PISO 2 - REVESTIMIENTOS DE PISO PORCELANATO",
-            "detalle": "85 → 70 % el 07/08: el avance se corrigió hacia abajo"
+            "detalle": "85 → 70 % el 07/08"
           }
         ],
         "noMarcadasLista": [
@@ -12230,7 +12230,7 @@
             "peor": 24
           }
         ],
-        "nota": "La tarea que fija el fin está Programada, así que la fecha base es real. <b>Se movió 8 días desde el viernes</b>: el 21/08 empujaron un mes las nueve tareas de revestimiento de piso madera y la del piso 9 pasó a ser la última del cronograma. Antes de esa edición la proyección daba 13/11.",
+        "nota": "La tarea que fija el fin está Programada, así que la fecha base es real. <b>Se movió 8 días desde el viernes</b>: el 21/08 empujaron un mes las 9 tareas de revestimiento de piso madera y la del piso 9 pasó a ser la última del cronograma. Antes de esa edición la proyección daba 13/11.",
         "corte": "2026-08-24",
         "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>El atraso y el adelanto se miden por separado.</b> La mediana del sector usa sólo las tareas que llegaron tarde, porque un adelanto no arregla una demora. Pero el trabajo adelantado sí descuenta del volumen pendiente y se reporta aparte. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
         "fuente": {
@@ -12454,7 +12454,7 @@
           1
         ],
         "sinSemana": 5,
-        "nota": "Cada línea acumula las veces que una causa apareció como motivo de no cumplimiento. <b>La falta de material saltó de 0 a 10 en la semana del 20 de julio y sumó 5 más en la siguiente; después se detuvo.</b> Fue un pico de dos semanas, no un problema permanente. <b>Las defensas de fachada son las que se repiten</b>: aparecen en la primera semana del registro y vuelven en la última, cruzando los dos meses. Hay 5 registros más sin semana asignada que no entran en la serie.",
+        "nota": "Cada línea acumula las veces que una causa apareció como motivo de no cumplimiento. <b>La falta de material saltó de 0 a 10 en la semana del 20 de julio y sumó 5 más en la siguiente; después se detuvo.</b> <b>Las defensas de fachada son las que se repiten</b>: aparecen en la primera semana del registro y vuelven en la última, cruzando los 2 meses. Hay 5 registros más sin semana asignada que no entran en la serie.",
         "fuente": {
           "tipo": "monday",
           "ref": "board 18398874030 · columna Semana (week_mm5g3xqz) × «Restricciones o causas de no cumplimiento» (text_mm5ghwkw) · 30 registros con causa clasificados en 8 familias"
@@ -14284,7 +14284,7 @@
           "porcentaje": 0,
           "corrimientoMax": 229
         },
-        "explicacion": "Dependencias cargadas: 222 de 544. Se pidió column_values(ids:[\"dependency_mm08tktm\"]) { ... on DependencyValue { linked_item_ids } } sobre los 544 ítems y se contaron los que tienen el",
+        "explicacion": "Dependencias cargadas: 222 de 544. Se pidió column_values(ids:[\"dependency_mm08tktm\"]) {.. on DependencyValue { linked_item_ids } } sobre los 544 ítems y se contaron los que tienen el",
         "robustez": "401 tareas tienen CRONOGRAMA y REFERENCIA cargados (de 546). Comparación sobre la fecha de FIN: 293 desviadas (73%), 108 sin cambio, 3 adelantadas (mínimo -10 días). Desvío promedio sobre las 293 desviadas = +79,7 días; sobre las 401 comparables = +58,2 días. sectorPeor por promedio de desviadas = PLANTA BAJA (+90,2 d, 16 tareas); el peor con volumen alto es PISO 7 R1 (+88,2 d sobre 26 desviadas; +84,9 d sobre sus 27 comparables) y la peor tarea individual es PISO 7 - REVESTIMIENTO PISO PORCELANATO BALCONES con +229 días. La columna formula \"Diferencia\" (formula_mm4m3wmr) devuelve vacío por API; el desvío se recalculó fecha a fecha.",
         "fuente": {
           "tipo": "monday",
@@ -14472,7 +14472,7 @@
             "n": 44,
             "pct": 8,
             "det": "TARQUINI BALCONES existe en los 9 pisos y los 9 están exactamente en 95% (8 vencidas, la más vieja 55 días). MAQUILLAJE HORMIGON BALCON existe en los 9 pisos: 5 al 80%, 3 al 40%, 1 al 50%, 1 al 0%; 7 vencidas. PARRILLA HERRERIA: 9 tareas abiertas entre 40% y 75%, todas Iniciadas, 6 vencidas. BARANDAS BALCONES: 4 al 85% sin cerrar (3 Pendiente + 1 Programada).",
-            "lectura": "No es un problema de un piso: es un frente completo (ROLANDO revoque exterior + BULAS herrería + BALDINO barandas) que quedó al 75-95% y no se cierra. Es el candidato número uno de la reunión semanal porque son puntos de avance que ya están casi comprados.",
+            "lectura": "No es un problema de 1 piso: es 1 frente completo (ROLANDO revoque exterior + BULAS herrería + BALDINO barandas) que quedó al 75-95% y no se cierra. Es el candidato número uno de la reunión semanal porque son puntos de avance que ya están casi comprados.",
             "fuente": {
               "tipo": "calculado",
               "ref": "Filtro por nombre de tarea (TARQUINI / MAQUILLAJE / PARRILLA / BARANDAS BALCONES) sobre los 546 ítems, cruzado con % (numeric_mkya8gds), ESTADO y fin de CRONOGRAMA vs 2026-08-18."
@@ -14482,7 +14482,7 @@
             "k": "Cascada de dependencias colgada de PINTURA INTERIOR ETAPA FINAL",
             "n": 39,
             "pct": 7,
-            "det": "39 de los 225 vínculos de dependencia (17%) apuntan a una tarea PINTURA INTERIOR ETAPA FINAL. Las 10 tareas de pintura final del edificio están en 0%: 9 Programadas y 1 Sin programar (PISO 10). Otras 32 dependencias apuntan a tareas de MARMOLERIA, subrubro que también está 0% en sus 19 ítems.",
+            "det": "39 de los 225 vínculos de dependencia (17%) apuntan a 1 tarea PINTURA INTERIOR ETAPA FINAL. Las 10 tareas de pintura final del edificio están en 0%: 9 Programadas y 1 Sin programar (PISO 10). Otras 32 dependencias apuntan a tareas de MARMOLERIA, subrubro que también está 0% en sus 19 ítems.",
             "lectura": "Dos oficios en 0% sostienen 71 de 225 vínculos. Mientras pintura final y marmolería no arranquen, la terminación de las unidades no puede encadenarse aunque los otros gremios avancen.",
             "fuente": {
               "tipo": "calculado",
@@ -14516,7 +14516,7 @@
             "n": 293,
             "pct": 54,
             "det": "De 401 tareas con CRONOGRAMA y REFERENCIA cargados, 293 (73%) movieron su fecha de fin: +79,7 días promedio, máximo +229 días (PISO 7 - REVESTIMIENTO PISO PORCELANATO BALCONES). Sólo 3 tareas se adelantaron (mínimo -10 días) y 108 quedaron igual. Peor sector por promedio: PLANTA BAJA +90,2 d (16 desviadas); con más volumen, PISO 7 R1 +88,2 d (26 desviadas). Los sectores menos movidos: EXTERIOR +3 d, SUBSUELO +12,1 d, PISO 10 +16,3 d.",
-            "lectura": "A diferencia de GLOW 3, acá el desvío SÍ se puede medir contra una referencia guardada, y da casi 80 días de corrimiento sistemático. La replanificación de junio ya está desactualizada.",
+            "lectura": "A diferencia de GLOW 3, acá el desvío SÍ se puede medir contra una referencia guardada, y da de corrimiento sistemático. La replanificación de junio ya está desactualizada.",
             "fuente": {
               "tipo": "calculado",
               "ref": "Diferencia en días entre el fin de timerange_mkyay6x2 y el fin de timerange_mm4mfdkj, tarea por tarea. La columna formula 'Diferencia' devuelve vacío por API, así que se recalculó."
@@ -14537,7 +14537,7 @@
         {
           "que": "Estado de vencimiento de 120 ítems",
           "porque": "120 de los 544 ítems no tienen ninguna fecha en la columna CRONOGRAMA, así que no se puede determinar si están vencidos. Las 60 vencidas reportadas salen sólo de los 424 ítems con fecha.",
-          "queHaceFalta": "Cargar CRONOGRAMA en esos 120 ítems. Hasta entonces, 60 vencidas es un piso, no el número real."
+          "queHaceFalta": "Cargar CRONOGRAMA en esos 120 ítems. Hasta entonces, 60 vencidas es 1 piso, no el número real."
         },
         {
           "que": "Columna 'Diferencia' (días de desvío calculados por Monday)",
@@ -14570,7 +14570,7 @@
         "El paquete que rompe el cronograma es REVESTIMIENTO PISO PORCELANATO DE BALCONES: los tres mayores corrimientos del tablero (+229, +227, +227 días) son la misma tarea en pisos 7, 8 y 6, y son las tres últimas fechas de toda la obra.",
         "60 tareas vencidas al 21-08-2026 (fin de cronograma pasado y estado distinto de 'Finalizada'). La más vieja es un hito 'FIN' de PISO 3 R1 vencido hace 116 días con 0 % de avance.",
         "La instalación eléctrica es el foco duro de atraso: 12 de las 20 tareas más vencidas son INST. ELECTRICA de SUBSUELO, PLANTA BAJA y LOCAL, todas en 0 % y estado 'Programada' — es decir, ni siquiera arrancaron y la fecha ya pasó hace 3 meses.",
-        "43 tareas están entre 80 % y 99 % sin cerrar. Diez de ellas son 'TARQUINI BALCONES' al 95 % (contratista ROLANDO, un piso por cada nivel del 1 al 9) y once son 'COCINA A/B' al 85 % (contratista NORAY). Son dos contratistas con la última milla frenada en todo el edificio.",
+        "43 tareas están entre 80 % y 99 % sin cerrar. Diez de ellas son 'TARQUINI BALCONES' al 95 % (contratista ROLANDO, 1 piso por cada nivel del 1 al 9) y 11 son 'COCINA A/B' al 85 % (contratista NORAY). Son dos contratistas con la última milla frenada en todo el edificio.",
         "La columna 'Diferencia' (formula_mm4m3wmr) calcula en Monday DAYS(cronograma#End, referencia#End), pero las columnas fórmula devuelven vacío por API. El corrimiento se recalculó a mano desde las dos timeline crudas.",
         "El rubro 'EXCAVACIONES' (índice 5, gris, posición 0) es la etiqueta por defecto del tablero y funciona como 'sin clasificar': 54 ítems la tienen, entre ellos 'TARQUINI BALCONES' e hitos 'FIN', que nada tienen que ver con excavaciones. Lo mismo pasa con CONTRATISTA 'DEFAULT' (índice 5, gris, posición 0): 118 ítems, el 22 % del tablero, sin contratista real asignado.",
         "Ningún ítem cerrado quedó con % en 100 sin estar en 'Finalizada'. Al revés sí: 3 ítems marcados 'Finalizada' tienen % menor a 100.",
@@ -14599,7 +14599,7 @@
           "ref": "board · dependency_mm08tktm con operator is_not_empty (conteo por cursor)"
         }
       },
-      "metodo": "Lectura del board 18402983112 el 21/08/2026. Avance ponderado = Σ(% × DURACION) / Σ(DURACION) sobre los 436 ítems ejecutables que tienen cargadas AMBAS columnas (% y DURACION, col. numeric_mkya8gds y numeric_mkyap28c). Σ(DURACION) = 2.640 días. Resultado: 72,23 %. ",
+      "metodo": "Lectura del board 18402983112 el 21/08/2026. Avance ponderado = Σ(% × DURACION) / Σ(DURACION) sobre los 436 ítems ejecutables que tienen cargadas AMBAS columnas (% y DURACION, col. numeric_mkya8gds y numeric_mkyap28c). Σ(DURACION) = 2.640 días. Resultado: 72,23 %.",
       "diagnostico": {
         "titulo": "Qué no puede medir este tablero",
         "cuerpo": "Tareas bloqueadas (tareas.bloqueadas = lista vacía): La columna ESTADO de este tablero no tiene la etiqueta 'Bloqueada' (índice 8). Sus etiquetas son 0=Iniciada, 1=Finalizada, 2=Pendiente, 5=Sin programar, 7=Programada. No es que no haya tareas bloqueadas: es que no hay dónde marcarlas. · Distinción entre 'Retrasada' y 'Pendiente': El slot rojo (índice 2) que en GLOW 3 se llama 'Retrasada' acá está renombrado 'Pendiente'. Se reportan sus 24 tareas en el campo tareas.retrasadas por equivalencia de posición y color, no porque el tablero diga 'Retrasada'. · Corte por persona / responsable (personas.quienes vacío): La columna SUPERVICION (multiple_person_mkzerbc5) existe en el tablero pero no tiene ningún ítem cargado: 0 de 546. · Avance ponderado del 100% de la obra: 126 tareas (23%) no tienen DURACION cargada y quedan fuera del cálculo Σ(avance×duración)/Σ(duración). El ponderado de 71,92% describe 420 tareas que suman 2.664 días-tarea."
@@ -14909,7 +14909,7 @@
           "ref": "board 18402983112 (vigente) · columna CONTRATISTA color_mkyaxv6j"
         },
         "alerta": {
-          "titulo": "Sólo 22 de 271 tareas activas caen en las próximas cuatro semanas",
+          "titulo": "Sólo 22 de 271 tareas activas caen en las próximas 4 semanas",
           "cuerpo": "233 ya vencieron y 16 no tienen fecha cargada. Con eso no se puede repartir trabajo.",
           "fuente": {
             "tipo": "calculado",
@@ -15175,7 +15175,7 @@
         "ganancia": 35.4,
         "metrica": "avance promedio simple (no ponderado por duración)",
         "advertencias": [
-          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "La reconstrucción no sabe cuándo nació cada tarea: 1 tarea creada en julio aparece en la foto de febrero con su valor de julio.",
           "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
           "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
         ],
@@ -15753,7 +15753,7 @@
             "cerradas": 64
           }
         ],
-        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos 3 meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
         "fuente": {
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 47.0/mes"
@@ -16101,7 +16101,7 @@
             "medAtrasos": 20
           }
         ],
-        "nota": "<b>La fecha base está depurada.</b> El fin literal del cronograma es 31/12/2026, pero lo fija una tarea <i>ya terminada</i> cuyo cronograma se movió después de cerrarla. Se usa la última tarea realmente pendiente: 11/11/2026. Con la fecha sucia la proyección daría 29/03/2027, cincuenta días más. Ojo: el atraso lo fijan sólo 10 tareas del subsuelo, cinco de ellas la cuadrilla eléctrica que hoy pasó a «Restringido por Mano de Obra». Si se destraban, la proyección baja de golpe.",
+        "nota": "<b>La fecha base está depurada.</b> El fin literal del cronograma es 31/12/2026, pero lo fija 1 tarea <i>ya terminada</i> cuyo cronograma se movió después de cerrarla. Se usa la última tarea realmente pendiente: 11/11/2026. Con la fecha sucia la proyección daría 29/03/2027, 50 días más. Ojo: el atraso lo fijan sólo 10 tareas del subsuelo, cinco de ellas la cuadrilla eléctrica que hoy pasó a «Restringido por Mano de Obra». Si se destraban, la proyección baja de golpe.",
         "corte": "2026-08-24",
         "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. <b>El atraso y el adelanto se miden por separado.</b> La mediana del sector usa sólo las tareas que llegaron tarde, porque un adelanto no arregla una demora. Pero el trabajo adelantado sí descuenta del volumen pendiente y se reporta aparte. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
         "fuente": {
@@ -16210,7 +16210,7 @@
         "antes": [
           "Las cuatro comparten la misma fecha de fin"
         ],
-        "nota": "El cronograma literal dice 31/12/2026, pero esa fecha la fija una tarea <b>ya terminada</b> cuyo cronograma se movió después de cerrarla. La última tarea realmente pendiente cierra el 06/11: casi dos meses antes.",
+        "nota": "El cronograma literal dice 31/12/2026, pero esa fecha la fija 1 tarea <b>ya terminada</b> cuyo cronograma se movió después de cerrarla. La última tarea realmente pendiente cierra el 06/11: antes.",
         "diasRestantes": 72,
         "vencida": false,
         "fuente": {
@@ -16465,7 +16465,7 @@
           "valor": 0,
           "pendiente": true,
           "nota": "Referencia de CRONOGRAMA (18 Aug '26) — columna timeline timerange_mm6",
-          "detalle": "El propio título de la columna dice que se copió el 18 de agosto de 2026, tres días antes de este corte. Comparé los 469 ítems que tienen fecha en las dos columnas: los 469 dan diferencia de 0 días, sin una sola excepción, y el fin del proyecto coincide exacto (17/04/2028 en las dos) igual que el inicio (02/12/2025). Un desvío de cero en 469 tareas no es una obra que cumple el plan: es una foto sa",
+          "detalle": "El propio título de la columna dice que se copió el 18 de agosto de 2026, 3 días antes de este corte. Comparé los 469 ítems que tienen fecha en las dos columnas: los 469 dan diferencia de 0 días, sin una sola excepción, y el fin del proyecto coincide exacto (17/04/2028 en las dos) igual que el inicio (02/12/2025). Un desvío de cero en 469 tareas no es 1 obra que cumple el plan: es una foto sa",
           "fuente": {
             "tipo": "calculado",
             "ref": "CRONOGRAMA contra Referencia de CRONOGRAMA (18 Aug '26) — columna timeline timerange_mm6bm4pz"
@@ -16487,7 +16487,7 @@
           "valor": 0,
           "pendiente": true,
           "nota": "sin referencia",
-          "detalle": "El propio título de la columna dice que se copió el 18 de agosto de 2026, tres días antes de este corte. Comparé los 469 ítems que tienen fecha en las dos columnas: los 469 dan diferencia de 0 días, sin una sola excepción, y el fin del proyecto coincide exacto (17/04/2028 en las dos) igual que el inicio (02/12/2025). Un desvío de cero en 469 tareas no es una obra que cumple el plan: es una foto sa",
+          "detalle": "El propio título de la columna dice que se copió el 18 de agosto de 2026, 3 días antes de este corte. Comparé los 469 ítems que tienen fecha en las dos columnas: los 469 dan diferencia de 0 días, sin una sola excepción, y el fin del proyecto coincide exacto (17/04/2028 en las dos) igual que el inicio (02/12/2025). Un desvío de cero en 469 tareas no es 1 obra que cumple el plan: es una foto sa",
           "fuente": {
             "tipo": "calculado",
             "ref": "promedio del desvío por tarea con ambas fechas"
@@ -16544,7 +16544,7 @@
         "detalle": [
           {
             "sector": "AMENITIES",
-            "tarea": "A.-  CANALIZACION PISO RADIANTE ELEC.",
+            "tarea": "A.- CANALIZACION PISO RADIANTE ELEC.",
             "avance": 0,
             "fin": "2026-03-24",
             "dias": 147,
@@ -17341,7 +17341,7 @@
           "porcentaje": 0,
           "corrimientoMax": 0
         },
-        "explicacion": "Dependencias cargadas: 475 de 726. Conteo 1: traje los 726 ítems paginados (400+326) pidiendo column_values(ids:[\"dependency_mm08tktm\"]) { ... on DependencyValue { linked_item_ids } } y",
+        "explicacion": "Dependencias cargadas: 475 de 726. Conteo 1: traje los 726 ítems paginados (400+326) pidiendo column_values(ids:[\"dependency_mm08tktm\"]) {.. on DependencyValue { linked_item_ids } } y",
         "robustez": "La columna existe y tiene cobertura completa: 469 tareas con fecha en CRONOGRAMA y las mismas 469 con fecha en Referencia. Pero la comparación tarea por tarea da desvío CERO en las 469, tanto en fecha de inicio como de fin. El título de la columna lo explica: es un snapshot tomado el 18-ago-2026, o sea hoy, comparado contra sí mismo. Existe la columna, no existe la línea base. Es el mismo caso que en GLOW 3, donde el tablero informaba desvío cero mientras la obra estaba atrasada. Mostrar este 0 como 'desvío' sería mentir con un dato real.",
         "fuente": {
           "tipo": "monday",
@@ -17506,7 +17506,7 @@
         "titulo": "Qué se repite",
         "items": [
           {
-            "k": "Cuatro tareas de FUNDACIONES sostienen el 58% del avance",
+            "k": "4 tareas de FUNDACIONES sostienen el 58% del avance",
             "n": 4,
             "pct": 1,
             "det": "EXCAVACIÓN VIGAS Y ZAPATAS PARA TABIQUES (100%, 175 días) 27,6% · RETIRO DE SUELO TOTAL (80%, 188 días) 23,7% · EXCAVACIÓN BASES Y PLATEA SECTOR 1 (100%, 34 días) 5,4% · EXCAVACIÓN BASES Y PLATEA FRENTE (50%, 13 días) 1,0%.",
@@ -17521,14 +17521,14 @@
             "n": 43,
             "pct": 6,
             "det": "43 de las 54 tareas FINALIZADAS no tienen DURACION: DEMOLICION 15, PRE CONSTRUCCION 13, TAREAS PRELIMINARES 9, ADM. EXCAVACIONES 6.",
-            "lectura": "Es el error espejo del anterior. La misma columna DURACION que infla FUNDACIONES borra cuatro sectores enteros ya cerrados. El ponderado tiene un sesgo en las dos direcciones a la vez.",
+            "lectura": "Es el error espejo del anterior. La misma columna DURACION que infla FUNDACIONES borra 4 sectores enteros ya cerrados. El ponderado tiene un sesgo en las dos direcciones a la vez.",
             "fuente": {
               "tipo": "calculado",
               "ref": "Conteo de ítems con ESTADO = Finalizada y DURACION vacía; contrastado contra el total de 54 Finalizada."
             }
           },
           {
-            "k": "Ocho pisos tipo clonados y sin tocar",
+            "k": "8 pisos tipo clonados y sin tocar",
             "n": 433,
             "pct": 60,
             "det": "PISO 1 (55 tareas) y PISO 2 a PISO 8 (54 cada uno), con 501 días de duración exactos en los ocho. Los 433 ítems están en 0% de avance.",
@@ -17550,7 +17550,7 @@
             }
           },
           {
-            "k": "Un frente vencido hace cinco meses, entero y sin dueño",
+            "k": "1 frente vencido hace 5 meses, entero y sin dueño",
             "n": 7,
             "pct": 1,
             "det": "AMENITIES (4) y LOCAL (3): canalización piso radiante, amurado de tableros, pre instalación de A.A. y cañerías sanitarias. Vencimientos entre 2026-03-24 y 2026-03-27, 144 a 147 días de atraso, 0% de avance, ninguna con contratista asignado.",
@@ -17600,19 +17600,19 @@
         },
         {
           "que": "Confirmación de si las 7 tareas de AMENITIES y LOCAL vencidas hace ~148 días están realmente paradas",
-          "porque": "Este tablero no tiene ninguna etiqueta de estado para 'trabado' o 'detenido', así que una tarea parada y una tarea simplemente no empezada se ven idénticas: ambas dicen 'Programado'.",
+          "porque": "Este tablero no tiene ninguna etiqueta de estado para 'trabado' o 'detenido', así que 1 tarea parada y 1 tarea simplemente no empezada se ven idénticas: ambas dicen 'Programado'.",
           "queHaceFalta": "O agregar una etiqueta de trabado a la columna ESTADO, o que el jefe de obra confirme por fuera del tablero. Sin eso no se puede publicar una lista de tareas frenadas para GLOW 6."
         }
       ],
       "hallazgosObra": [
         "Las etiquetas de ESTE tablero son Iniciada (0), Finalizada (1), Pendiente (2), Sin programar (5) y Programado (7). No existe la etiqueta 'Retrasada' ni 'Listo' ni 'Detenido' en la columna de estado: cualquier publicación que use esos nombres para GLOW 6 es inventada. El estado cerrado se llama 'Finalizada' (done_colors=[1], confirmado en settings_str).",
-        "La línea base NO es una línea base: la columna se llama 'Referencia de CRONOGRAMA (18 Aug '26)' y fue copiada el 18/08/2026, tres días antes del corte. Los 469 ítems que tienen ambas fechas dan diferencia exactamente 0 días, sin una sola excepción (máximo 0, mínimo 0, promedio 0). El desvío cero es un artefacto de la copia, no una obra en fecha. Marcado confiable=false.",
+        "La línea base NO es una línea base: la columna se llama 'Referencia de CRONOGRAMA (18 Aug '26)' y fue copiada el 18/08/2026, 3 días antes del corte. Los 469 ítems que tienen ambas fechas dan diferencia exactamente 0 días, sin una sola excepción (máximo 0, mínimo 0, promedio 0). El desvío cero es un artefacto de la copia, no 1 obra en fecha. Marcado confiable=false.",
         "Avance ponderado 10,8% con 5.858 días planificados, pero 43 de las 54 tareas Finalizadas no tienen duración cargada y pesan 0. La banda honesta es 10,8%–15,4%.",
         "El % de avance está en 0,00 en 669 de 726 ítems. Sólo 3 tareas tienen avance parcial cargado (RETIRO DE SUELO TOTAL 80%, EXCAVACIÓN BASES Y PLATEA FRENTE 50%, REMITO 125 50%). El tablero informa avance por cambio de estado, no por porcentaje.",
         "257 de 726 ítems (35%) no tienen CRONOGRAMA cargado. Sectores enteros están sin fechas: AREAS COMUNES INSTALACIONES (11/11), AREAS COMUNES ALBAÑILERIA (7/7), AREAS COMUNES GRAL. (6/6), PROYECTO (9/9), y 37 de 41 en AMENITIES y 28 de 31 en LOCAL. La fecha de fin de obra 17/04/2028 sale sólo de los ítems que sí tienen fecha.",
-        "Siete tareas de instalaciones de AMENITIES y LOCAL están fechadas en marzo de 2026 —canalización de piso radiante, tableros eléctricos, preinstalación de A.A., cañerías sanitarias— y siguen en 'Programado' con 0% cinco meses después (147 a 150 días vencidas). Están fuera de secuencia respecto del resto del plan: el frente de obra recién está en fundaciones y subsuelos, así que o las fechas son un arrastre mal cargado o son trabajo realmente parado.",
+        "7 tareas de instalaciones de AMENITIES y LOCAL están fechadas en marzo de 2026 —canalización de piso radiante, tableros eléctricos, preinstalación de A.A., cañerías sanitarias— y siguen en 'Programado' con 0% 5 meses después (147 a 150 días vencidas). Están fuera de secuencia respecto del resto del plan: el frente de obra recién está en fundaciones y subsuelos, así que o las fechas son un arrastre mal cargado o son trabajo realmente parado.",
         "El fin de obra (17/04/2028) lo fija el grupo PISO 8, pero los dos ítems que marcan esa fecha se llaman 'PISO 1 - INSTALACION ELECTRODOMESTICOS' y 'PISO 1 - CORTINAS'. Hay 22 ítems en el grupo PISO 8 cuyo nombre empieza con 'PISO 1': se duplicó el piso 1 sin renombrar. La fecha de fin de obra descansa sobre ítems mal etiquetados.",
-        "El frente real de obra son las FUNDACIONES: las dos únicas tareas 'Iniciada' del tablero (RETIRO DE SUELO TOTAL 80%, EXCAVACIÓN BASES Y PLATEA FRENTE 50%) vencieron el 20/08/2026, un día antes del corte. Es el atraso que sí es información fresca.",
+        "El frente real de obra son las FUNDACIONES: las dos únicas tareas 'Iniciada' del tablero (RETIRO DE SUELO TOTAL 80%, EXCAVACIÓN BASES Y PLATEA FRENTE 50%) vencieron el 20/08/2026, 1 día antes del corte. Es el atraso que sí es información fresca.",
         "CONTRATISTA está cargado en 95 de 726 ítems (13%) y SUPERVICION en 1. No se puede hacer un corte por responsable con esta base. Además la columna CONTRATISTA tiene una etiqueta 'Detenido' (índice 2) que no corresponde a ningún contratista y no la usa ningún ítem: es un resto de una columna de estado reciclada.",
         "475 ítems tienen dependencia cargada (65%), con 484 vínculos: la red de precedencias existe y es densa, a diferencia de la carga de fechas. Verificado por dos métodos independientes.",
         "La columna formula 'Diferencia' (DAYS entre el fin del cronograma y el fin de la referencia) devuelve vacío por API en los 726 ítems, como se esperaba. La diferencia la calculé yo desde las dos columnas timeline y da 0 en todos los casos."
@@ -17763,7 +17763,7 @@
           "ref": "board 18398672766 · CRONOGRAMA solapado con la ventana de 4 semanas"
         },
         "alerta": {
-          "titulo": "Sólo 5 tareas caen en las próximas cuatro semanas",
+          "titulo": "Sólo 5 tareas caen en las próximas 4 semanas",
           "cuerpo": "De 642 tareas activas, 5 tienen fecha dentro de la ventana. Las otras 637 o ya vencieron o no tienen fecha cargada: con eso no se puede repartir trabajo.",
           "fuente": {
             "tipo": "calculado",
@@ -17873,7 +17873,7 @@
         "ganancia": 3.9,
         "metrica": "avance promedio simple (no ponderado por duración)",
         "advertencias": [
-          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "La reconstrucción no sabe cuándo nació cada tarea: 1 tarea creada en julio aparece en la foto de febrero con su valor de julio.",
           "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
           "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
         ],
@@ -18119,7 +18119,7 @@
         "mesActual": "2026-08",
         "ejecutables": 469,
         "referencia": "cronograma del 16/06 reconstruido del historial",
-        "nota": "La «línea base» declarada de esta obra <b>no sirve</b>: es una copia exacta del cronograma en los 469 ítems, sacada el 18/08. El desvío da cero por construcción, no por buena gestión. Se reconstruyó el cronograma al 16/06 desde el historial: <b>415 de 469 tareas tienen la misma fecha de fin que hoy</b>, y las 54 que se movieron se adelantaron. La conclusión es más incómoda que un atraso: <b>este cronograma no se está replanificando contra la realidad</b>. Además la fecha de fin de obra la fijan dos tareas del grupo PISO 8 mal nombradas «PISO 1 - …».",
+        "nota": "La «línea base» declarada de esta obra <b>no sirve</b>: es una copia exacta del cronograma en los 469 ítems, sacada el 18/08. El desvío da cero por construcción, no por buena gestión. Se reconstruyó el cronograma al 16/06 desde el historial: <b>415 de 469 tareas tienen la misma fecha de fin que hoy</b>, y las 54 que se movieron se adelantaron. La conclusión es más incómoda que un atraso: <b>este cronograma no se está replanificando contra la realidad</b>. Además la fecha de fin de obra la fijan 2 tareas del grupo PISO 8 mal nombradas «PISO 1 - …».",
         "fuente": {
           "tipo": "calculado",
           "ref": "board 18398672766 · timerange_mm6bm4pz vs cronograma reconstruido desde activity_logs al 16/06/2026, sobre 469 ejecutables con fecha"
@@ -18402,14 +18402,14 @@
             "cerradas": 5
           }
         ],
-        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos 3 meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
         "fuente": {
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 2.3/mes"
         },
         "pctCerradas": 7.4,
         "confiable": false,
-        "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos tres meses (2.3/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
+        "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos 3 meses (2.3/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
       },
       "desvioAcumulado": {
         "tareasMedidas": 20,
@@ -18529,7 +18529,7 @@
         "total": 11,
         "pct": 66.4,
         "siguiente": "Losa de subpresión del frente, programada para el 03/09",
-        "nota": "La obra se ejecuta partida en <b>frente y contrafrente</b>, y tiene <b>dos subsuelos</b>. Eso da ocho tramos de hormigón donde otra obra tendría uno. El contrafrente está completo; el frente no arrancó ninguno porque estuvo esperando la submuración, que llevó de abril a agosto: <b>casi cuatro meses</b>. Recién con eso cerrado el 01/08 se pudo empezar a excavar el frente, que hoy va por la mitad.",
+        "nota": "La obra se ejecuta partida en <b>frente y contrafrente</b>, y tiene <b>dos subsuelos</b>. Eso da ocho tramos de hormigón donde otra obra tendría uno. El contrafrente está completo; el frente no arrancó ninguno porque estuvo esperando la submuración, que llevó de abril a agosto: <b></b>. Recién con eso cerrado el 01/08 se pudo empezar a excavar el frente, que hoy va por la mitad.",
         "fuente": {
           "tipo": "monday",
           "ref": "board 18398672766 · grupos FUNDACIONES, SUBSUELO 1 y SUBSUELO 2 · tareas de hormigón, submuración y excavación"
@@ -18542,7 +18542,7 @@
         "tareasMedidas": 19,
         "universo": 726,
         "finCronograma": "2028-05-02",
-        "finCronogramaTarea": "PISO 8 (dos tareas mal nombradas «PISO 1»)",
+        "finCronogramaTarea": "PISO 8 (2 tareas mal nombradas «PISO 1»)",
         "finProyectado": "2028-06-09",
         "confianza": "baja",
         "baseValida": false,
@@ -18572,7 +18572,7 @@
             "peor": 152
           }
         ],
-        "nota": "<b>Depurado de fechas huérfanas.</b> El método estricto daba AMENITIES con 151 días, pero ahí sólo 4 de 42 tareas tienen fecha y son terminaciones fechadas en marzo de 2026 en una obra que recién excava fundaciones. Miden un error de carga, no atraso. <b>Hoy a las 19:18 replanificaron 443 tareas de golpe, +15 a +17 días</b>, y el fin de obra pasó de 17/04 a 02/05/2028. Sólo 19 tareas de 726 son medibles: leelo como piso, no como pronóstico. Todo el hormigón del frente todavía no arrancó y no aportó un solo dato.",
+        "nota": "<b>Depurado de fechas huérfanas.</b> El método estricto daba AMENITIES con 151 días, pero ahí sólo 4 de 42 tareas tienen fecha y son terminaciones fechadas en marzo de 2026 en 1 obra que recién excava fundaciones. Miden un error de carga, no atraso. <b>Hoy a las 19:18 replanificaron 443 tareas de golpe, +15 a +17 días</b>, y el fin de obra pasó de 17/04 a 02/05/2028. Sólo 19 tareas de 726 son medibles: leelo como piso, no como pronóstico. Todo el hormigón del frente todavía no arrancó y no aportó un solo dato.",
         "corte": "2026-08-24",
         "metodo": "Por cada tarea: fecha real de cierre menos la fecha que pedía el plan; si sigue abierta y venció, contra hoy. Mediana por sector. El atraso de la obra es el del peor sector con muestra suficiente, porque los sectores corren en paralelo. Fin proyectado = fin de la última tarea pendiente + ese atraso.",
         "fuente": {
@@ -18591,7 +18591,7 @@
         "antes": [
           "Todo el hormigón del frente, sin arrancar"
         ],
-        "nota": "Las dos tareas que fijan el fin están en el grupo PISO 8 pero se llaman «PISO 1 - …»: nombres mal heredados de una duplicación. Y la fecha se movió del 17/04 al 02/05 el 24/08, cuando corrieron 443 tareas quince días en bloque.",
+        "nota": "Las 2 tareas que fijan el fin están en el grupo PISO 8 pero se llaman «PISO 1 - …»: nombres mal heredados de una duplicación. Y la fecha se movió del 17/04 al 02/05 el 24/08, cuando corrieron 443 tareas 15 días en bloque.",
         "diasRestantes": 615,
         "vencida": false,
         "fuente": {
@@ -18701,7 +18701,7 @@
           "valor": 7.03,
           "pendiente": false,
           "nota": "no comparable con las otras obras",
-          "detalle": "NO comparable con el ponderado estándar de otros tableros. 36 de las 45 tareas Finalizadas (80% de lo terminado) no tienen DURACION cargada, así que el ponderado por duración las descarta y subestima el avance real. El 7,03% es el piso; imputando la duración promedio (7,27 días) a los 62 ítems sin dato, la banda alta es 12,29%. El avance simple (7,43%) es aquí más representativo que el ponderado. Además hay 12 ítems ",
+          "detalle": "NO comparable con el ponderado estándar de otros tableros. 36 de las 45 tareas Finalizadas (80% de lo terminado) no tienen DURACION cargada, así que el ponderado por duración las descarta y subestima el avance real. El 7,03% es el piso; imputando la duración promedio (7,27 días) a los 62 ítems sin dato, la banda alta es 12,29%. El avance simple (7,43%) es aquí más representativo que el ponderado. Además hay 12 ítems",
           "fuente": {
             "tipo": "calculado",
             "ref": "Avance ponderado = Σ(DURACION_i × %_i) / Σ(DURACION_i) sobre los 557 ítems que tienen DURACION cargada = 28.484 / 4.052 días = 7,03%. Los otros 62 ítems del tablero quedan fuera del cálculo porque no tienen DURACION, y entre ellos están 36 de las 45 tareas Finalizadas."
@@ -19245,7 +19245,7 @@
           },
           {
             "sector": "LOCAL",
-            "tarea": "L. -  ESPEJOS DE BAÑO",
+            "tarea": "L. - ESPEJOS DE BAÑO",
             "avance": 0,
             "fin": "2026-04-14",
             "dias": 126,
@@ -19581,7 +19581,7 @@
           },
           {
             "sector": "SUBSUELO",
-            "tarea": "PISO SUBSUELO - CANALIZACION  ELECTRICA",
+            "tarea": "PISO SUBSUELO - CANALIZACION ELECTRICA",
             "avance": 0,
             "fin": "2026-07-08",
             "dias": 41,
@@ -19685,7 +19685,7 @@
           },
           {
             "sector": "PISO 1",
-            "tarea": "PISO 1 - CANALIZACION  ELECTRICA",
+            "tarea": "PISO 1 - CANALIZACION ELECTRICA",
             "avance": 0,
             "fin": "2026-08-06",
             "dias": 12,
@@ -19693,7 +19693,7 @@
           },
           {
             "sector": "PISO 1",
-            "tarea": "PISO 1 -  CANALIZACION PISO RADIANTE ELEC.",
+            "tarea": "PISO 1 - CANALIZACION PISO RADIANTE ELEC.",
             "avance": 0,
             "fin": "2026-08-06",
             "dias": 12,
@@ -20410,7 +20410,7 @@
           "responsable": "Sin contratista cargado",
           "responsableNota": "",
           "gestionable": null,
-          "efecto": "PISO SUBSUELO- MAMPOSTERIA · PISO SUBSUELO - CANALIZACION  ELECTRICA · PISO 1 - CANALIZACION SANITARIA · PISO 2 - PARRILLA OBRA GRUESA",
+          "efecto": "PISO SUBSUELO- MAMPOSTERIA · PISO SUBSUELO - CANALIZACION ELECTRICA · PISO 1 - CANALIZACION SANITARIA · PISO 2 - PARRILLA OBRA GRUESA",
           "desde": null,
           "desvio": null,
           "cadena": [],
@@ -20690,7 +20690,7 @@
           "porcentaje": 0,
           "corrimientoMax": -323
         },
-        "explicacion": "Dependencias cargadas: 470 de 619. column_values(ids:[\"dependency_mm08tktm\"]) { ... on DependencyValue { linked_item_ids } } sobre los 619 ítems, contando los que tienen linked_item_ids",
+        "explicacion": "Dependencias cargadas: 470 de 619. column_values(ids:[\"dependency_mm08tktm\"]) {.. on DependencyValue { linked_item_ids } } sobre los 619 ítems, contando los que tienen linked_item_ids",
         "robustez": "CONVENCION DE SIGNO: negativo = el CRONOGRAMA vigente termina ANTES que la referencia (el plan se adelanto en papel); positivo = se atraso. // CONTRA 27 May '26 (timerange_mm3rvr72): 483 tareas comparables (las 483 que tienen cronograma; las 136 sin fecha tampoco tienen referencia). 376 desviadas, 107 identicas. Promedio sobre las desviadas -4,6 dias; promedio sobre las 483 -3,6 dias; mediana -1 dia. Maximo desvio -323 dias (PISO SUBSUELO- CARPETA CEMENTICIA). CERO tareas con desvio positivo: contra esta referencia el tablero es fisicamente incapaz de mostrar atraso. Distribucion: 107 en 0, 363 entre -1 y -30, 9 entre -31 y -90, 3 entre -91 y -180, 1 por debajo de -180. Peores sectores por promedio: SUBSUELO -18,0 (18 tareas), PISO 9 -5,3 (49), PISO 8 -4,8 (49), PISO 7 -4,1 (50), PISO 6 -4,0 (43). // CONTRA 07 May '26 (timerange_mm34tb6x): 483 comparables, 415 desviadas, promedio sobre desviadas -101,8 dias, promedio sobre las 483 -87,5, mediana -99. Maximo -447 dias (PISO SUBSUELO- CARPETA CEMENTICIA); solo 12 tareas con desvio positivo, la mayor +32 (PISO PB - CANALIZACION ELECT. LOSA). Distribucion: 68 en 0, 12 positivas, 7 entre -1 y -30, 1 entre -31 y -90, 387 entre -91 y -180, 8 por debajo de -180. Peores sectores: SUBSUELO -226,9 (18), PISO 3 -94,3 (44), PISO 4 -90,3 (44), PISO 6 -90,3 (43), PISO 5 -90,2 (44). // LECTURA: los 387 items movidos en bloque entre -91 y -180 dias son la huella de un replanteo hecho entre el 07 y el 27 de mayo de 2026 que comprimio el plan unos 99 dias (mediana). Esa referencia sirve para dimensionar el replanteo, no para medir desempeno. Los desvios de inicio dan lo mismo: -87,3 dias promedio contra 07 May, -3,2 contra 27 May.",
         "fuente": {
           "tipo": "monday",
@@ -21189,7 +21189,7 @@
                 "responsable": "ALBAÑILERIA"
               },
               {
-                "tarea": "PISO 2 - CANALIZACION  ELECTRICA",
+                "tarea": "PISO 2 - CANALIZACION ELECTRICA",
                 "inicio": "2026-08-27",
                 "fin": "2026-09-02",
                 "clase": "porVenir",
@@ -21202,7 +21202,7 @@
                 "responsable": "ALBAÑILERIA"
               },
               {
-                "tarea": "PISO 2 -  CANALIZACION PISO RADIANTE ELEC.",
+                "tarea": "PISO 2 - CANALIZACION PISO RADIANTE ELEC.",
                 "inicio": "2026-08-27",
                 "fin": "2026-09-02",
                 "clase": "porVenir",
@@ -21481,7 +21481,7 @@
           "ref": "board 18402983267 · CRONOGRAMA solapado con la ventana de 4 semanas"
         },
         "alerta": {
-          "titulo": "Sólo 27 tareas caen en las próximas cuatro semanas",
+          "titulo": "Sólo 27 tareas caen en las próximas 4 semanas",
           "cuerpo": "De 529 tareas activas, 27 tienen fecha dentro de la ventana. Las otras 502 o ya vencieron o no tienen fecha cargada: con eso no se puede repartir trabajo.",
           "fuente": {
             "tipo": "calculado",
@@ -21605,7 +21605,7 @@
         "ganancia": 5.2,
         "metrica": "avance promedio simple (no ponderado por duración)",
         "advertencias": [
-          "La reconstrucción no sabe cuándo nació cada tarea: una tarea creada en julio aparece en la foto de febrero con su valor de julio.",
+          "La reconstrucción no sabe cuándo nació cada tarea: 1 tarea creada en julio aparece en la foto de febrero con su valor de julio.",
           "Las tareas con % cargado y sin ningún cambio registrado (330 de 687 en GLOW 3, 51 de ellas en 100 %) inflan la historia temprana.",
           "Es una foto del pasado de lo que hoy sigue vivo: las tareas borradas se llevaron su historia."
         ],
@@ -21886,7 +21886,7 @@
             "dias": null
           }
         ],
-        "nota": "Doce hitos, uno por nivel, todos pruebas hidráulicas. <b>El primero venció hace 37 días y sigue en «Programada»</b>. Debajo tiene diez tareas de subsuelo vencidas en cadena: mampostería → canalización sanitaria → canalización eléctrica → cañerías → la prueba → contrapiso → carpeta. Todas en 0 %.",
+        "nota": "12 hitos, uno por nivel, todos pruebas hidráulicas. <b>El primero venció hace 37 días y sigue en «Programada»</b>. Debajo tiene 10 tareas de subsuelo vencidas en cadena: mampostería → canalización sanitaria → canalización eléctrica → cañerías → la prueba → contrapiso → carpeta. Todas en 0 %.",
         "fuente": {
           "tipo": "monday",
           "ref": "board 18402983267 · visualization_type milestone en timerange_mkyay6x2"
@@ -22144,14 +22144,14 @@
             "cerradas": 29
           }
         ],
-        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos tres meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
+        "nota": "Proyección por ritmo de cierre: tareas que faltan dividido el promedio de cierres netos de los últimos 3 meses, tomado del historial de Monday. Cierres netos = pasaron a terminada menos las que se reabrieron.",
         "fuente": {
           "tipo": "calculado",
           "ref": "activity_logs(column_ids:[status]) del board · cierres netos por mes · ritmo de los últimos 3 meses = 10.7/mes"
         },
         "pctCerradas": 7.3,
         "confiable": false,
-        "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos tres meses (10.7/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
+        "motivo": "Obra en etapa temprana (7 % cerrado). El ritmo de los últimos 3 meses (10.7/mes) es el de estructura, no el de terminaciones, que es mucho más rápido. Proyectar con él da una fecha absurda."
       },
       "desvioAcumulado": {
         "tareasMedidas": 30,
@@ -22265,7 +22265,7 @@
         "total": 10,
         "pct": 89.0,
         "siguiente": "Estructura de los pisos; ya hay 6 tareas cerradas en elevación",
-        "nota": "El subsuelo se ejecutó <b>en un solo tramo</b>: la estructura de hormigón entró el 04/03 y cerró el 01/04, cuatro semanas. Antes había cerrado toda la fundación — excavación, retiro de suelo y perfilado de bases y submurales. Sin partición por sectores y con un solo subsuelo, la secuencia corrió de corrido.",
+        "nota": "El subsuelo se ejecutó <b>en un solo tramo</b>: la estructura de hormigón entró el 04/03 y cerró el 01/04, 4 semanas. Antes había cerrado toda la fundación — excavación, retiro de suelo y perfilado de bases y submurales. Sin partición por sectores y con un solo subsuelo, la secuencia corrió de corrido.",
         "fuente": {
           "tipo": "monday",
           "ref": "board 18402983267 · grupos FUNDACIONES y SUBSUELO · tareas de hormigón y excavación"
@@ -22349,8 +22349,8 @@
           "pct": 58,
           "nota": "Demolición documental, preconstrucción, proyecto, preliminares y administración de excavaciones. Son trámites — certificados, seguros, encomiendas, inspecciones de GCBA — sin duración cargada. No deberían promediarse con el hormigón."
         },
-        "porQueEsBajo": "El 7 % no es un error de cálculo: <b>GLOW 7 tiene 567 tareas de obra física y terminó 15.</b> El denominador es el plan completo de una obra que recién hormigona el piso 3, así que casi todo lo que cuenta son terminaciones que no empezaron. <b>El número que refleja la realidad es el avance por etapa</b>, no el global: la estructura está al 89 % y las terminaciones en cero.",
-        "descartado": "Se probó imputar duración a las tareas que no la tienen. Con la mediana de cada grupo daba 25,2 %, pero es un artefacto: el grupo FUNDACIONES tiene una excavación de ocho meses que arrastra la mediana a 177 días y se la asigna a tareas cortas. Con la mediana global de 5 días da 7,7 %, casi igual que sin imputar.",
+        "porQueEsBajo": "El 7 % no es un error de cálculo: <b>GLOW 7 tiene 567 tareas de obra física y terminó 15.</b> El denominador es el plan completo de 1 obra que recién hormigona el piso 3, así que casi todo lo que cuenta son terminaciones que no empezaron. <b>El número que refleja la realidad es el avance por etapa</b>, no el global: la estructura está al 89 % y las terminaciones en cero.",
+        "descartado": "Se probó imputar duración a las tareas que no la tienen. Con la mediana de cada grupo daba 25,2 %, pero es un artefacto: el grupo FUNDACIONES tiene una excavación de 8 meses que arrastra la mediana a 177 días y se la asigna a tareas cortas. Con la mediana global de 5 días da 7,7 %, casi igual que sin imputar.",
         "fuente": {
           "tipo": "calculado",
           "ref": "board 18402983267 · Σ(% × DURACION) ÷ Σ(DURACION) separando los grupos de gestión de los de obra · 619 ítems leídos el 26/08/2026"
@@ -22388,7 +22388,7 @@
           "GLOW 6+": "FALTA — timerange_mm6bm4pz existe con cobertura 469/469, pero es un snapshot tomado hoy 18-ago-26: desvío 0 en las 469 tareas, en inicio y en fin. Publicar ese 0 sería mentir con un dato real.",
           "GLOW 7": "FALTA ÚTIL — dos referencias (07 May y 27 May 26) sobre 483 tareas. Contra la vigente hay CERO tareas con desvío positivo: el tablero es incapaz de mostrar atraso. La vieja mide un replanteo de -99 d de mediana, no desempeño."
         },
-        "nota": "De cinco obras, una sola (GLOW 5) tiene línea base capaz de mostrar atraso. En GLOW 6+ y GLOW 7 la columna existe y da 0 o negativo por construcción: la trampa del desvío cero repetida en tres tableros."
+        "nota": "De 5 obras, una sola (GLOW 5) tiene línea base capaz de mostrar atraso. En GLOW 6+ y GLOW 7 la columna existe y da 0 o negativo por construcción: la trampa del desvío cero repetida en tres tableros."
       },
       {
         "bloque": "Tareas bloqueadas",
@@ -22448,13 +22448,13 @@
           "GLOW 6+": "DISPONIBLE — 726/726 (100%), 10 rubros. Es la única columna con cobertura total y real de ese tablero.",
           "GLOW 7": "DISPONIBLE CON SESGO — 619/619 (100%), 10 rubros; 'EXCAVACIONES' incluye puertas, termotanque y sala de máquinas."
         },
-        "nota": "Cobertura 100% en cuatro obras, pero EXCAVACIONES está contaminado en tres: cualquier ranking por rubro necesita nota al pie."
+        "nota": "Cobertura 100% en 4 obras, pero EXCAVACIONES está contaminado en tres: cualquier ranking por rubro necesita nota al pie."
       },
       {
         "bloque": "Corte por contratista",
         "porObra": {
           "GLOW 3": "PARCIAL E INÚTIL — 125/778 (16,1%) y sólo 4 etiquetas genéricas (Constructora 75 / Subcontrato 50). Se puede decir 'es propio o tercerizado', no qué proveedor frena la obra.",
-          "GLOW 5": "DISPONIBLE — 546/546 (100%) con 22 empresas reales (SIELPROM 60, NORAY 39, BALDINO 35, BULAS 21, ROLANDO 20...). Pero 119 (21,8%) están en 'DEFAULT', el placeholder del template.",
+          "GLOW 5": "DISPONIBLE — 546/546 (100%) con 22 empresas reales (SIELPROM 60, NORAY 39, BALDINO 35, BULAS 21, ROLANDO 20..). Pero 119 (21,8%) están en 'DEFAULT', el placeholder del template.",
           "GLOW 6+": "FALTA — 95/726 (13,1%) y las etiquetas son genéricas o de prueba (RESPONSABLE 1 39, JUANCITO 27, YESO 15). 631 tareas sin nadie.",
           "GLOW 7": "FALTA — 26/619 (4,2%): Gimenez 13, Carlos Rios 10, Constructora 3. 101 de las 103 tareas frenadas no tienen responsable."
         },
@@ -22468,7 +22468,7 @@
           "GLOW 6+": "FALTA — SUPERVICION cargada en 1 de 726 (0,14%), y ese ítem es REMITO 125, que parece de prueba (Luis Fontana).",
           "GLOW 7": "FALTA — no existe columna de personas en el board 18402983267."
         },
-        "nota": "Único bloque con FALTA en las cinco obras. Total de asignaciones en toda la cartera: 3 celdas sobre 3.020 tareas. La pantalla 'quién tiene qué' no existe para nadie."
+        "nota": "Único bloque con FALTA en las 5 obras. Total de asignaciones en toda la cartera: 3 celdas sobre 3.020 tareas. La pantalla 'quién tiene qué' no existe para nadie."
       },
       {
         "bloque": "Subelementos / registro Last Planner semanal (PPC)",
@@ -22511,7 +22511,7 @@
           "GLOW 7"
         ],
         "esfuerzo": "MUY BAJO — 4 ediciones de configuración de columna, cero carga de datos, más una convención escrita de una línea.",
-        "impacto": "ALTO — hoy 'bloqueadas' da 15/0/0/0/15 y 'retrasadas' da 46/24/1/39/11 sin significar lo mismo. Es lo que impide poner las cinco obras en una misma tabla sin nota al pie."
+        "impacto": "ALTO — hoy 'bloqueadas' da 15/0/0/0/15 y 'retrasadas' da 46/24/1/39/11 sin significar lo mismo. Es lo que impide poner las 5 obras en una misma tabla sin nota al pie."
       },
       {
         "que": "Cargar CONTRATISTA con nombre real de empresa en las tareas frenadas y activas. En GLOW 3 hay que cambiar además el set de etiquetas (hoy sólo Constructora/Subcontrato/Listo/Detenido); en GLOW 5 hay que reemplazar los 119 'DEFAULT'.",
@@ -22578,7 +22578,7 @@
           "GLOW 7"
         ],
         "esfuerzo": "BAJO-MEDIO — 3 columnas nuevas y unas 100 asignaciones en total para toda la cartera.",
-        "impacto": "ALTO — es el único bloque con FALTA en las cinco obras. Hoy hay 3 celdas de persona cargadas sobre 3.020 tareas."
+        "impacto": "ALTO — es el único bloque con FALTA en las 5 obras. Hoy hay 3 celdas de persona cargadas sobre 3.020 tareas."
       },
       {
         "que": "Cargar dependencias en GLOW 3, al menos la cadena de terminaciones por piso (contrapiso → carpeta → impermeabilización → revestimiento → pintura).",
@@ -22591,14 +22591,14 @@
       },
       {
         "que": "Corregir los errores puntuales de dato que hoy invalidan indicadores enteros (menos de 40 celdas en total).",
-        "donde": "GLOW 7: fecha 2030-11-29/2030-12-06 en 'PISO 1 - CIELORRASOS EXTERIORES' (1 celda que mueve el fin de obra 3 años y 4 meses). GLOW 5: 3 tareas Finalizadas al 100% con fecha futura (PISO 6/7/8 REVESTIMIENTO PISO PORCELANATO BALCONES) que fijan un fin falso de 2026-12-31. GLOW 3: 4 tareas al 100% con ESTADO 'Programada' que figuran vencidas (las vencidas reales son 24, no 27). GLOW 6+: 22 tareas del grupo PISO 8 nombradas 'PISO 1 - ...', dos de ellas fijan el fin de obra 2028-04-17.",
+        "donde": "GLOW 7: fecha 2030-11-29/2030-12-06 en 'PISO 1 - CIELORRASOS EXTERIORES' (1 celda que mueve el fin de obra 3 años y 4 meses). GLOW 5: 3 tareas Finalizadas al 100% con fecha futura (PISO 6/7/8 REVESTIMIENTO PISO PORCELANATO BALCONES) que fijan un fin falso de 2026-12-31. GLOW 3: 4 tareas al 100% con ESTADO 'Programada' que figuran vencidas (las vencidas reales son 24, no 27). GLOW 6+: 22 tareas del grupo PISO 8 nombradas 'PISO 1 -..', dos de ellas fijan el fin de obra 2028-04-17.",
         "obrasQueDestraba": [
           "GLOW 7",
           "GLOW 5",
           "GLOW 3",
           "GLOW 6+"
         ],
-        "esfuerzo": "MUY BAJO — menos de 40 celdas en las cinco obras juntas.",
+        "esfuerzo": "MUY BAJO — menos de 40 celdas en las 5 obras juntas.",
         "impacto": "ALTO en credibilidad — cuatro de los cinco 'fin de obra' que hoy publicaría el dashboard son artefactos de estas celdas."
       },
       {
@@ -22610,10 +22610,10 @@
           "GLOW 7"
         ],
         "esfuerzo": "MEDIO — reetiquetar unos 175 ítems y acordar una convención de cierre de hito (mover a Finalizada, o usar % = 100).",
-        "impacto": "MEDIO — hoy cualquier ranking por rubro está contaminado en tres obras y 'hitos cumplidos vs vencidos' no se puede reportar en ninguna."
+        "impacto": "MEDIO — hoy cualquier ranking por rubro está contaminado en 3 obras y 'hitos cumplidos vs vencidos' no se puede reportar en ninguna."
       },
       {
-        "que": "Empezar a usar los subelementos como registro semanal Last Planner (compromiso, se cumplió o no, causa) en las tres obras que tienen la estructura armada y no la usan.",
+        "que": "Empezar a usar los subelementos como registro semanal Last Planner (compromiso, se cumplió o no, causa) en las 3 obras que tienen la estructura armada y no la usan.",
         "donde": "Boards de subelementos de GLOW 5 (3 registros y uno es 'asdas'), 18398672781 de GLOW 6+ (8 registros para 726 tareas) y 18402983268 de GLOW 7 (4 filas, 3 de prueba). Las columnas ya existen: Semana / Responsable / Tipo / Se cumplió o no / Restricciones o causas / Calidad / Equipo.",
         "obrasQueDestraba": [
           "GLOW 5",
@@ -22628,12 +22628,12 @@
       {
         "que": "PPC (porcentaje de plan cumplido) comparable entre obras y como serie semanal",
         "porque": "Sólo GLOW 3 tiene volumen: 55 subelementos y PPC = 16/(16+18+1) = 45,7%. Ni siquiera GLOW 3 permite una curva: es una foto, no semanas encadenadas.",
-        "queHaceFalta": "Cargar el compromiso semanal como subelemento en las cuatro obras que faltan, con la columna Semana bien poblada, y sostenerlo 4 a 6 semanas seguidas. Recién ahí el dashboard puede mostrar PPC por obra y su evolución, que es el indicador central del informe en papel."
+        "queHaceFalta": "Cargar el compromiso semanal como subelemento en las 4 obras que faltan, con la columna Semana bien poblada, y sostenerlo 4 a 6 semanas seguidas. Recién ahí el dashboard puede mostrar PPC por obra y su evolución, que es el indicador central del informe en papel."
       },
       {
         "que": "Causas de no cumplimiento con taxonomía cerrada y rankeables",
         "porque": "Las causas existen sólo como texto libre y, fuera de GLOW 3, sólo en 3 celdas de toda la cartera: 'desmoronamiento de rampa' (GLOW 6+), 'Llovió' (GLOW 7), 'Le faltó gente al contratista' (GLOW 5). GLOW 3 tiene varias escritas a mano (falta de material - ladrillo celular del 12, inspecciones de GAS pendientes, lluvias, recursos desviados a la obra de Campana, defensas de fachada sin retirar) pero como prosa, no como categoría.",
-        "queHaceFalta": "Convertir 'Restricciones o causas de no cumplimiento' de texto libre a un dropdown cerrado (Material / Mano de obra / Liberación-inspección / Clima / Proyecto-documentación / Recursos desviados / Definición del cliente) y dejar el texto como detalle. Sin eso no se puede decir 'la causa número uno de la cartera es X' ni comparar dos obras."
+        "queHaceFalta": "Convertir 'Restricciones o causas de no cumplimiento' de texto libre a un dropdown cerrado (Material / Mano de obra / Liberación-inspección / Clima / Proyecto-documentación / Recursos desviados / Definición del cliente) y dejar el texto como detalle. Sin eso no se puede decir 'la causa número uno de la cartera es X' ni comparar 2 obras."
       },
       {
         "que": "Movimiento entre cortes: qué avanzó, qué se frenó y qué se movió de fecha desde la semana pasada",
@@ -22642,28 +22642,28 @@
       },
       {
         "que": "Costo, certificación y curva de inversión (avance físico contra avance financiero)",
-        "porque": "Ninguna de las cinco obras tiene una sola columna numérica de monto, presupuesto o certificado. Las únicas numéricas son % y DURACION.",
+        "porque": "Ninguna de las 5 obras tiene una sola columna numérica de monto, presupuesto o certificado. Las únicas numéricas son % y DURACION.",
         "queHaceFalta": "Agregar una columna de monto o peso económico por tarea en los cinco boards y cargarla al menos a nivel rubro×sector. Sin eso no hay curva S ni se puede contrastar el 71,9% físico de GLOW 5 contra lo certificado."
       },
       {
-        "que": "Ruta crítica calculada y el impacto en días de una tarea frenada sobre la fecha de fin",
+        "que": "Ruta crítica calculada y el impacto en días de 1 tarea frenada sobre la fecha de fin",
         "porque": "GLOW 3 tiene 0 dependencias cargadas; las otras cuatro tienen entre 40,8% y 86,9% pero ningún tablero expone el cálculo. Además las columnas formula 'Diferencia' de Monday (formula_mm586xc5 en GLOW 3, formula_mm4m3wmr en GLOW 5, formula_mm3rwq3v y formula_mm341nbc en GLOW 7) devuelven vacío por API: todo desvío ya se recalcula por fuera.",
         "queHaceFalta": "Cargar precedencias en GLOW 3 y que el dashboard calcule la ruta crítica del lado propio con los linked_item_ids que ya existen en las otras cuatro. La cuenta se hace afuera; lo único que falta es el dato de origen en GLOW 3."
       },
       {
         "que": "Responsable del compromiso semanal (quién se comprometió y quién falló)",
-        "porque": "El corte por persona es FALTA en las cinco obras: 3 celdas cargadas sobre 3.020 tareas. Los responsables del Last Planner viven sólo como texto dentro de los subelementos de GLOW 3 (Equipo Troche, Equipo Cesar, Equipo Pablo, Equipo Miguel, Compras, Subcontrato, SIN DEFINIR) y con otro set en GLOW 5 (Técnicas / Equipo 1 / Compras) y GLOW 6+ (Pedro, Excavador, Compras, Técnica).",
-        "queHaceFalta": "Definir una lista única de equipos/responsables para las cinco obras y usarla tanto en la columna de personas del board principal como en el campo Responsable del subelemento. Hoy el informe en papel sabe a quién reclamarle y el tablero no."
+        "porque": "El corte por persona es FALTA en las 5 obras: 3 celdas cargadas sobre 3.020 tareas. Los responsables del Last Planner viven sólo como texto dentro de los subelementos de GLOW 3 (Equipo Troche, Equipo Cesar, Equipo Pablo, Equipo Miguel, Compras, Subcontrato, SIN DEFINIR) y con otro set en GLOW 5 (Técnicas / Equipo 1 / Compras) y GLOW 6+ (Pedro, Excavador, Compras, Técnica).",
+        "queHaceFalta": "Definir una lista única de equipos/responsables para las 5 obras y usarla tanto en la columna de personas del board principal como en el campo Responsable del subelemento. Hoy el informe en papel sabe a quién reclamarle y el tablero no."
       },
       {
         "que": "Hitos cumplidos contra hitos vencidos",
-        "porque": "Sólo GLOW 3 tiene hitos (45) y usan ESTADO=HITO como etiqueta permanente que nunca pasa a Finalizada: 19 ya tienen fecha pasada y el tablero no puede decir si se cumplieron. Las otras cuatro obras ni siquiera tienen la etiqueta HITO; GLOW 5 la sustituye con 20 tareas cuyo nombre empieza con 'FIN'.",
+        "porque": "Sólo GLOW 3 tiene hitos (45) y usan ESTADO=HITO como etiqueta permanente que nunca pasa a Finalizada: 19 ya tienen fecha pasada y el tablero no puede decir si se cumplieron. Las otras 4 obras ni siquiera tienen la etiqueta HITO; GLOW 5 la sustituye con 20 tareas cuyo nombre empieza con 'FIN'.",
         "queHaceFalta": "Definir una convención única (mover el hito a Finalizada, o marcarlo con % = 100) y crear las etiquetas HITO/FIN en GLOW 5, 6+, 7 y 2. Hoy lo máximo reportable es 'hitos con fecha ya pasada': 19, y en una sola obra."
       },
       {
         "que": "Las columnas de recurso 'mano de obra' (numeric_mm1kz7fz) y 'oficina tecnica' (numeric_mm1k7tmk)",
-        "porque": "El brief las daba por existentes en GLOW 6+ y no están: se recorrieron las 14 columnas del board 18398672766 y las 9 del de subelementos 18398672781 y no aparecen ni por id ni por título. Tampoco figuran en el relevamiento de columnas de las otras cuatro obras.",
-        "queHaceFalta": "Confirmar con quien pasó el brief de qué tablero salieron esos ids. Si el dato de dotación se quiere en el dashboard, hay que crear las columnas en Monday y cargarlas: hoy no hay nada que graficar en ninguna de las cinco obras."
+        "porque": "El brief las daba por existentes en GLOW 6+ y no están: se recorrieron las 14 columnas del board 18398672766 y las 9 del de subelementos 18398672781 y no aparecen ni por id ni por título. Tampoco figuran en el relevamiento de columnas de las otras 4 obras.",
+        "queHaceFalta": "Confirmar con quien pasó el brief de qué tablero salieron esos ids. Si el dato de dotación se quiere en el dashboard, hay que crear las columnas en Monday y cargarlas: hoy no hay nada que graficar en ninguna de las 5 obras."
       }
     ],
     "resumen": "La buena noticia es que la mitad de la brecha es configuración y no trabajo: unificar las etiquetas de ESTADO en cuatro boards, congelar una línea base de verdad y corregir menos de 40 celdas erróneas cuesta horas y elimina la nota al pie de casi todas las pantallas; el trabajo pesado real es CONTRATISTA (1.877 celdas vacías), CRONOGRAMA (749) y DURACION (430), que acotado al frente frenado baja a unas 200 celdas de alto rendimiento."
@@ -22749,7 +22749,7 @@
         "baseUtil": true
       }
     ],
-    "nota": "La misma cuenta en las cinco obras: qué porcentaje de tareas debía estar cerrado según la línea base y qué porcentaje lo está.",
+    "nota": "La misma cuenta en las 5 obras: qué porcentaje de tareas debía estar cerrado según la línea base y qué porcentaje lo está.",
     "fuente": {
       "tipo": "calculado",
       "ref": "los 5 boards · fin de la línea base de cada obra vs estado terminado, al 21/08/2026"
@@ -22798,7 +22798,7 @@
         "confiable": false
       }
     ],
-    "nota": "Fin de cronograma contra fin proyectado por el ritmo real de cierre de cada obra. <b>Sólo GLOW 3 y GLOW 5 tienen proyección utilizable</b>: las otras tres están al 7 %, al 7 % y congelada, y el ritmo de una obra en estructura no predice el de terminaciones.",
+    "nota": "Fin de cronograma contra fin proyectado por el ritmo real de cierre de cada obra. <b>Sólo GLOW 3 y GLOW 5 tienen proyección utilizable</b>: las otras tres están al 7 %, al 7 % y congelada, y el ritmo de 1 obra en estructura no predice el de terminaciones.",
     "fuente": {
       "tipo": "calculado",
       "ref": "activity_logs(column_ids:[status]) de cada board · cierres netos por mes · tareas sin cerrar ÷ ritmo de los últimos 3 meses"
@@ -22882,7 +22882,7 @@
         "finEstructuraSubsuelo": null
       }
     ],
-    "nota": "Las dos están en hormigón, pero no en el mismo punto. <b>GLOW 7 cerró la estructura de su subsuelo el 01/04 y ya tiene tareas en elevación. GLOW 6+ tiene tres tramos de hormigón sin arrancar.</b> La diferencia no es de ritmo de trabajo: GLOW 6+ tiene dos subsuelos y ejecuta partida en frente y contrafrente por las medianeras, así que cada tramo espera al anterior. Comparar el porcentaje global de las dos obras —7,4 % y 7,3 %— esconde eso por completo.",
+    "nota": "Las dos están en hormigón, pero no en el mismo punto. <b>GLOW 7 cerró la estructura de su subsuelo el 01/04 y ya tiene tareas en elevación. GLOW 6+ tiene tres tramos de hormigón sin arrancar.</b> La diferencia no es de ritmo de trabajo: GLOW 6+ tiene dos subsuelos y ejecuta partida en frente y contrafrente por las medianeras, así que cada tramo espera al anterior. Comparar el porcentaje global de las 2 obras —7,4 % y 7,3 %— esconde eso por completo.",
     "fuente": {
       "tipo": "cruzado",
       "ref": "boards 18398672766 y 18402983267 · secuencia de tareas de hormigón con su estado y fecha real de cierre"
