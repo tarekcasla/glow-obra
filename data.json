@@ -12479,6 +12479,21 @@
           "tipo": "monday",
           "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
         }
+      },
+      "avanceDetalle": {
+        "obraFisica": {
+          "tareas": 715,
+          "avance": 58.2,
+          "sinDuracion": 147,
+          "nota": "Ponderado por duración. 147 tareas no tienen duración cargada y quedan fuera del cálculo."
+        },
+        "gestion": null,
+        "porQueEsBajo": null,
+        "descartado": null,
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board de la obra · Σ(% × DURACION) ÷ Σ(DURACION) sobre 715 ejecutables"
+        }
       }
     },
     "glow5": {
@@ -16232,6 +16247,20 @@
           "tipo": "calculado",
           "ref": "board 18402983112 · Σ(% × DURACION) ÷ Σ(DURACION) sobre 484 ejecutables · leído el 26/08/2026"
         }
+      },
+      "causasEnTiempo": {
+        "semanas": [],
+        "series": [],
+        "sinDatos": true,
+        "subelementos": 4,
+        "conCausa": 1,
+        "unica": "Le falto gente al contratista",
+        "semanaUnica": "10–16 ago",
+        "nota": "<b>No hay serie para graficar.</b> El board de subelementos de GLOW 5 tiene 4 registros y sólo 1 con causa escrita. Sin registro semanal sostenido no hay serie que acumular. La única causa registrada es «Le falto gente al contratista», en la semana del 10–16 ago. Para que este gráfico funcione hace falta cargar el compromiso semanal como subelemento, con la semana y la causa de no cumplimiento, y sostenerlo 4 a 6 semanas seguidas. Es lo que sí se hace en GLOW 3.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18402983122 · 4 subelementos · 1 con causa escrita"
+        }
       }
     },
     "glow6": {
@@ -18597,6 +18626,40 @@
         "fuente": {
           "tipo": "monday",
           "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+        }
+      },
+      "causasEnTiempo": {
+        "semanas": [],
+        "series": [],
+        "sinDatos": true,
+        "subelementos": 8,
+        "conCausa": 0,
+        "unica": null,
+        "semanaUnica": null,
+        "nota": "<b>No hay serie para graficar.</b> Los 8 subelementos de GLOW 6+ tienen la columna de causas vacía. La estructura del Last Planner está creada y sin usar. Para que este gráfico funcione hace falta cargar el compromiso semanal como subelemento, con la semana y la causa de no cumplimiento, y sostenerlo 4 a 6 semanas seguidas. Es lo que sí se hace en GLOW 3.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18398672781 · 8 subelementos · 0 con causa escrita"
+        }
+      },
+      "avanceDetalle": {
+        "obraFisica": {
+          "tareas": 674,
+          "avance": 2.3,
+          "sinDuracion": 82,
+          "nota": "Ponderado por duración. 82 tareas no tienen duración cargada y quedan fuera del cálculo."
+        },
+        "gestion": {
+          "tareas": 52,
+          "cerradas": 30,
+          "pct": 58,
+          "nota": "Demolición documental, preconstrucción, proyecto, preliminares y administración de excavaciones. Trámites sin duración cargada."
+        },
+        "porQueEsBajo": "El denominador es el plan completo, y la obra está en estructura: casi todo lo que cuenta son terminaciones que no empezaron. El avance por etapa representa mejor el estado real.",
+        "descartado": null,
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "board de la obra · Σ(% × DURACION) ÷ Σ(DURACION) sobre 674 ejecutables"
         }
       }
     },
@@ -22354,6 +22417,20 @@
         "fuente": {
           "tipo": "calculado",
           "ref": "board 18402983267 · Σ(% × DURACION) ÷ Σ(DURACION) separando los grupos de gestión de los de obra · 619 ítems leídos el 26/08/2026"
+        }
+      },
+      "causasEnTiempo": {
+        "semanas": [],
+        "series": [],
+        "sinDatos": true,
+        "subelementos": 4,
+        "conCausa": 1,
+        "unica": "Llovio",
+        "semanaUnica": "10–16 ago",
+        "nota": "<b>No hay serie para graficar.</b> El board de subelementos de GLOW 7 tiene 4 registros, dos de ellos de prueba («tarea 3», «sdas»), y una sola causa escrita. La única causa registrada es «Llovio», en la semana del 10–16 ago. Para que este gráfico funcione hace falta cargar el compromiso semanal como subelemento, con la semana y la causa de no cumplimiento, y sostenerlo 4 a 6 semanas seguidas. Es lo que sí se hace en GLOW 3.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board 18402983268 · 4 subelementos · 1 con causa escrita"
         }
       }
     }
