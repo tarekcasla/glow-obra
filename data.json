@@ -12461,9 +12461,9 @@
         }
       },
       "ultimaTarea": {
-        "tarea": "PISO 9 - REVESTIMIENTOS DE PISO MADERA",
-        "sector": "PISO 9",
-        "fecha": "2026-10-21",
+        "tarea": "PISO 10 - MARMOLERIA BAÑOS",
+        "sector": "PISO 10",
+        "fecha": "2026-11-11",
         "estado": "Programada",
         "avance": 0,
         "limpia": true,
@@ -12473,26 +12473,59 @@
           "PISO PB - FIN · 15/10"
         ],
         "nota": "La fecha se lee limpia: la tarea está pendiente y es realmente la última del plan. El 21/08 la empujaron un mes junto con las otras ocho de revestimiento de piso madera, y ahí pasó a fijar el fin de obra.",
-        "diasRestantes": 56,
+        "diasRestantes": 76,
         "vencida": false,
         "fuente": {
           "tipo": "monday",
-          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · 2026-08-27"
         }
       },
       "avanceDetalle": {
         "obraFisica": {
           "tareas": 715,
-          "avance": 58.2,
-          "sinDuracion": 147,
-          "nota": "Ponderado por duración. 147 tareas no tienen duración cargada y quedan fuera del cálculo."
+          "avance": 66.3,
+          "sinDuracion": 192,
+          "nota": "Ponderado por duración. 192 tareas quedan fuera por no tener duración o porcentaje cargado."
         },
         "gestion": null,
         "porQueEsBajo": null,
         "descartado": null,
         "fuente": {
           "tipo": "calculado",
-          "ref": "board de la obra · Σ(% × DURACION) ÷ Σ(DURACION) sobre 715 ejecutables"
+          "ref": "Σ(% × DURACION) ÷ Σ(DURACION) sobre 715 ejecutables · 2026-08-27"
+        },
+        "conteo": 47.69,
+        "corte": "2026-08-27"
+      },
+      "corte": "2026-08-27",
+      "estadosActuales": {
+        "conteo": {
+          "Finalizada": 341,
+          "Programada": 293,
+          "HITO": 45,
+          "Iniciada": 37,
+          "Retrasada": 30,
+          "FIN": 18,
+          "Bloqueada": 14
+        },
+        "items": 778,
+        "ejecutables": 715,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · columna ESTADO · 2026-08-27"
+        }
+      },
+      "ultimoMovimiento": {
+        "eventos": 409,
+        "fechas": 213,
+        "cierres": 11,
+        "estados": 64,
+        "desde": "2026-08-21",
+        "corte": "2026-08-27",
+        "nota": "<b>213 movimientos de fecha contra 11 tareas cerradas.</b> La actividad reciente del tablero es reprogramación, no ejecución.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board"
         }
       }
     },
@@ -16215,8 +16248,8 @@
         }
       },
       "ultimaTarea": {
-        "tarea": "MAMPARAS Y ESPEJOS DE BAÑO",
-        "sector": "pisos 3, 4, 5 y 6",
+        "tarea": "PISO 6 - MAMPARAS Y ESPEJOS DE BAÑO",
+        "sector": "PISO 6 R1",
         "fecha": "2026-11-06",
         "estado": "Programada",
         "avance": 0,
@@ -16226,27 +16259,29 @@
           "Las cuatro comparten la misma fecha de fin"
         ],
         "nota": "El cronograma literal dice 31/12/2026, pero esa fecha la fija 1 tarea <b>ya terminada</b> cuyo cronograma se movió después de cerrarla. La última tarea realmente pendiente cierra el 06/11: antes.",
-        "diasRestantes": 72,
+        "diasRestantes": 71,
         "vencida": false,
         "fuente": {
           "tipo": "monday",
-          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · 2026-08-27"
         }
       },
       "avanceDetalle": {
         "obraFisica": {
-          "tareas": 484,
-          "avance": 67.3,
-          "sinDuracion": 109,
-          "nota": "Ponderado sobre las 375 tareas con duración cargada."
+          "tareas": 521,
+          "avance": 71.57,
+          "sinDuracion": 112,
+          "nota": "Ponderado por duración. 112 tareas quedan fuera por no tener duración o porcentaje cargado."
         },
         "gestion": null,
         "porQueEsBajo": null,
         "descartado": "Se verificó con cuatro métodos: sólo con duración da 67,3 %, imputando la mediana global 70,3 %, imputando la del grupo 69,3 %, y por conteo de tareas 54,8 %. <b>El número es sólido</b>: las variantes ponderadas caen todas entre 67 y 70.",
         "fuente": {
           "tipo": "calculado",
-          "ref": "board 18402983112 · Σ(% × DURACION) ÷ Σ(DURACION) sobre 484 ejecutables · leído el 26/08/2026"
-        }
+          "ref": "Σ(% × DURACION) ÷ Σ(DURACION) sobre 521 ejecutables · 2026-08-27"
+        },
+        "conteo": 53.93,
+        "corte": "2026-08-27"
       },
       "causasEnTiempo": {
         "semanas": [],
@@ -16260,6 +16295,35 @@
         "fuente": {
           "tipo": "monday",
           "ref": "board 18402983122 · 4 subelementos · 1 con causa escrita"
+        }
+      },
+      "corte": "2026-08-27",
+      "estadosActuales": {
+        "conteo": {
+          "Finalizada": 284,
+          "Programada": 153,
+          "Iniciada": 65,
+          "Pendiente": 26,
+          "Restringido por Mano de Obra": 12
+        },
+        "items": 540,
+        "ejecutables": 521,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · columna ESTADO · 2026-08-27"
+        }
+      },
+      "ultimoMovimiento": {
+        "eventos": 361,
+        "fechas": 195,
+        "cierres": 1,
+        "estados": 19,
+        "desde": "2026-08-21",
+        "corte": "2026-08-27",
+        "nota": "<b>195 movimientos de fecha contra 1 tareas cerradas.</b> La actividad reciente del tablero es reprogramación, no ejecución.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board"
         }
       }
     },
@@ -18610,7 +18674,7 @@
         }
       },
       "ultimaTarea": {
-        "tarea": "PISO 1 - INSTALACION ELECTRODOMESTICOS y PISO 1 - CORTINAS",
+        "tarea": "PISO 1 - INSTALACION ELECTRODOMESTICOS",
         "sector": "grupo PISO 8",
         "fecha": "2028-05-02",
         "estado": "Programado",
@@ -18621,11 +18685,11 @@
           "Todo el hormigón del frente, sin arrancar"
         ],
         "nota": "Las 2 tareas que fijan el fin están en el grupo PISO 8 pero se llaman «PISO 1 - …»: nombres mal heredados de una duplicación. Y la fecha se movió del 17/04 al 02/05 el 24/08, cuando corrieron 443 tareas 15 días en bloque.",
-        "diasRestantes": 615,
+        "diasRestantes": 614,
         "vencida": false,
         "fuente": {
           "tipo": "monday",
-          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · 2026-08-27"
         }
       },
       "causasEnTiempo": {
@@ -18644,10 +18708,10 @@
       },
       "avanceDetalle": {
         "obraFisica": {
-          "tareas": 674,
-          "avance": 2.3,
-          "sinDuracion": 82,
-          "nota": "Ponderado por duración. 82 tareas no tienen duración cargada y quedan fuera del cálculo."
+          "tareas": 726,
+          "avance": 10.97,
+          "sinDuracion": 89,
+          "nota": "Ponderado por duración. 89 tareas quedan fuera por no tener duración o porcentaje cargado."
         },
         "gestion": {
           "tareas": 52,
@@ -18659,7 +18723,182 @@
         "descartado": null,
         "fuente": {
           "tipo": "calculado",
-          "ref": "board de la obra · Σ(% × DURACION) ÷ Σ(DURACION) sobre 674 ejecutables"
+          "ref": "Σ(% × DURACION) ÷ Σ(DURACION) sobre 726 ejecutables · 2026-08-27"
+        },
+        "conteo": 7.44,
+        "corte": "2026-08-27"
+      },
+      "avanceEtapas": {
+        "filas": [
+          {
+            "etapa": "Excavación y fundaciones",
+            "meses": 10,
+            "peso": 11.2,
+            "avance": 91.2,
+            "aporte": 10.2,
+            "tareas": 8
+          },
+          {
+            "etapa": "Estructura de hormigón",
+            "meses": 16,
+            "peso": 18.0,
+            "avance": 18.8,
+            "aporte": 3.4,
+            "tareas": 16
+          },
+          {
+            "etapa": "Albañilería",
+            "meses": 11,
+            "peso": 12.4,
+            "avance": 0.0,
+            "aporte": 0.0,
+            "tareas": 66
+          },
+          {
+            "etapa": "Instalaciones",
+            "meses": 25,
+            "peso": 28.1,
+            "avance": 1.5,
+            "aporte": 0.4,
+            "tareas": 136
+          },
+          {
+            "etapa": "Terminaciones",
+            "meses": 27,
+            "peso": 30.3,
+            "avance": 0.2,
+            "aporte": 0.1,
+            "tareas": 243
+          }
+        ],
+        "total": 14.1,
+        "nota": "Cada etapa pesa según los meses que el plan le da en el calendario, no según la duración cargada tarea por tarea. Es el criterio que evita que las duraciones por defecto —bloques de 5, 20 y 40 días— aplasten el peso de la obra gruesa.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "ventana de calendario de cada etapa en el CRONOGRAMA × avance promedio de sus tareas · leído el 27/08/2026"
+        }
+      },
+      "corte": "2026-08-27",
+      "estadosActuales": {
+        "conteo": {
+          "Programado": 639,
+          "Finalizada": 54,
+          "Sin programar": 30,
+          "Iniciada": 2,
+          "Pendiente": 1
+        },
+        "items": 726,
+        "ejecutables": 726,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · columna ESTADO · 2026-08-27"
+        }
+      },
+      "ultimoMovimiento": {
+        "eventos": 445,
+        "fechas": 443,
+        "cierres": 0,
+        "estados": 0,
+        "desde": "2026-08-24",
+        "corte": "2026-08-27",
+        "nota": "<b>443 movimientos de fecha contra 0 tareas cerradas.</b> La actividad reciente del tablero es reprogramación, no ejecución.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board"
+        }
+      },
+      "estructura": {
+        "tramos": [
+          {
+            "tramo": "SS2 · losa de subpresión contrafrente",
+            "pct": 100,
+            "fin": "2026-03-03"
+          },
+          {
+            "tramo": "SS2 · estructura contrafrente",
+            "pct": 100,
+            "fin": "2026-05-19"
+          },
+          {
+            "tramo": "SS1 · estructura contrafrente",
+            "pct": 100,
+            "fin": "2026-06-30"
+          },
+          {
+            "tramo": "SS2 · losa de subpresión frente",
+            "pct": 0,
+            "fin": "2026-09-18"
+          },
+          {
+            "tramo": "SS2 · estructura frente",
+            "pct": 0,
+            "fin": "2026-10-09"
+          },
+          {
+            "tramo": "SS1 · estructura frente",
+            "pct": 0,
+            "fin": "2026-10-29"
+          },
+          {
+            "tramo": "Planta baja · estructura",
+            "pct": 0,
+            "fin": "2026-11-19"
+          },
+          {
+            "tramo": "Piso 1 · estructura",
+            "pct": 0,
+            "fin": "2026-12-10"
+          },
+          {
+            "tramo": "Piso 2 · estructura",
+            "pct": 0,
+            "fin": "2026-12-31"
+          },
+          {
+            "tramo": "Piso 3 · estructura",
+            "pct": 0,
+            "fin": "2027-01-21"
+          },
+          {
+            "tramo": "Piso 4 · estructura",
+            "pct": 0,
+            "fin": "2027-02-11"
+          },
+          {
+            "tramo": "Piso 5 · estructura",
+            "pct": 0,
+            "fin": "2027-03-04"
+          },
+          {
+            "tramo": "Piso 6 · estructura",
+            "pct": 0,
+            "fin": "2027-03-25"
+          },
+          {
+            "tramo": "Piso 7 · estructura",
+            "pct": 0,
+            "fin": "2027-04-15"
+          },
+          {
+            "tramo": "Piso 8 · estructura",
+            "pct": 0,
+            "fin": "2027-05-06"
+          },
+          {
+            "tramo": "Piso 9 · estructura",
+            "pct": 0,
+            "fin": "2027-05-27"
+          }
+        ],
+        "hechos": 3,
+        "total": 16,
+        "pct": 19,
+        "enCurso": "Ninguna — lo abierto es excavación del frente (50 %) y retiro de suelo (80 %)",
+        "nota": "<b>3 de 16 tramos.</b> Todo el contrafrente está hormigonado y el frente no arrancó ninguno: primero hay que terminar de excavar. El próximo hormigón está programado para el 07/09.",
+        "corte": "2026-08-27",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · tareas de ESTRUCTURA Ho. Ao., losa de subpresión y submuración · 27/08/2026"
         }
       }
     },
@@ -22382,7 +22621,7 @@
       "ultimaTarea": {
         "tarea": "PISO SUBSUELO - PINTURA INTERIOR ETAPA 1",
         "sector": "SUBSUELO",
-        "fecha": "2027-08-06",
+        "fecha": "2028-01-07",
         "estado": "Programada",
         "avance": 0,
         "limpia": false,
@@ -22392,19 +22631,19 @@
           "L. - PRE INSTALACION A.A · 29/07/2027"
         ],
         "nota": "Hay un ítem con cronograma en <b>noviembre de 2030</b> (PISO 1 - CIELORRASOS EXTERIORES) que es error de carga. Si no se excluye, cualquier lectura automática da 2030 como fin de obra.",
-        "diasRestantes": 345,
+        "diasRestantes": 498,
         "vencida": false,
         "fuente": {
           "tipo": "monday",
-          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · leído el 26/08/2026"
+          "ref": "board de la obra · última tarea sin terminar del CRONOGRAMA · 2026-08-27"
         }
       },
       "avanceDetalle": {
         "obraFisica": {
-          "tareas": 567,
-          "avance": 7.0,
-          "sinDuracion": 22,
-          "nota": "Ponderado por duración sobre las 545 tareas que la tienen."
+          "tareas": 619,
+          "avance": 7.57,
+          "sinDuracion": 62,
+          "nota": "Ponderado por duración. 62 tareas quedan fuera por no tener duración o porcentaje cargado."
         },
         "gestion": {
           "tareas": 52,
@@ -22416,8 +22655,10 @@
         "descartado": "Se probó imputar duración a las tareas que no la tienen. Con la mediana de cada grupo daba 25,2 %, pero es un artefacto: el grupo FUNDACIONES tiene una excavación de 8 meses que arrastra la mediana a 177 días y se la asigna a tareas cortas. Con la mediana global de 5 días da 7,7 %, casi igual que sin imputar.",
         "fuente": {
           "tipo": "calculado",
-          "ref": "board 18402983267 · Σ(% × DURACION) ÷ Σ(DURACION) separando los grupos de gestión de los de obra · 619 ítems leídos el 26/08/2026"
-        }
+          "ref": "Σ(% × DURACION) ÷ Σ(DURACION) sobre 619 ejecutables · 2026-08-27"
+        },
+        "conteo": 7.59,
+        "corte": "2026-08-27"
       },
       "causasEnTiempo": {
         "semanas": [],
@@ -22431,6 +22672,154 @@
         "fuente": {
           "tipo": "monday",
           "ref": "board 18402983268 · 4 subelementos · 1 con causa escrita"
+        }
+      },
+      "avanceEtapas": {
+        "filas": [
+          {
+            "etapa": "Excavación y fundaciones",
+            "meses": 9,
+            "peso": 10.7,
+            "avance": 100.0,
+            "aporte": 10.7,
+            "tareas": 1
+          },
+          {
+            "etapa": "Estructura de hormigón",
+            "meses": 10,
+            "peso": 11.9,
+            "avance": 45.5,
+            "aporte": 5.4,
+            "tareas": 11
+          },
+          {
+            "etapa": "Albañilería",
+            "meses": 20,
+            "peso": 23.8,
+            "avance": 0.0,
+            "aporte": 0.0,
+            "tareas": 77
+          },
+          {
+            "etapa": "Instalaciones",
+            "meses": 22,
+            "peso": 26.2,
+            "avance": 3.0,
+            "aporte": 0.8,
+            "tareas": 166
+          },
+          {
+            "etapa": "Terminaciones",
+            "meses": 23,
+            "peso": 27.4,
+            "avance": 0.0,
+            "aporte": 0.0,
+            "tareas": 224
+          }
+        ],
+        "total": 16.9,
+        "nota": "Cada etapa pesa según los meses que el plan le da en el calendario, no según la duración cargada tarea por tarea. Es el criterio que evita que las duraciones por defecto —bloques de 5, 20 y 40 días— aplasten el peso de la obra gruesa.",
+        "fuente": {
+          "tipo": "calculado",
+          "ref": "ventana de calendario de cada etapa en el CRONOGRAMA × avance promedio de sus tareas · leído el 27/08/2026"
+        }
+      },
+      "corte": "2026-08-27",
+      "estadosActuales": {
+        "conteo": {
+          "Programada": 510,
+          "Finalizada": 47,
+          "Pendiente": 35,
+          "Sin programar": 25,
+          "Iniciada": 2
+        },
+        "items": 619,
+        "ejecutables": 619,
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · columna ESTADO · 2026-08-27"
+        }
+      },
+      "ultimoMovimiento": {
+        "eventos": 1292,
+        "fechas": 1222,
+        "cierres": 2,
+        "estados": 7,
+        "desde": "2026-08-24",
+        "corte": "2026-08-27",
+        "nota": "<b>1222 movimientos de fecha contra 2 tareas cerradas.</b> La actividad reciente del tablero es reprogramación, no ejecución.",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "activity_logs del board"
+        }
+      },
+      "estructura": {
+        "tramos": [
+          {
+            "tramo": "Subsuelo · estructura",
+            "pct": 100,
+            "fin": "2026-04-01"
+          },
+          {
+            "tramo": "Planta baja · estructura",
+            "pct": 100,
+            "fin": "2026-05-28"
+          },
+          {
+            "tramo": "Piso 1 · estructura",
+            "pct": 100,
+            "fin": "2026-07-01"
+          },
+          {
+            "tramo": "Piso 2 · estructura",
+            "pct": 100,
+            "fin": "2026-07-23"
+          },
+          {
+            "tramo": "Piso 3 · estructura",
+            "pct": 100,
+            "fin": "2026-08-20"
+          },
+          {
+            "tramo": "Piso 4 · estructura",
+            "pct": 0,
+            "fin": "2026-09-24"
+          },
+          {
+            "tramo": "Piso 5 · estructura",
+            "pct": 0,
+            "fin": "2026-10-16"
+          },
+          {
+            "tramo": "Piso 6 · estructura",
+            "pct": 0,
+            "fin": "2026-11-06"
+          },
+          {
+            "tramo": "Piso 7 · estructura",
+            "pct": 0,
+            "fin": "2026-11-26"
+          },
+          {
+            "tramo": "Piso 8 · estructura",
+            "pct": 0,
+            "fin": "2026-12-16"
+          },
+          {
+            "tramo": "Piso 9 · estructura",
+            "pct": 0,
+            "fin": "2026-12-30"
+          }
+        ],
+        "hechos": 5,
+        "total": 11,
+        "pct": 45,
+        "enCurso": "Piso 4 — iniciada el 26/08, todavía sin avance cargado",
+        "nota": "<b>5 de 11 losas hormigonadas.</b> El piso 3 cerró el 26/08 y el piso 4 arrancó ese mismo día. Es la única de las cuatro obras con estructura en curso.",
+        "corte": "2026-08-27",
+        "fuente": {
+          "tipo": "monday",
+          "ref": "board de la obra · tareas de ESTRUCTURA Ho. Ao., losa de subpresión y submuración · 27/08/2026"
         }
       }
     }
